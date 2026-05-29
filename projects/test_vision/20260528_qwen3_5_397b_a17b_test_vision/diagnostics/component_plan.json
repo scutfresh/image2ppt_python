@@ -1,0 +1,17 @@
+{
+  "assets": [
+    {
+      "name": "Background Gradient",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "Smooth gradient background transitioning from deep blue to purple with subtle geometric patterns",
+      "negative_prompt": "text, people, complex shapes, high contrast",
+      "transparent": false
+    }
+  ]
+}

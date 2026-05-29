@@ -1,0 +1,43 @@
+{
+  "assets": [
+    {
+      "name": "Background Gradient",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "dark gradient background, black to dark gray, subtle smooth transition, professional presentation style",
+      "negative_prompt": "bright colors, patterns, text, logos, noise, grain",
+      "transparent": false
+    },
+    {
+      "name": "Left Decorative Shape",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 960,
+        "h": 1080
+      },
+      "prompt": "abstract curved shape, blue to purple gradient, smooth flowing form, modern design, left side composition",
+      "negative_prompt": "text, sharp edges, bright colors, complex patterns",
+      "transparent": true
+    },
+    {
+      "name": "Decorative Accent Lines",
+      "type": "decoration",
+      "bbox": {
+        "x": 960,
+        "y": 0,
+        "w": 960,
+        "h": 1080
+      },
+      "prompt": "subtle thin accent lines, light blue and purple, minimal geometric decorations, professional presentation style",
+      "negative_prompt": "thick lines, bright colors, text, complex shapes",
+      "transparent": true
+    }
+  ]
+}

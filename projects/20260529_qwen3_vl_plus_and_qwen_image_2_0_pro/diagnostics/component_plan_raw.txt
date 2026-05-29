@@ -1,0 +1,12 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
+      "prompt": "smooth gradient background, soft blue to light gray radial gradient, subtle noise texture, professional presentation style",
+      "negative_prompt": "text, logos, borders, sharp lines, patterns, icons, people",
+      "transparent": false
+    }
+  ]
+}

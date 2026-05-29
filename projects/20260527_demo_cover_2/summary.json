@@ -1,0 +1,28 @@
+{
+  "manifest": "D:\\Desktop\\image2ppt\\langchain\\projects\\20260527_demo_cover_2\\manifest.json",
+  "output": "D:\\Desktop\\image2ppt\\langchain\\projects\\20260527_demo_cover_2\\output.pptx",
+  "slide_width_in": 13.333,
+  "slide_height_in": 7.5,
+  "canvas_width": 1920.0,
+  "canvas_height": 1080.0,
+  "counts": {
+    "slides": 1,
+    "background": 0,
+    "image": 22,
+    "text": 67,
+    "shape": 23,
+    "table": 0,
+    "unsupported": 0
+  },
+  "slides": [
+    {
+      "name": "Slide 1",
+      "elements": 112,
+      "image": 22,
+      "text": 67,
+      "shape": 23,
+      "table": 0,
+      "background": 0
+    }
+  ]
+}

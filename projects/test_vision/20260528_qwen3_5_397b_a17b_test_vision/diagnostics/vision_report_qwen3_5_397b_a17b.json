@@ -1,0 +1,100 @@
+{
+  "analysis": {
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "image",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    "titles": {
+      "count": 4
+    },
+    "body_text": {
+      "count": 55
+    },
+    "objects": {
+      "count": 33,
+      "types": {
+        "icon": 28,
+        "photo": 1,
+        "decoration": 4
+      },
+      "needs_image": {
+        "true": 33,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "Timeline Number 1",
+          "Timeline Number 2",
+          "Timeline Number 3",
+          "Timeline Number 4",
+          "Timeline Number 5",
+          "Timeline Number 6",
+          "Timeline Number 7",
+          "Timeline Number 8",
+          "Icon Plug",
+          "Icon Server",
+          "Icon Transformer",
+          "Icon Network",
+          "Icon Brain",
+          "Icon Blueprint",
+          "Icon Graph",
+          "Icon Globe",
+          "Icon People",
+          "Icon Cube",
+          "Icon Book",
+          "Icon Tools",
+          "Path Icon 1",
+          "Path Icon 2",
+          "Path Icon 3",
+          "Path Icon 4",
+          "Path Icon 5",
+          "Path Icon 6",
+          "Path Icon 7",
+          "Path Icon 8"
+        ],
+        "photo": [
+          "Central Engine Graphic"
+        ],
+        "decoration": [
+          "Curved Arrow Left Top",
+          "Curved Arrow Left Bottom",
+          "Curved Arrow Right Top",
+          "Curved Arrow Right Bottom"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 24,
+      "types": {
+        "roundRect": 16,
+        "line": 8
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 1,
+      "types": {
+        "texture": 1
+      },
+      "transparent": {
+        "true": 0,
+        "false": 1
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Gradient"
+        ]
+      }
+    }
+  }
+}

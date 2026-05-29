@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "name": "Slide Background",
+      "type": "texture",
+      "file": "component_images/slide_background.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "name": "Decorative Shape",
+      "type": "shape",
+      "file": "component_images/decorative_shape.png",
+      "bbox": {
+        "x": 1600,
+        "y": 800,
+        "w": 300,
+        "h": 200
+      }
+    },
+    {
+      "name": "Logo Icon",
+      "type": "icon",
+      "file": "component_images/logo_icon.png",
+      "bbox": {
+        "x": 50,
+        "y": 50,
+        "w": 150,
+        "h": 75
+      }
+    }
+  ]
+}

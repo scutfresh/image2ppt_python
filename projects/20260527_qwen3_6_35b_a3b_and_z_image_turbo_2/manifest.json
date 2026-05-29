@@ -1,0 +1,747 @@
+{
+  "slide_width": 1920,
+  "slide_height": 1080,
+  "elements": [
+    {
+      "type": "shape",
+      "name": "Card Background 1",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 100,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 2",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 300,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 3",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 500,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 4",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 700,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 5",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 900,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 6",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 1100,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 7",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 1300,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Card Background 8",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 1500,
+        "y": 220,
+        "w": 200,
+        "h": 280
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Central Ring Outer",
+      "shape_type": "ellipse",
+      "fill": "none",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 550,
+        "y": 600,
+        "w": 820,
+        "h": 200
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Central Ring Inner",
+      "shape_type": "ellipse",
+      "fill": "none",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 650,
+        "y": 650,
+        "w": 620,
+        "h": 100
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Side Block Left 1",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 50,
+        "y": 570,
+        "w": 220,
+        "h": 60
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Side Block Left 2",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 50,
+        "y": 660,
+        "w": 220,
+        "h": 60
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Side Block Right 1",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 1650,
+        "y": 570,
+        "w": 220,
+        "h": 60
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Side Block Right 2",
+      "shape_type": "roundRect",
+      "fill": "#0a1e3d",
+      "stroke": "#1a4a8a",
+      "stroke_width_px": 1,
+      "bbox": {
+        "x": 1650,
+        "y": 660,
+        "w": 220,
+        "h": 60
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 1",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 180,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 2",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 380,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 3",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 580,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 4",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 780,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 5",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 980,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 6",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 1180,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 7",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 1380,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "shape",
+      "name": "Timeline Node 8",
+      "shape_type": "ellipse",
+      "fill": "#0055aa",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2,
+      "bbox": {
+        "x": 1580,
+        "y": 180,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "image",
+      "name": "Central Graphic Layer",
+      "file": "component_images/central_graphic_layer.png",
+      "bbox": {
+        "x": 550,
+        "y": 520,
+        "w": 820,
+        "h": 350
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Plug",
+      "file": "component_images/icon_plug.png",
+      "bbox": {
+        "x": 160,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Server Stack",
+      "file": "component_images/icon_server_stack.png",
+      "bbox": {
+        "x": 360,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Transformer",
+      "file": "component_images/icon_transformer.png",
+      "bbox": {
+        "x": 560,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Network Nodes",
+      "file": "component_images/icon_network_nodes.png",
+      "bbox": {
+        "x": 760,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Brain",
+      "file": "component_images/icon_brain.png",
+      "bbox": {
+        "x": 960,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Blueprint",
+      "file": "component_images/icon_blueprint.png",
+      "bbox": {
+        "x": 1160,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Molecule",
+      "file": "component_images/icon_molecule.png",
+      "bbox": {
+        "x": 1360,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Globe",
+      "file": "component_images/icon_globe.png",
+      "bbox": {
+        "x": 1560,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: People",
+      "file": "component_images/icon_people.png",
+      "bbox": {
+        "x": 80,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Cube",
+      "file": "component_images/icon_cube.png",
+      "bbox": {
+        "x": 80,
+        "y": 680,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Book",
+      "file": "component_images/icon_book.png",
+      "bbox": {
+        "x": 1700,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "image",
+      "name": "Icon: Wrench",
+      "file": "component_images/icon_wrench.png",
+      "bbox": {
+        "x": 1700,
+        "y": 680,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "type": "image",
+      "name": "Bottom Icons Row",
+      "file": "component_images/bottom_icons_row.png",
+      "bbox": {
+        "x": 150,
+        "y": 900,
+        "w": 1620,
+        "h": 80
+      }
+    },
+    {
+      "type": "text",
+      "name": "Main Title",
+      "text": "\u201c\u5927\u74e6\u7279\u201d\u6f14\u8fdb\u8def\u7ebf\u56fe",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 56,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "center",
+      "bbox": {
+        "x": 640,
+        "y": 40,
+        "w": 640,
+        "h": 80
+      }
+    },
+    {
+      "type": "text",
+      "name": "Subtitle 1",
+      "text": "\u8def\u6807\u4e0e\u6838\u5fc3\u4eae\u70b9",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 32,
+      "color": "#ffaa00",
+      "bold": true,
+      "italic": false,
+      "align": "center",
+      "bbox": {
+        "x": 840,
+        "y": 130,
+        "w": 240,
+        "h": 40
+      }
+    },
+    {
+      "type": "text",
+      "name": "Subtitle 2",
+      "text": "\u4ece\u591a\u6a21\u6001\u670d\u52a1\u5316\u8fc8\u5411\u7535\u529b\u4e16\u754c\u6a21\u578b",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#88aadd",
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "bbox": {
+        "x": 750,
+        "y": 175,
+        "w": 420,
+        "h": 30
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 1",
+      "text": "\u5927\u74e6\u7279 1.0\n2025.05\n\u5b9a\u4f4d\uff1a\u591a\u6a21\u6001\u670d\u52a1\u5316\n\u4eae\u70b9\uff1a\n\u5efa\u6210\u5357\u7f51\u9996\u4e2a\uff0c\u7535\u529b\u591a\u6a21\u6001\u80fd\u529b\u5165\u53e3\uff0c\u6210\u529f\u9002\u914d\u56fd\u4ea7\u7b97\u529b\uff0c\u5b9e\u73b0\u5168\u81ea\u4e3b\u5b89\u5168\u53ef\u63a7\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 110,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 2",
+      "text": "\u5927\u74e6\u7279 1.1\n2025.12\n\u5b9a\u4f4d\uff1a\u80fd\u529b\u89c4\u6a21\u5316\n\u4eae\u70b9\uff1a\n\u5e95\u5ea7\u5168\u9762\u8fed\u4ee3\u5347\u7ea7\uff0c\u6b63\u5f0f\u5907\u5343\u4ebf\u7ea7\u53c2\u6570\u89c4\u6a21\u6a21\u578b\u80fd\u529b\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 310,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 3",
+      "text": "\u5927\u74e6\u7279 2.0\n2026.04\n\u5b9a\u4f4d\uff1a\u884c\u4e1a\u4e13\u4e1a\u5316\n\u4eae\u70b9\uff1a\n\u5b8c\u621072B\u884c\u4e1a\u5fae\u8c03\u6a21\u578b\u5168\u9762\u5347\u7ea7\uff0c\u5f3a\u5316\u7535\u529b\u4e13\u4e1a\u80fd\u529b\uff0c\u9ad8\u6548\u6d41\u8f6c\u5178\u578b\u4e1a\u52a1\u573a\u666f\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 510,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 4",
+      "text": "\u5927\u74e6\u7279 2.1\n2026.06\n\u5b9a\u4f4d\uff1a\u67b6\u6784\u534f\u540c\u5316\n\u4eae\u70b9\uff1a\n\u4e0a\u7ebf MoE \u67b6\u6784\u5fae\u8c03\u6a21\u578b\uff0c\u5b9e\u73b0\u4e13\u5bb6\u534f\u540c\u3001\u4efb\u52a1\u5206\u6d41\u548c\u591a\u4e1a\u52a1\u57df\u534f\u540c\uff0c\u6309\u9700\u8c03\u7528\u4e13\u4e1a\u80fd\u529b\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 710,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 5",
+      "text": "\u5927\u74e6\u7279 2.2\n2026.08\n\u5b9a\u4f4d\uff1a\u63a8\u7406\u539f\u751f\u5316\n\u4eae\u70b9\uff1a\n\u5f15\u5165\u5f3a\u5316\u5b66\u4e60\u4e0e\u6162\u601d\u8003\u673a\u5236\uff0c\u589e\u5f3a\u903b\u8f91\u63a8\u7406\u3001\u77e5\u8bc6\u589e\u5f3a\u548c\u5de5\u5177\u8c03\u7528\u80fd\u529b\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 910,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 6",
+      "text": "\u5927\u74e6\u7279 3.0\n2026.01\n\u5b9a\u4f4d\uff1a\u5de5\u4e1a\u56fe\u7eb8\u5316\n\u4eae\u70b9\uff1a\n\u884c\u4e1a\u9996\u53d1\u7535\u529b\u591a\u6a21\u6001\u5de5\u4e1a\u56fe\u7eb8\u6a21\u578b\uff0c\u5177\u5907\u56fe\u7eb8\u89e3\u6790\u3001\u89c4\u5219\u6821\u6838\u548c\u8f85\u52a9\u8bbe\u8ba1\u80fd\u529b\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 1110,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 7",
+      "text": "\u5927\u74e6\u7279 3.1\n2027.04\n\u5b9a\u4f4d\uff1a\u62d3\u6251\u8ba4\u77e5\u5316\n\u4eae\u70b9\uff1a\n\u878d\u5408\u591a\u6e90\u6570\u636e\uff0c\u6784\u5efa\u201c\u56fe\u50cf\u2014\u8bbe\u5907\u2014\u7a7a\u95f4\u2014\u62d3\u6251\u201d\u8054\u5408\u63a8\u7406\u80fd\u529b\uff0c\u5f62\u6210\u7535\u529b\u884c\u4e1a\u7ed3\u6784\u5316\u8ba4\u77e5\u58c1\u5792\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 1310,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Timeline Text 8",
+      "text": "\u5927\u74e6\u7279 4.0\n2027.12\n\u5b9a\u4f4d\uff1a\u4e16\u754c\u6a21\u578b\u5316\n\u4eae\u70b9\uff1a\n\u53d1\u5e03\u7535\u529b\u591a\u6a21\u6001\u4e16\u754c\u6a21\u578b\uff0c\u5b9e\u73b0\u7269\u7406\u4eff\u771f\u4e0e\u667a\u80fd\u63a8\u6f14\u3001\u4ece\u7406\u89e3\u73b0\u573a\u8fc8\u5411\u63a8\u6f14\u73b0\u573a\u3001\u8f85\u52a9\u51b3\u7b56\u3002",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 1510,
+        "y": 220,
+        "w": 180,
+        "h": 260
+      }
+    },
+    {
+      "type": "text",
+      "name": "Central Block Text",
+      "text": "\u7edf\u4e00\u670d\u52a1\n\u7535\u529b\u4e13\u4e1a\u591a\u6a21\u6001\u80fd\u529b\u5f15\u64ce\n\u7edf\u4e00\u4e1a\u52a1\u5e95\u5ea7\n\u4e1a\u52a1\u9a71\u52a8\u00b7\u573a\u666f\u666e\u60e0\n\u7edf\u4e00\u6570\u636e\u5e95\u5ea7\n\u6570\u636e\u878d\u5408\u00b7\u77e5\u8bc6\u589e\u5f3a\n\u7edf\u4e00\u6280\u672f\u5e95\u5ea7\n\u7b97\u6cd5\u9886\u5148\u00b7\u5de5\u7a0b\u53ef\u9760\n\u5168\u57df\u6570\u636e\u878d\u5408\u4e0e\u77e5\u8bc6\u6c89\u6dc0",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "bbox": {
+        "x": 600,
+        "y": 550,
+        "w": 720,
+        "h": 300
+      }
+    },
+    {
+      "type": "text",
+      "name": "Left Side Block Text",
+      "text": "\u4e1a\u52a1\u751f\u6001\n\u591a\u4e1a\u52a1\u57df\u534f\u540c\u8d4b\u80fd\n\u6a21\u578b\u751f\u6001\n\u591a\u6a21\u6001\u6a21\u578b\u534f\u540c\u6f14\u8fdb",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 60,
+        "y": 580,
+        "w": 200,
+        "h": 150
+      }
+    },
+    {
+      "type": "text",
+      "name": "Right Side Block Text",
+      "text": "\u77e5\u8bc6\u751f\u6001\n\u7535\u529b\u4e13\u4e1a\u77e5\u8bc6\u4f53\u7cfb\n\u5de5\u5177\u751f\u6001\n\u5de5\u5177\u94fe\u4e0e\u5e94\u7528\u96c6\u6210",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left",
+      "bbox": {
+        "x": 1660,
+        "y": 580,
+        "w": 200,
+        "h": 150
+      }
+    },
+    {
+      "type": "text",
+      "name": "Bottom Path Text",
+      "text": "\u6f14\u8fdb\u8def\u5f84\n\u670d\u52a1\u5316\u5165\u53e3\n\u6253\u901a\u80fd\u529b\u5165\u53e3\n\u89c4\u6a21\u5316\u8dc3\u5347\n\u63d0\u5347\u6a21\u578b\u89c4\u6a21\n\u884c\u4e1a\u4e13\u4e1a\u5316\n\u6df1\u8015\u7535\u529b\u573a\u666f\n\u67b6\u6784\u534f\u540c\u5316\n\u4e13\u5bb6\u534f\u540c\u667a\u80fd\n\u63a8\u7406\u539f\u751f\u5316\n\u5f3a\u5316\u63a8\u7406\u80fd\u529b\n\u5de5\u4e1a\u56fe\u7eb8\u5316\n\u7406\u89e3\u5de5\u7a0b\u56fe\u7eb8\n\u62d3\u6251\u8ba4\u77e5\u5316\n\u63a8\u7406\u7535\u7f51\u7ed3\u6784\n\u4e16\u754c\u6a21\u578b\u5316\n\u4eff\u771f\u63a8\u6f14\u51b3\u7b56",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "bbox": {
+        "x": 100,
+        "y": 880,
+        "w": 1720,
+        "h": 150
+      }
+    },
+    {
+      "type": "text",
+      "name": "Domain Labels",
+      "text": "\u7535\u7f51\u751f\u4ea7\u57df\n\u8bbe\u5907\u8d44\u4ea7\u57df\n\u8425\u9500\u670d\u52a1\u57df\n\u5b89\u5168\u7ba1\u7406\u57df\n\u5916\u90e8\u73af\u5883\u57df",
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 12,
+      "color": "#88aadd",
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "bbox": {
+        "x": 400,
+        "y": 820,
+        "w": 1120,
+        "h": 30
+      }
+    }
+  ],
+  "deck": {
+    "canvas_width": 1920,
+    "canvas_height": 1080,
+    "slide_width_in": 13.333,
+    "slide_height_in": 7.5,
+    "name": "Image2PPT Deck"
+  }
+}

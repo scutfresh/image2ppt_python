@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "image",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 32
+    },
+    "objects": {
+      "count": 36,
+      "types": {
+        "icon": 24,
+        "decoration": 3,
+        "line": 1,
+        "shape": 8
+      },
+      "needs_image": {
+        "true": 27,
+        "false": 9
+      },
+      "names_by_type": {
+        "icon": [
+          "power_grid_icon_1",
+          "power_grid_icon_2",
+          "globe_icon",
+          "step_1_icon",
+          "step_2_icon",
+          "step_3_icon",
+          "step_4_icon",
+          "step_5_icon",
+          "step_6_icon",
+          "step_7_icon",
+          "step_8_icon",
+          "business_ecosystem_icon",
+          "model_ecosystem_icon",
+          "knowledge_ecosystem_icon",
+          "tool_ecosystem_icon",
+          "evolution_path_icon_1",
+          "evolution_path_icon_2",
+          "evolution_path_icon_3",
+          "evolution_path_icon_4",
+          "evolution_path_icon_5",
+          "evolution_path_icon_6",
+          "evolution_path_icon_7",
+          "evolution_path_icon_8",
+          "evolution_path_icon_9"
+        ],
+        "decoration": [
+          "central_engine_structure",
+          "blue_arrow_curve",
+          "bottom_evolution_curve"
+        ],
+        "line": [
+          "step_connector_line"
+        ],
+        "shape": [
+          "step_number_circle_1",
+          "step_number_circle_2",
+          "step_number_circle_3",
+          "step_number_circle_4",
+          "step_number_circle_5",
+          "step_number_circle_6",
+          "step_number_circle_7",
+          "step_number_circle_8"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 16,
+      "types": {
+        "roundRect": 16
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 1,
+      "types": {
+        "texture": 1
+      },
+      "transparent": {
+        "true": 0,
+        "false": 1
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Image"
+        ]
+      }
+    }
+  }
+}

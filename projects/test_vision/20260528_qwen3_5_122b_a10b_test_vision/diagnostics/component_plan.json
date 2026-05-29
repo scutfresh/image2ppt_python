@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "name": "Slide Background",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "professional corporate background, subtle gradient blue and white, clean minimalist style",
+      "negative_prompt": "text, clutter, dark colors, busy patterns",
+      "transparent": false
+    },
+    {
+      "name": "Abstract Decoration",
+      "type": "illustration",
+      "bbox": {
+        "x": 1600,
+        "y": 100,
+        "w": 250,
+        "h": 250
+      },
+      "prompt": "abstract geometric shape, light blue, soft edges, modern design",
+      "negative_prompt": "text, sharp lines, dark colors",
+      "transparent": true
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "analysis": {
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "image",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 65
+    },
+    "objects": {
+      "count": 11,
+      "types": {
+        "icon": 8,
+        "photo": 1,
+        "chart": 1,
+        "decoration": 1
+      },
+      "needs_image": {
+        "true": 11,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "section1_icon",
+          "section2_icon",
+          "section3_icon",
+          "section4_icon",
+          "section5_icon",
+          "section6_icon",
+          "section7_icon",
+          "section8_icon"
+        ],
+        "photo": [
+          "globe_photo"
+        ],
+        "chart": [
+          "central_chart"
+        ],
+        "decoration": [
+          "decorations"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 10,
+      "types": {
+        "rect": 8,
+        "ellipse": 1,
+        "line": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 1,
+      "types": {
+        "texture": 1
+      },
+      "transparent": {
+        "true": 0,
+        "false": 1
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Image"
+        ]
+      }
+    }
+  }
+}

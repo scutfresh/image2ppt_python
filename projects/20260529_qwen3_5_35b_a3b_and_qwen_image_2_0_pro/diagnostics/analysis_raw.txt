@@ -1,0 +1,831 @@
+{
+  "canvas_width": 1920,
+  "canvas_height": 1080,
+  "background": {
+    "type": "gradient",
+    "color": "#0a1f44",
+    "bbox": {
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080
+    },
+    "hints": "Dark blue radial gradient with faint grid lines and power tower silhouettes in corners."
+  },
+  "titles": [
+    {
+      "text": "\"大瓦特\"演进路线图",
+      "bbox": {
+        "x": 580,
+        "y": 40,
+        "w": 760,
+        "h": 100
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 72,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "路标与核心亮点",
+      "bbox": {
+        "x": 750,
+        "y": 150,
+        "w": 420,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 32,
+      "color": "#ffcc00",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "从多模态服务化迈向电力世界模型",
+      "bbox": {
+        "x": 700,
+        "y": 195,
+        "w": 520,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#cccccc",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    }
+  ],
+  "body_text": [
+    {
+      "text": "大瓦特 1.0\n2025.05",
+      "bbox": {
+        "x": 50,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：多模态服务化",
+      "bbox": {
+        "x": 50,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n建成南网首个，\n电力多模态能力入口，\n成功适配国产算力，\n实现全自主安全可控。",
+      "bbox": {
+        "x": 50,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 1.1\n2025.12",
+      "bbox": {
+        "x": 250,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：能力规模化",
+      "bbox": {
+        "x": 250,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n底座全面迭代升级，\n正式备千亿级参参数\n规模模型能力。",
+      "bbox": {
+        "x": 250,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 2.0\n2026.04",
+      "bbox": {
+        "x": 450,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：行业专业化",
+      "bbox": {
+        "x": 450,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n完成72B行业微调模型\n全面升级，强化电力专\n业能力，高效流转典型\n业务场景。",
+      "bbox": {
+        "x": 450,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 2.1\n2026.06",
+      "bbox": {
+        "x": 650,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：架构协同化",
+      "bbox": {
+        "x": 650,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n上线 MoE 架构微调模型，\n实现专家协同、任务分流\n和多业务域协同，按需调\n用专业能力。",
+      "bbox": {
+        "x": 650,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 2.2\n2026.08",
+      "bbox": {
+        "x": 850,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：推理原生化",
+      "bbox": {
+        "x": 850,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n引入强化学习与慢思考\n机制，增强逻辑推理、\n知识增强和工具调用\n能力。",
+      "bbox": {
+        "x": 850,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 3.0\n2026.01",
+      "bbox": {
+        "x": 1050,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：工业图纸化",
+      "bbox": {
+        "x": 1050,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n行业首发电力多模态\n工业图纸模型，具备\n图纸解析、规则校验\n和辅助设计能力。",
+      "bbox": {
+        "x": 1050,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 3.1\n2027.04",
+      "bbox": {
+        "x": 1250,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：拓扑认知化",
+      "bbox": {
+        "x": 1250,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n融合多源数据，构建“图像\n一设备一空间一拓扑”联合\n推理能力，形成电力行业\n结构化认知壁垒。",
+      "bbox": {
+        "x": 1250,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "大瓦特 4.0\n2027.12",
+      "bbox": {
+        "x": 1450,
+        "y": 200,
+        "w": 180,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "定位：世界模型化",
+      "bbox": {
+        "x": 1450,
+        "y": 250,
+        "w": 180,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#00d2ff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "亮点\n发布电力多模态世界模型，\n实现物理仿真与智能推演、\n从理解现场迈向推演现场、\n辅助决策。",
+      "bbox": {
+        "x": 1450,
+        "y": 380,
+        "w": 180,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "业务生态\n多业务域协同赋能",
+      "bbox": {
+        "x": 50,
+        "y": 580,
+        "w": 200,
+        "h": 60
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "模型生态\n多模态模型协同演进",
+      "bbox": {
+        "x": 50,
+        "y": 680,
+        "w": 200,
+        "h": 60
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "知识生态\n电力专业知识体系",
+      "bbox": {
+        "x": 1670,
+        "y": 580,
+        "w": 200,
+        "h": 60
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "工具生态\n工具链与应用集成",
+      "bbox": {
+        "x": 1670,
+        "y": 680,
+        "w": 200,
+        "h": 60
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "演进路径",
+      "bbox": {
+        "x": 50,
+        "y": 850,
+        "w": 100,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 36,
+      "color": "#ffaa00",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "服务化入口\n打通能力入口",
+      "bbox": {
+        "x": 150,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "规模化跃升\n提升模型规模",
+      "bbox": {
+        "x": 350,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "行业专业化\n深耕电力场景",
+      "bbox": {
+        "x": 550,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "架构协同化\n专家协同智能",
+      "bbox": {
+        "x": 750,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "推理原生化\n强化推理能力",
+      "bbox": {
+        "x": 950,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "工业图纸化\n理解工程图纸",
+      "bbox": {
+        "x": 1150,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "拓扑认知化\n推理电网结构",
+      "bbox": {
+        "x": 1350,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "世界模型化\n仿真推演决策",
+      "bbox": {
+        "x": 1550,
+        "y": 950,
+        "w": 150,
+        "h": 50
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    }
+  ],
+  "objects": [
+    {
+      "name": "Central Engine Diagram",
+      "type": "chart",
+      "bbox": {
+        "x": 200,
+        "y": 500,
+        "w": 1520,
+        "h": 400
+      },
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true
+    },
+    {
+      "name": "Bottom Timeline Graphic",
+      "type": "decoration",
+      "bbox": {
+        "x": 100,
+        "y": 850,
+        "w": 1720,
+        "h": 200
+      },
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true
+    },
+    {
+      "name": "Top Row Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 300,
+        "w": 1580,
+        "h": 80
+      },
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true
+    },
+    {
+      "name": "Background Decorations",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "z_index": 0,
+      "needs_image": true,
+      "needs_transparent": true
+    }
+  ],
+  "shapes": [
+    {
+      "name": "Card 1 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 40,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 2 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 240,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 3 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 440,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 4 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 640,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 5 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 840,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 6 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 1040,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 7 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 1240,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Card 8 Container",
+      "type": "roundRect",
+      "bbox": {
+        "x": 1440,
+        "y": 240,
+        "w": 200,
+        "h": 300
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Left Box 1",
+      "type": "roundRect",
+      "bbox": {
+        "x": 40,
+        "y": 570,
+        "w": 220,
+        "h": 70
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Left Box 2",
+      "type": "roundRect",
+      "bbox": {
+        "x": 40,
+        "y": 670,
+        "w": 220,
+        "h": 70
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Right Box 1",
+      "type": "roundRect",
+      "bbox": {
+        "x": 1660,
+        "y": 570,
+        "w": 220,
+        "h": 70
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Right Box 2",
+      "type": "roundRect",
+      "bbox": {
+        "x": 1660,
+        "y": 670,
+        "w": 220,
+        "h": 70
+      },
+      "fill": "#1a3a5c",
+      "stroke": "#00d2ff",
+      "stroke_width_px": 2
+    }
+  ]
+}

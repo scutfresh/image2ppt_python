@@ -1,0 +1,87 @@
+{
+  "analysis": {
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 51
+    },
+    "objects": {
+      "count": 22,
+      "types": {
+        "icon": 20,
+        "decoration": 2
+      },
+      "needs_image": {
+        "true": 22,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "stage1_icon",
+          "stage2_icon",
+          "stage3_icon",
+          "stage4_icon",
+          "stage5_icon",
+          "stage6_icon",
+          "stage7_icon",
+          "stage8_icon",
+          "business_ecosystem_icon",
+          "model_ecosystem_icon",
+          "knowledge_ecosystem_icon",
+          "tools_ecosystem_icon",
+          "timeline_icon1",
+          "timeline_icon2",
+          "timeline_icon3",
+          "timeline_icon4",
+          "timeline_icon5",
+          "timeline_icon6",
+          "timeline_icon7",
+          "timeline_icon8"
+        ],
+        "decoration": [
+          "central_diagram",
+          "top_decoration"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 23,
+      "types": {
+        "roundRect": 12,
+        "line": 3,
+        "ellipse": 8
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 1,
+      "types": {
+        "texture": 1
+      },
+      "transparent": {
+        "true": 0,
+        "false": 1
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Image"
+        ]
+      }
+    }
+  }
+}

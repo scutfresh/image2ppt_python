@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "name": "Slide Background",
+      "type": "texture",
+      "file": "component_images/slide_background.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "name": "Decorative Icon",
+      "type": "icon",
+      "file": "component_images/decorative_icon.png",
+      "bbox": {
+        "x": 1650,
+        "y": 80,
+        "w": 180,
+        "h": 180
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "assets": [
+    {
+      "name": "Slide Background",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "Professional presentation background, dark navy blue gradient, subtle mesh pattern",
+      "negative_prompt": "text, words, bright colors, low resolution",
+      "transparent": false
+    },
+    {
+      "name": "Decorative Shape",
+      "type": "shape",
+      "bbox": {
+        "x": 1600,
+        "y": 800,
+        "w": 300,
+        "h": 200
+      },
+      "prompt": "Abstract geometric circle overlay, semi-transparent white, soft shadow",
+      "negative_prompt": "sharp edges, hard lines, text",
+      "transparent": true
+    },
+    {
+      "name": "Logo Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 50,
+        "w": 150,
+        "h": 75
+      },
+      "prompt": "Minimalist tech company logo, white vector icon, clean lines",
+      "negative_prompt": "complex illustration, photorealistic, text",
+      "transparent": true
+    }
+  ]
+}

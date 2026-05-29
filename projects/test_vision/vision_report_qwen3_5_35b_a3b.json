@@ -1,0 +1,97 @@
+{
+  "analysis": {
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 35
+    },
+    "objects": {
+      "count": 24,
+      "types": {
+        "icon": 20,
+        "decoration": 4
+      },
+      "needs_image": {
+        "true": 24,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "Icon_Version_1_Plug",
+          "Icon_Version_2_Stack",
+          "Icon_Version_3_Transformer",
+          "Icon_Version_4_Network",
+          "Icon_Version_5_Brain",
+          "Icon_Version_6_Blueprint",
+          "Icon_Version_7_Topology",
+          "Icon_Version_8_Globe",
+          "Icon_Ecosystem_Business",
+          "Icon_Ecosystem_Model",
+          "Icon_Ecosystem_Knowledge",
+          "Icon_Ecosystem_Tool",
+          "Icon_Path_Entry",
+          "Icon_Path_Scale",
+          "Icon_Path_Professional",
+          "Icon_Path_Collaboration",
+          "Icon_Path_Inference",
+          "Icon_Path_Blueprint",
+          "Icon_Path_Topology",
+          "Icon_Path_World"
+        ],
+        "decoration": [
+          "Central_Engine_Diagram",
+          "Background_Tower_Left",
+          "Background_Tower_Right",
+          "Bottom_Arrow_Path"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 16,
+      "types": {
+        "roundRect": 12,
+        "ellipse": 3,
+        "line": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 3,
+      "types": {
+        "texture": 1,
+        "shape": 1,
+        "icon": 1
+      },
+      "transparent": {
+        "true": 2,
+        "false": 1
+      },
+      "names_by_type": {
+        "texture": [
+          "Slide Background"
+        ],
+        "shape": [
+          "Decorative Wave"
+        ],
+        "icon": [
+          "Chart Icon"
+        ]
+      }
+    }
+  }
+}
