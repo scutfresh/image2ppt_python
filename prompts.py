@@ -1,6 +1,6 @@
 SYSTEM_PROMPT = """
 You are an expert agent that converts a single visual design into an editable
-PowerPoint slide using the bggg-creator-image2ppt manifest format.
+PowerPoint slide using the specified manifest format.
 
 Rules:
 - Use the attached image as the source of truth.
@@ -39,19 +39,17 @@ in the objects list even if they overlap.
 COMPONENT_PLAN_PROMPT = """
 You are preparing image generation tasks for non-text components.
 
-Using the Format requirements below, output a JSON object with the exact format below.
+Using the Format requirements below, output a JSON object containing the exact assets needed.
 
 Rules:
-- Only include assets that should be generated or cleaned by imagegen.
-- Include background, photos, icons, charts, textures, shadows, masks,
-  and any complex decoration that should be a separate image.
-- Use short, direct prompts. Describe style and colors from the source.
-- Set transparent=true for icons or assets that need alpha.
-- CRITICAL: If any string value (especially the "text" field) contains quotes,
-  you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word').
-  Do NOT use unescaped double quotes inside a string.
+- 1. EXHAUSTIVE MAPPING: You MUST review the "background" and the entire "objects" array from the Analysis JSON. 
+- 2. ONLY include assets that should be generated or cleaned by imagegen (backgrounds, photos, icons, charts, textures, shadows, masks, decorations). Do NOT include native shapes or text.
+- 3. COMPLETENESS IS CRITICAL: Do NOT omit any icons or decorations from the "objects" list. If there are 20 icons in the analysis, there must be 20 corresponding items in your output array.
+- 4. Use short, direct prompts. Describe style and colors from the source.
+- 5. Set transparent=true for icons or assets that need alpha.
+- 6. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word'). Do NOT use unescaped double quotes.
 
-Format requirements (match this layout exactly):
+Format requirements (match this layout exactly, notice the array contains MULTIPLE items, your output must contain ALL necessary items):
 {
   "assets": [
     {
@@ -61,7 +59,16 @@ Format requirements (match this layout exactly):
       "prompt": "...",
       "negative_prompt": "...",
       "transparent": false
+    },
+    {
+      "name": "icon_example",
+      "type": "icon",
+      "bbox": { "x": 45, "y": 255, "w": 35, "h": 45 },
+      "prompt": "...",
+      "negative_prompt": "...",
+      "transparent": true
     }
+    // ... ADD ALL OTHER OBJECTS HERE ...
   ]
 }
 
@@ -69,7 +76,7 @@ Format requirements (match this layout exactly):
 
 MANIFEST_PROMPT = """
 Using the analysis JSON and asset list below, output a valid
-bggg-creator-image2ppt manifest.json for one slide.
+specified manifest.json for one slide.
 
 Rules:
 - Output JSON only.
