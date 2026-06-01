@@ -126,6 +126,7 @@ def generate_component_plan(
     model: str,
     temperature: float,
     analysis: dict[str, Any],
+    image_path: Path, # 新增参数：接收原图路径
     raw_output_path: Path | None = None,
 ) -> dict[str, Any]:
     
@@ -153,15 +154,22 @@ def generate_component_plan(
             })
             
     expected_count = len(items_need_prompt)    
-
-# 2. 组装 Prompt
+    print(f"Component plan will include {expected_count} items that need images.")
+    # 2. 组装 Prompt
     prompt_text = COMPONENT_PLAN_PROMPT.replace(
         "{filtered_json}", json.dumps(items_need_prompt, indent=2)
     )
     # prompt_text = COMPONENT_PLAN_PROMPT.replace(
     #     "{analysis_json}", json.dumps(analysis, indent=2)
     # )
-    response_text = client.chat(model, build_text_messages(prompt_text), temperature)
+
+    # 3. 将原图转为 base64 数据
+    image_url = encode_image_to_data_url(image_path)
+    
+    # 4. 关键修改：使用 build_vision_messages 发送视觉分析请求
+    response_text = client.chat(model, build_vision_messages(prompt_text, image_url), temperature)
+
+    # response_text = client.chat(model, build_text_messages(prompt_text), temperature)
     if raw_output_path:
         raw_output_path.write_text(response_text, encoding="utf-8")
     payload = parse_llm_json(response_text)
@@ -344,6 +352,7 @@ def main() -> int:
                 vision_model,
                 vision_temperature,
                 analysis,
+                Path(args.source),  # 新增：传入原图路径
                 raw_output_path=diagnostics_dir / "component_plan_raw.txt",
             )
             save_json(diagnostics_dir / "component_plan.json", component_plan)

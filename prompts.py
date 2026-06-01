@@ -39,15 +39,17 @@ in the objects list even if they overlap.
 """.strip()
 
 COMPONENT_PLAN_PROMPT = """
-You are an expert prompt engineer. You are preparing image generation tasks for non-text components.
+You are an expert prompt engineer for an image generation AI.
+I have attached the SOURCE IMAGE and a JSON list of specific elements extracted from it. 
 
-Using the provided filtered Analysis JSON below (which contains elements needing images and their `style_tags`), output a JSON object containing the exact assets needed.
+Your task is to write highly accurate `prompt` and `negative_prompt` strings to recreate each element.
 
-Rules:
-- 1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
-- 2. Use the `style_tags` and `type` provided to write short, highly accurate `prompt` and `negative_prompt` strings. Describe the visual style accurately.
-- 3. Set transparent=true for icons or assets that need alpha.
-- 4. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word'). Do NOT use unescaped double quotes.
+CRITICAL RULES:
+1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
+2. USE THE BOUNDING BOX (bbox): Look at the attached image. Use the provided "bbox" [x, y, w, h] to locate the exact element in the image.
+3. DESCRIBE WHAT YOU SEE: Base your prompt ONLY on how that specific element looks in the source image (colors, art style, flat vs 3D, textures, gradients, context).
+4. Set transparent=true for icons or assets that need alpha.
+5. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
 
 Format requirements (match this layout exactly, output MUST contain ALL items):
 {
