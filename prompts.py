@@ -28,7 +28,9 @@ The image content is attached. Analyze the slide and output a JSON object with:
 - body_text: list of text blocks with the same fields as titles
 - objects: list of visual objects with:
   name, type (icon|photo|chart|decoration|shadow|mask|texture|logo|shape),
-  bbox (x, y, w, h), z_index, needs_image (true/false), needs_transparent
+  bbox (x, y, w, h), z_index, needs_image (true/false), needs_transparent,
+  style_tags (string, ONLY if needs_image is true: output 3-5 keywords describing 
+  color, texture, and visual style, e.g., 'neon green, glowing, 3d, flat, metallic')
 - shapes: list of simple shapes (rect|roundRect|ellipse|line) with bbox, fill,
   stroke, stroke_width_px
 
@@ -37,40 +39,41 @@ in the objects list even if they overlap.
 """.strip()
 
 COMPONENT_PLAN_PROMPT = """
-You are preparing image generation tasks for non-text components.
+You are an expert prompt engineer. You are preparing image generation tasks for non-text components.
 
-Using the Format requirements below, output a JSON object containing the exact assets needed.
+Using the provided filtered Analysis JSON below (which contains elements needing images and their `style_tags`), output a JSON object containing the exact assets needed.
 
 Rules:
-- 1. EXHAUSTIVE MAPPING: You MUST review the "background" and the entire "objects" array from the Analysis JSON. 
-- 2. ONLY include assets that should be generated or cleaned by imagegen (backgrounds, photos, icons, charts, textures, shadows, masks, decorations). Do NOT include native shapes or text.
-- 3. COMPLETENESS IS CRITICAL: Do NOT omit any icons or decorations from the "objects" list. If there are 20 icons in the analysis, there must be 20 corresponding items in your output array.
-- 4. Use short, direct prompts. Describe style and colors from the source.
-- 5. Set transparent=true for icons or assets that need alpha.
-- 6. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word'). Do NOT use unescaped double quotes.
+- 1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
+- 2. Use the `style_tags` and `type` provided to write short, highly accurate `prompt` and `negative_prompt` strings. Describe the visual style accurately.
+- 3. Set transparent=true for icons or assets that need alpha.
+- 4. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word'). Do NOT use unescaped double quotes.
 
-Format requirements (match this layout exactly, notice the array contains MULTIPLE items, your output must contain ALL necessary items):
+Format requirements (match this layout exactly, output MUST contain ALL items):
 {
   "assets": [
     {
       "name": "Background Image",
       "type": "texture",
       "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
-      "prompt": "...",
-      "negative_prompt": "...",
+      "prompt": "soft gradient background, light blue to white transition, subtle texture",
+      "negative_prompt": "dark colors, text, logos",
       "transparent": false
     },
     {
       "name": "icon_example",
       "type": "icon",
       "bbox": { "x": 45, "y": 255, "w": 35, "h": 45 },
-      "prompt": "...",
-      "negative_prompt": "...",
+      "prompt": "golden, flat, outline style icon...",
+      "negative_prompt": "3d, realistic, cluttered",
       "transparent": true
     }
     // ... ADD ALL OTHER OBJECTS HERE ...
   ]
 }
+
+Input JSON (Elements needing images):
+{filtered_json}
 
 """.strip()
 

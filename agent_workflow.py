@@ -128,13 +128,47 @@ def generate_component_plan(
     analysis: dict[str, Any],
     raw_output_path: Path | None = None,
 ) -> dict[str, Any]:
+    
+# 1. 构建精简版的输入列表，大幅缩减 Token，防止截断
+    items_need_prompt = []
+    
+    # 加入背景（如果是图片）
+    if analysis.get("background", {}).get("type") == "image":
+        bg = analysis["background"]
+        items_need_prompt.append({
+            "name": "Background Image",
+            "type": bg.get("type"),
+            "bbox": bg.get("bbox"),
+            "style_tags": bg.get("image_hints", "background texture")
+        })
+        
+    # 加入所有 needs_image 为 true 的对象
+    for obj in analysis.get("objects", []):
+        if obj.get("needs_image"):
+            items_need_prompt.append({
+                "name": obj.get("name"),
+                "type": obj.get("type"),
+                "bbox": obj.get("bbox"),
+                "style_tags": obj.get("style_tags", "") # 接收第一步打的标签
+            })
+            
+    expected_count = len(items_need_prompt)    
+
+# 2. 组装 Prompt
     prompt_text = COMPONENT_PLAN_PROMPT.replace(
-        "{analysis_json}", json.dumps(analysis, indent=2)
+        "{filtered_json}", json.dumps(items_need_prompt, indent=2)
     )
+    # prompt_text = COMPONENT_PLAN_PROMPT.replace(
+    #     "{analysis_json}", json.dumps(analysis, indent=2)
+    # )
     response_text = client.chat(model, build_text_messages(prompt_text), temperature)
     if raw_output_path:
         raw_output_path.write_text(response_text, encoding="utf-8")
-    return parse_llm_json(response_text)
+    payload = parse_llm_json(response_text)
+    generated_assets = payload.get("assets", [])
+    if expected_count > 0 and len(generated_assets) < expected_count*0.8:
+        raise ValueError(f"AI generated {len(generated_assets)} assets, but {expected_count} were expected.")
+    return payload
 
 @retry_llm_call(max_retries=2)
 def generate_manifest(
@@ -196,7 +230,7 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="only run vision analysis and component plan, then emit a report",
     )
-    parser.add_argument("--no-redraw", action="store_true", help="crop from source instead of imagegen")
+    parser.add_argument("--no_redraw", action="store_true", help="crop from source instead of imagegen")
     parser.add_argument("--skip-verify", action="store_true", help="skip pptx verification")
     parser.add_argument("--vision-model", help="override vision model")
     parser.add_argument("--vision-base-url", help="override vision base url")
@@ -327,21 +361,23 @@ def main() -> int:
             source_image = None
             if args.no_redraw:
                 source_image = Image.open(args.source)
-            imagegen_base_url = args.imagegen_base_url or os.getenv("IMAGE2PPT_IMAGEGEN_BASE_URL")
-            imagegen_api_key = (
-                os.getenv("IMAGE2PPT_IMAGEGEN_API_KEY")
-                or os.getenv("DASHSCOPE_API_KEY")
-                or os.getenv("OPENAI_API_KEY")
-            )
-            imagegen_size = os.getenv("IMAGE2PPT_IMAGEGEN_SIZE", "1024x1024")
-            imagegen_config = ImageGenConfig(
-                base_url=imagegen_base_url or "",
-                api_key=imagegen_api_key,
-                model=imagegen_model,
-                size=imagegen_size,
-                api_style=args.imagegen_api_style,
-            )
-            print(f"Imagegen model loaded: {imagegen_model}")
+                print(f"Source image loaded for cropping: {args.source}")
+            else:
+                imagegen_base_url = args.imagegen_base_url or os.getenv("IMAGE2PPT_IMAGEGEN_BASE_URL")
+                imagegen_api_key = (
+                    os.getenv("IMAGE2PPT_IMAGEGEN_API_KEY")
+                    or os.getenv("DASHSCOPE_API_KEY")
+                    or os.getenv("OPENAI_API_KEY")
+                )
+                imagegen_size = os.getenv("IMAGE2PPT_IMAGEGEN_SIZE", "1024x1024")
+                imagegen_config = ImageGenConfig(
+                    base_url=imagegen_base_url or "",
+                    api_key=imagegen_api_key,
+                    model=imagegen_model,
+                    size=imagegen_size,
+                    api_style=args.imagegen_api_style,
+                )
+                print(f"Imagegen model loaded: {imagegen_model}")
 
             component_dir = project_dir / "component_images"
 
