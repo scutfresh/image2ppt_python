@@ -68,6 +68,26 @@ def copy_sources(project_dir: Path, sources: list[str]) -> list[str]:
     return copied
 
 
+def copy_prompt_file(project_dir: Path) -> str | None:
+    prompt_path = Path(__file__).resolve().parent / "prompts.py"
+    if not prompt_path.exists():
+        return None
+    inputs_dir = project_dir / "original_inputs"
+    target = inputs_dir / prompt_path.name
+    if target.exists():
+        stem = target.stem
+        suffix = target.suffix
+        index = 2
+        while True:
+            candidate = inputs_dir / f"{stem}_{index}{suffix}"
+            if not candidate.exists():
+                target = candidate
+                break
+            index += 1
+    shutil.copy2(prompt_path, target)
+    return str(target)
+
+
 def init_project(
     projects_root: Path,
     slug: str,
@@ -87,6 +107,7 @@ def init_project(
         (project_dir / item).mkdir(parents=True, exist_ok=True)
 
     copied_sources = copy_sources(project_dir, sources)
+    copy_prompt_file(project_dir)
     return {
         "project_dir": str(project_dir),
         "original_inputs": str(project_dir / "original_inputs"),
