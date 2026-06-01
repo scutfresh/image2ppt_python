@@ -16,11 +16,12 @@ Rules:
 
 ANALYSIS_PROMPT = """
 Source image: {source_path}
+Image Dimensions: {width}px (width) x {height}px (height)
 Optional notes: {notes}
 
 The image content is attached. Analyze the slide and output a JSON object with:
 
-- canvas_width, canvas_height (numbers)
+- canvas_width: {width}, canvas_height: {height} (Must match the provided dimensions exactly)
 - background: object with type (color|gradient|image), color/gradient/image hints
   and bbox (x, y, w, h)
 - titles: list of text blocks with text, bbox, font_family, font_size_px,
@@ -92,8 +93,8 @@ Rules:
 
 Format requirements (match this layout exactly):
 {
-  "slide_width": 1920,
-  "slide_height": 1080,
+  "slide_width": "MUST strictly match the canvas_width provided in Analysis JSON",
+  "slide_height": "MUST strictly match the canvas_height provided in Analysis JSON",
   "elements": [
     {
       "type": "image|shape|text",
@@ -114,10 +115,9 @@ Format requirements (match this layout exactly):
     }
   ],
   "deck": {
-    "canvas_width": 1920,
-    "canvas_height": 1080,
+    "canvas_width": "MUST strictly match the canvas_width provided in Analysis JSON",
+    "canvas_height": "MUST strictly match the canvas_height provided in Analysis JSON",
     "slide_width_in": 13.333,
-    "slide_height_in": 7.5,
     "name": "Image2PPT Deck"
   }
 }

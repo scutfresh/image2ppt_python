@@ -14,17 +14,15 @@ bggg-creator-image2ppt process for bitmap inputs. It adds:
 pip install -r requirements.txt
 ```
 
-## Run (bitmap)
+## Run 
 
 ```bash
-python agent_workflow.py --slug demo_cover --source D:\path\to\slide.png
+python agent_workflow.py --source D:\Desktop\南网\ppt图片.png --vision-model qwen3.6-35b-a3b --vision-base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --imagegen-model qwen-image --imagegen-base-url https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation --imagegen-api-style qwen                        
 ```
 
 Example with DashScope:
 
-```bash
-python agent_workflow.py --slug demo_cover --source D:\Desktop\南网\ppt图片.png --vision-model Qwen35-35b-a3b --vision-base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --imagegen-model Z-Image-Turbo --imagegen-base-url https://dashscope.aliyuncs.com/compatible-mode/v1
-```
+
 
 ## 1. 目标与范围
 

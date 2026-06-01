@@ -70,8 +70,7 @@ class SlideScale:
 
     def px_font_to_pt(self, value: float | int) -> float:
         # Use the average axis ratio so text remains visually close when aspect ratio is adjusted.
-        return float(value) * ((self.slide_width_in / self.canvas_width) + (self.slide_height_in / self.canvas_height)) * 36
-
+        return float(value) * (self.slide_height_in / self.canvas_height) * 72
 
 def load_json(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:

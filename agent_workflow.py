@@ -104,19 +104,25 @@ def generate_analysis(
     source_path: str,
     image_path: Path,
     notes: str | None,
-    raw_output_path: Path | None = None,
+    # raw_output_path: Path | None = None,
 ) -> dict[str, Any]:
     if not image_path.exists():
         raise FileNotFoundError(f"image not found: {image_path}")
 
+    with Image.open(image_path) as img:
+        img_w, img_h = img.size
+    print(f"Source image dimensions: {img_w}x{img_h}")
+
     analysis_text = ANALYSIS_PROMPT.format(
         source_path=source_path,
+        width=img_w,
+        height=img_h,
         notes=notes or "none",
     )
     image_url = encode_image_to_data_url(image_path)
     response_text = client.chat(model, build_vision_messages(analysis_text, image_url), temperature)
-    if raw_output_path:
-        raw_output_path.write_text(response_text, encoding="utf-8")
+    # if raw_output_path:
+    #     raw_output_path.write_text(response_text, encoding="utf-8")
     payload = parse_llm_json(response_text)
     return payload
 
@@ -127,7 +133,7 @@ def generate_component_plan(
     temperature: float,
     analysis: dict[str, Any],
     image_path: Path, # 新增参数：接收原图路径
-    raw_output_path: Path | None = None,
+    # raw_output_path: Path | None = None,
 ) -> dict[str, Any]:
     
 # 1. 构建精简版的输入列表，大幅缩减 Token，防止截断
@@ -170,8 +176,8 @@ def generate_component_plan(
     response_text = client.chat(model, build_vision_messages(prompt_text, image_url), temperature)
 
     # response_text = client.chat(model, build_text_messages(prompt_text), temperature)
-    if raw_output_path:
-        raw_output_path.write_text(response_text, encoding="utf-8")
+    # if raw_output_path:
+    #     raw_output_path.write_text(response_text, encoding="utf-8")
     payload = parse_llm_json(response_text)
     generated_assets = payload.get("assets", [])
     if expected_count > 0 and len(generated_assets) < expected_count*0.8:
@@ -185,7 +191,7 @@ def generate_manifest(
     temperature: float,
     analysis: dict[str, Any],
     assets: list[dict[str, Any]],
-    raw_output_path: Path | None = None,
+    # raw_output_path: Path | None = None,
 ) -> dict[str, Any]:
     prompt_text = MANIFEST_PROMPT.replace(
         "{analysis_json}", json.dumps(analysis, indent=2)
@@ -193,11 +199,94 @@ def generate_manifest(
         "{asset_json}", json.dumps(assets, indent=2)
     )
     response_text = client.chat(model, build_text_messages(prompt_text), temperature)
-    if raw_output_path:
-        raw_output_path.write_text(response_text, encoding="utf-8")
+    # if raw_output_path:
+    #     raw_output_path.write_text(response_text, encoding="utf-8")
     manifest = parse_llm_json(response_text)
     return manifest
+def generate_manifest_python(analysis: dict, assets: list) -> dict:
+    elements = []
+    
+    # 1. 建立资产映射表 (通过 name 快速查找对应的文件路径)
+    asset_map = {item["name"]: item["file"] for item in assets if "name" in item and "file" in item}
 
+    # 2. 处理 Background
+    bg = analysis.get("background", {})
+    if bg:
+        bg_element = {
+            "type": "image" if bg.get("type") == "image" else "shape",
+            "name": "background",
+            "bbox": bg.get("bbox", {"x": 0, "y": 0, "w": analysis.get("canvas_width"), "h": analysis.get("canvas_height")}),
+            "z_index": -999 # 确保背景在最底层
+        }
+        if bg.get("type") == "image":
+            # 如果背景是图片，从资产中匹配
+            bg_element["file"] = asset_map.get("Background Image") or asset_map.get("background")
+        else:
+            bg_element["shape_type"] = "rect"
+            bg_element["fill"] = bg.get("color") or bg.get("fill")
+        elements.append(bg_element)
+
+    # 3. 处理 Shapes
+    for shape in analysis.get("shapes", []):
+        elements.append({
+            "type": "shape",
+            "shape_type": shape.get("type", "rect"),
+            "name": shape.get("name", "shape"),
+            "bbox": shape.get("bbox"),
+            "fill": shape.get("fill", "none"),
+            "stroke": shape.get("stroke", "none"),
+            "stroke_width_px": shape.get("stroke_width_px", 1),
+            "z_index": shape.get("z_index", 0)
+        })
+
+    # 4. 处理 Objects (需要图片的视觉元素)
+    for obj in analysis.get("objects", []):
+        if obj.get("needs_image"):
+            elements.append({
+                "type": "image",
+                "name": obj.get("name"),
+                "file": asset_map.get(obj.get("name")), # 从刚才生成的资源中读取路径
+                "bbox": obj.get("bbox"),
+                "z_index": obj.get("z_index", 0)
+            })
+
+    # 5. 处理 Text (titles & body_text)
+    for text_type in ["titles", "body_text"]:
+        for text_block in analysis.get(text_type, []):
+            elements.append({
+                "type": "text",
+                "name": text_block.get("name", text_type),
+                "text": text_block.get("text", ""),
+                "bbox": text_block.get("bbox"),
+                "font_family": text_block.get("font_family", "Microsoft YaHei"),
+                "font_size_px": text_block.get("font_size_px", 16),
+                "color": text_block.get("color", "#000000"),
+                "bold": text_block.get("bold", False),
+                "italic": text_block.get("italic", False),
+                "align": text_block.get("align", "left"),
+                "z_index": text_block.get("z_index", 100) # 文字通常在较上层
+            })
+
+    # 6. 按照 z_index 从后到前排序
+    elements.sort(key=lambda e: e.get("z_index", 0))
+
+    # 7. 组装最终的 Manifest
+    canvas_w = analysis.get("canvas_width", 1920)
+    canvas_h = analysis.get("canvas_height", 1080)
+    
+    manifest = {
+        "slide_width": canvas_w,
+        "slide_height": canvas_h,
+        "elements": elements,
+        "deck": {
+            "canvas_width": canvas_w,
+            "canvas_height": canvas_h,
+            "slide_width_in": 13.333,
+            "name": "Image2PPT Deck"
+        }
+    }
+    
+    return manifest
 
 def ensure_deck(manifest: dict[str, Any], canvas_w: int, canvas_h: int) -> None:
     deck = manifest.setdefault("deck", {})
@@ -320,7 +409,7 @@ def main() -> int:
                 vision_temperature,
                 analysis,
                 asset_records,
-                raw_output_path=diagnostics_dir / "manifest_raw.txt",
+                # raw_output_path=diagnostics_dir / "manifest_raw.txt",
             )
             canvas_w = int(analysis.get("canvas_width", 0) or 0)
             canvas_h = int(analysis.get("canvas_height", 0) or 0)
@@ -342,7 +431,7 @@ def main() -> int:
                 args.source,
                 Path(args.source),
                 args.notes,
-                raw_output_path=diagnostics_dir / "analysis_raw.txt",
+                # raw_output_path=diagnostics_dir / "analysis_raw.txt",
             )
             save_json(diagnostics_dir / "analysis.json", analysis)
             print("Analysis complete: diagnostics/analysis.json")
@@ -353,7 +442,7 @@ def main() -> int:
                 vision_temperature,
                 analysis,
                 Path(args.source),  # 新增：传入原图路径
-                raw_output_path=diagnostics_dir / "component_plan_raw.txt",
+                # raw_output_path=diagnostics_dir / "component_plan_raw.txt",
             )
             save_json(diagnostics_dir / "component_plan.json", component_plan)
             assets = component_plan.get("assets") or []
@@ -433,18 +522,18 @@ def main() -> int:
             save_json(diagnostics_dir / "asset_catalog.json", {"assets": asset_records})
             print("Asset catalog written: diagnostics/asset_catalog.json")
 
-            manifest = generate_manifest(
-                vision_client,
-                vision_model,
-                vision_temperature,
+            manifest = generate_manifest_python(
+                # vision_client,
+                # vision_model,
+                # vision_temperature,
                 analysis,
                 asset_records,
-                raw_output_path=diagnostics_dir / "manifest_raw.txt",
+                # raw_output_path=diagnostics_dir / "manifest_raw.txt",
             )
-            canvas_w = int(analysis.get("canvas_width", 0) or 0)
-            canvas_h = int(analysis.get("canvas_height", 0) or 0)
-            if canvas_w and canvas_h:
-                ensure_deck(manifest, canvas_w, canvas_h)
+            # canvas_w = int(analysis.get("canvas_width", 0) or 0)
+            # canvas_h = int(analysis.get("canvas_height", 0) or 0)
+            # if canvas_w and canvas_h:
+            #     ensure_deck(manifest, canvas_w, canvas_h)
             manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
             print("Manifest generated: manifest.json")
     if args.manifest:
