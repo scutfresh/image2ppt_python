@@ -1,123 +1,98 @@
-# Image2PPT OpenAI-Compatible Workflow (Vision + ImageGen)
+# Image2PPT Langchain Workflow
 
-This folder contains an OpenAI-compatible workflow that follows the
-bggg-creator-image2ppt process for bitmap inputs. It adds:
+本目录提供从位图输入到可编辑 PPTX 的自动化流程。核心入口为 `agent_workflow.py`。
 
-- Vision analysis (Qwen-VL or any OpenAI-compatible vision model).
-- Image generation for non-text components (DashScope Z-Image-Turbo or any
-  OpenAI-compatible image endpoint).
-- Manifest generation and PPTX build via the existing skill scripts.
+## 快速开始
 
-## Install
+1. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run 
+2. 配置环境变量（见下文）
+
+3. 运行
 
 ```bash
-python agent_workflow.py --source D:\Desktop\南网\ppt图片.png --vision-model qwen3.6-35b-a3b --vision-base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --imagegen-model qwen-image --imagegen-base-url https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation --imagegen-api-style qwen                        
+python agent_workflow.py --source /path/to/input.png --parameters
 ```
 
+## 环境变量
 
+### Vision (视觉分析)
 
-## 1. 目标与范围
+- IMAGE2PPT_VISION_BASE_URL: OpenAI 兼容的 chat/completions 基础地址（必填）
+- IMAGE2PPT_VISION_API_KEY: 视觉模型 API Key（可选）
+- DASHSCOPE_API_KEY: 可作为 IMAGE2PPT_VISION_API_KEY 的后备（可选）
+- OPENAI_API_KEY: 可作为 IMAGE2PPT_VISION_API_KEY 的后备（可选）
+- IMAGE2PPT_VISION_MODEL: 视觉模型名称（默认: qwen-vl）
+- IMAGE2PPT_VISION_TEMPERATURE: 视觉分析温度（默认: 0.2）
 
-本报告覆盖 langchain 工作流的端到端实现，重点描述从位图输入到可编辑 PPTX 输出的完整链路，包括视觉分析、组件规划、资产生成、清单生成与渲染验证。核心入口为 [langchain/agent_workflow.py](langchain/agent_workflow.py)。
+### ImageGen (图片生成)
 
-## 2. 目录与核心模块
+- IMAGE2PPT_IMAGEGEN_BASE_URL: 图片生成 API 基础地址（必填）
+- IMAGE2PPT_IMAGEGEN_API_KEY: 图片生成 API Key（可选）
+- DASHSCOPE_API_KEY: 可作为 IMAGE2PPT_IMAGEGEN_API_KEY 的后备（可选）
+- OPENAI_API_KEY: 可作为 IMAGE2PPT_IMAGEGEN_API_KEY 的后备（可选）
+- IMAGE2PPT_IMAGEGEN_MODEL: 图片生成模型名称（默认: z-image-turbo）
+- IMAGE2PPT_IMAGEGEN_BACKGROUND: 当透明背景需要生效时可设置（OpenAI 风格接口）
 
-- 入口与编排: [langchain/agent_workflow.py](langchain/agent_workflow.py)
-- 提示词模板: [langchain/prompts.py](langchain/prompts.py)
-- OpenAI 兼容对话客户端: [langchain/openai_client.py](langchain/openai_client.py)
-- 图像生成与后处理: [langchain/imagegen.py](langchain/imagegen.py)
-- Manifest -> PPTX 渲染器: [langchain/image2pptx.py](langchain/image2pptx.py)
-- 辅助工具与 JSON 修复: [langchain/tools.py](langchain/tools.py)
-- 批量模型测试脚本: [langchain/test.py](langchain/test.py)
-- 视觉报告重命名脚本: [langchain/rename_vision_reports.py](langchain/rename_vision_reports.py)
-- 运行说明与环境变量: [langchain/README.md](langchain/README.md)
-- 依赖清单: [langchain/requirements.txt](langchain/requirements.txt)
+## 参数说明
 
-## 3. 工作流总览
+入口脚本: `agent_workflow.py`
 
-```mermaid
-flowchart TD
-  A[输入位图] --> B[项目初始化与拷贝源图]
-  B --> C[视觉分析]
-  C --> D[组件规划]
-  D --> E{生成组件图}
-  E -->|imagegen| F[图像生成与后处理]
-  E -->|no-redraw| G[从源图裁剪]
-  F --> H[资产清单]
-  G --> H[资产清单]
-  H --> I[Manifest 生成]
-  I --> J[PPTX 构建]
-  J --> K[可选验证与过程记录]
+- --source (必填): 输入图片路径
+- --date: 项目日期前缀，格式 YYYYMMDD
+- --notes: 分析补充说明，作为提示词的一部分
+- --test_vision: 只执行视觉分析和组件规划，输出诊断报告后退出
+- --skip-verify: 跳过 PPTX 验证统计
+- --vision-model: 覆盖视觉模型名称
+- --vision-base-url: 覆盖视觉模型 API Base URL
+- --imagegen-model: 覆盖图片生成模型名称
+- --imagegen-base-url: 覆盖图片生成 API Base URL
+- --imagegen-api-style: 图片生成 API 风格，openai 或 qwen
+- --resume_analysis: 复用已有项目中的 analysis/component_plan
+- --resume_imagegen: 复用已有项目中的资产，直接生成 manifest
+- --resume_manifest: 复用已有 manifest，直接生成 PPTX
+
+注意事项:
+- resume_analysis、resume_imagegen、resume_manifest 互斥
+- test_vision 不能与 resume_imagegen 或 resume_manifest 同时使用
+
+## 输出结构
+
+运行后在 projects/ 下按日期和模型生成项目目录，常见结构如下:
+
+```
+projects/20260602_qwen3_6_35b_a3b_and_qwen_image/
+  original_inputs/        # 输入图片与提示词备份
+  component_images/       # 生成的组件图片
+  diagnostics/            # 分析与规划中间结果
+    analysis.json
+    component_plan.json
+    asset_catalog.json
+  manifest.json           # 最终清单
+  output.pptx             # PPTX 输出
+  summary.json            # 渲染摘要
+  process_notes.md        # 运行记录
 ```
 
-## 4. 关键流程细节
+## 项目代码结构
 
-### 4.1 项目初始化与输入准备
+- agent_workflow.py: 入口与流程编排
+- prompts.py: 提示词模板
+- openai_client.py: OpenAI 兼容对话客户端
+- imagegen.py: 图片生成与后处理
+- image2pptx.py: Manifest -> PPTX 渲染
+- tools.py: 工具函数与 JSON 修复
+- test.py: 批量模型测试脚本
+- requirements.txt: 依赖清单
+- TECH_REPORT.md: 技术报告与流程细节
 
-- 入口参数 `--source` 指向输入位图，项目目录在 langchain/projects 下按日期和模型命名创建。
-- 初始化时会将源图复制到 original_inputs 中，确保追溯性与复跑一致性，逻辑在 [langchain/tools.py](langchain/tools.py) 和 [langchain/agent_workflow.py](langchain/agent_workflow.py)。
-
-### 4.2 视觉分析 (Vision)
-
-- 输入图像被编码为 data URL，并与 ANALYSIS_PROMPT 组合请求视觉模型，解析为分析 JSON。
-- 解析由 `parse_llm_json` 完成，包含 JSON 抽取与转义修复，确保坏格式可恢复。
-- 输出为 diagnostics/analysis.json，执行逻辑在 [langchain/agent_workflow.py](langchain/agent_workflow.py) 与 [langchain/tools.py](langchain/tools.py)。
-
-### 4.3 组件规划 (Component Plan)
-
-- 根据分析 JSON 生成可绘制资产列表，输出 diagnostics/component_plan.json。
-- 每个资产包含 `bbox`、`prompt`、`negative_prompt`、`transparent` 等关键字段，逻辑在 [langchain/prompts.py](langchain/prompts.py) 与 [langchain/agent_workflow.py](langchain/agent_workflow.py)。
-
-### 4.4 组件生成与裁剪
-
-- 默认走 imagegen 生成：调用 OpenAI 兼容或 DashScope/Qwen 风格 API 生成图像，支持自动尺寸调整与 PNG 标准化。
-- `--no-redraw` 时改为从源图按 bbox 进行裁剪输出。
-- 图像生成与后处理实现位于 [langchain/imagegen.py](langchain/imagegen.py)，控制流程在 [langchain/agent_workflow.py](langchain/agent_workflow.py)。
-
-### 4.5 资产清单与 Manifest 生成
-
-- 资产输出后写入 diagnostics/asset_catalog.json，作为 Manifest 生成的输入之一。
-- Manifest 通过 MANIFEST_PROMPT 生成，并补齐 deck 尺寸参数，写入 manifest.json。
-- 逻辑集中于 [langchain/agent_workflow.py](langchain/agent_workflow.py) 与 [langchain/prompts.py](langchain/prompts.py)。
-
-### 4.6 PPTX 渲染与验证
-
-- Manifest 由 [langchain/image2pptx.py](langchain/image2pptx.py) 渲染为 PPTX，并输出 summary.json 统计信息。
-- 可选验证步骤统计页数和形状数，结果写入 process_notes.md，逻辑在 [langchain/tools.py](langchain/tools.py) 与 [langchain/agent_workflow.py](langchain/agent_workflow.py)。
-
-## 5. 数据契约与文件产物
-
-### 5.1 诊断与中间结果
-
-- diagnostics/analysis.json: 画布尺寸、背景、文本块、对象与形状。
-- diagnostics/component_plan.json: 资产生成计划。
-- diagnostics/asset_catalog.json: 资产文件与 bbox 记录。
-- diagnostics/manifest_raw.txt 与 diagnostics/analysis_raw.txt 等原始 LLM 输出（可选）。
-
-### 5.2 最终产物
-
-- manifest.json: 供 PPTX 渲染的最终清单。
-- output.pptx: 可编辑 PPTX 输出。
-- summary.json: 统计与渲染概要。
-- process_notes.md: 运行模式与关键信息记录。
-
-## 6. 模型与 API 适配
-
-- 视觉分析与 Manifest 使用 OpenAI 兼容 chat 接口，调用逻辑在 [langchain/openai_client.py](langchain/openai_client.py)。
-- 图像生成同时适配 OpenAI 风格与 Qwen/DashScope 风格接口，响应解析兼容 base64 与 URL 形式，详见 [langchain/imagegen.py](langchain/imagegen.py)。
+## 命令示例
 
 
-## 7. 可靠性与错误处理
-
-- `retry_llm_call` 针对 JSON 解析失败自动重试，降低 LLM 格式波动风险。
-- JSON 修复逻辑可处理未转义引号，避免解析失败。
-- 输入文件缺失、bbox 无效、元素类型不支持会明确抛错，便于定位问题。
-- 图像生成失败会包含 HTTP 状态与错误文本，便于追踪上游响应。
-
-
+```bash
+python agent_workflow.py --source D:\Desktop\南网\ppt图片.png --vision-model qwen3.6-plus --vision-base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --imagegen-model qwen-image --imagegen-base-url https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation --imagegen-api-style qwen 
+```
