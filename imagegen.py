@@ -10,7 +10,7 @@ import requests
 from PIL import Image
 import time                 
 from functools import wraps
-
+from urllib.parse import urlparse  
 @dataclass
 class ImageGenConfig:
     base_url: str
@@ -74,36 +74,51 @@ def request_image(
     headers = {"Content-Type": "application/json"}
     if config.api_key:
         headers["Authorization"] = f"Bearer {config.api_key}"
-
+    synthesis = False
     api_style = (config.api_style or "openai").strip().lower()
     if api_style == "qwen":
         url = config.base_url.rstrip("/")
         size_value = normalize_dashscope_size(size_override or config.size)
-        payload = {
-            "model": config.model,
-            "input": {
-                "messages": [
-                    {
-                        "role": "user",
-                        "content": [
-                            {"text": prompt},
-                        ],
-                    }
-                ]
-            },
-            "parameters": {
-                "prompt_extend": False,
-                "size": size_value,
-            },
-        }
-        if negative_prompt:
-            warnings.warn("DashScope imagegen ignores negative_prompt", stacklevel=2)
-        if transparent:
-            background = os.getenv("IMAGE2PPT_IMAGEGEN_BACKGROUND")
-            if background:
-                warnings.warn("DashScope imagegen ignores IMAGE2PPT_IMAGEGEN_BACKGROUND", stacklevel=2)
-
-            
+        
+        # 判断是否调用的是旧版的纯异步接口 (wan2.5 及 wanx-v1)
+        if "text2image/image-synthesis" in url:
+            synthesis = True
+            headers["X-DashScope-Async"] = "enable"  # 旧版接口必须开启异步标志
+            payload = {
+                "model": config.model,
+                "input": {
+                    "prompt": prompt  # 旧版要求的格式
+                },
+                "parameters": {
+                    "size": size_value,
+                    "n": 1
+                }
+            }
+            if negative_prompt:
+                payload["input"]["negative_prompt"] = negative_prompt
+        else:
+            # 新版接口 (wan2.6等)，兼容 messages 结构
+            payload = {
+                "model": config.model,
+                "input": {
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": [{"text": prompt}],
+                        }
+                    ]
+                },
+                "parameters": {
+                    "prompt_extend": False,
+                    "size": size_value,
+                },
+            }
+            if negative_prompt:
+                warnings.warn("DashScope imagegen ignores negative_prompt", stacklevel=2)
+            if transparent:
+                background = os.getenv("IMAGE2PPT_IMAGEGEN_BACKGROUND")
+                if background:
+                    warnings.warn("DashScope imagegen ignores IMAGE2PPT_IMAGEGEN_BACKGROUND", stacklevel=2)
 
     else:
         url = join_url(config.base_url, "/images/generations")
@@ -123,9 +138,46 @@ def request_image(
     resp = requests.post(url, headers=headers, json=payload, timeout=config.timeout)
     if resp.status_code >= 400:
         raise ImageGenError(f"imagegen failed: {resp.status_code} {resp.text[:200]}")
-    return resp.json()
+    # return resp.json()
+    # 拦截异步任务，进入自动轮询
+    data = resp.json()
+    output = data.get("output", {})
+    if "task_id" in output and synthesis:
+        # 只要状态不是明确的成功，就挂起去轮询等待
+        status = str(output.get("task_status", "")).upper()
+        if status != "SUCCEEDED":
+            return poll_dashscope_task(output["task_id"], headers, url)
 
+    return data
 
+def poll_dashscope_task(task_id: str, headers: dict, original_url: str) -> dict[str, Any]:
+    """内置的轮询函数，用于等待 DashScope 异步任务执行完成"""
+    from urllib.parse import urlparse
+    parsed = urlparse(original_url)
+    poll_url = f"{parsed.scheme}://{parsed.netloc}/api/v1/tasks/{task_id}"
+    
+    print(f"\n⏳ [异步任务] 已提交，Task ID: {task_id}，正在轮询等待结果...")
+    
+    while True:
+        resp = requests.get(poll_url, headers=headers, timeout=30)
+        if resp.status_code >= 400:
+            raise ImageGenError(f"Task polling failed: {resp.status_code} {resp.text[:200]}")
+            
+        data = resp.json()
+        status = str(data.get("output", {}).get("task_status", "")).upper()
+        
+        if status == "SUCCEEDED":
+            print("✅ [异步任务] 图片生成成功！")
+            return data
+        elif status == "FAILED":
+            msg = data.get("output", {}).get("message", "Unknown error")
+            code = data.get("output", {}).get("code", "Unknown")
+            raise ImageGenError(f"Async imagegen task failed: [{code}] {msg}")
+        else:
+            # 对于 PENDING, RUNNING, SUSPENDED 等任何中间状态，继续等待
+            time.sleep(3)
+
+            
 def parse_size_spec(size: str | None) -> tuple[int, int] | None:
     if not size:
         return None
