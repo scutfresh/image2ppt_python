@@ -187,11 +187,15 @@ def build_vision_report(
     shapes = analysis.get("shapes") or []
     background = analysis.get("background") or {}
     assets = component_plan.get("assets") or []
+    #print numbers in analysis and component_plan for debugging
+    print(f"Analysis - Titles: {len(titles)}, Body Text: {len(body_text)}, Objects: {len(objects)}, Shapes: {len(shapes)}")
+    print(f"Component Plan - Assets: {len(assets)}")
 
     needs_image_true = sum(1 for item in objects if item.get("needs_image") is True)
     needs_image_false = sum(1 for item in objects if item.get("needs_image") is False)
     transparent_true = sum(1 for item in assets if item.get("transparent") is True)
     transparent_false = sum(1 for item in assets if item.get("transparent") is False)
+
 
     return {
         "analysis": {

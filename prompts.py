@@ -12,15 +12,20 @@ Rules:
 - CRITICAL: If any string value (especially the "text" field) contains quotes,
   you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word').
   Do NOT use unescaped double quotes inside a string.
+- CRITICAL BBOX FORMAT: All spatial coordinates MUST use a dictionary format: 
+  {"x": left_x, "y": top_y, "w": absolute_width, "h": absolute_height}.
+  NEVER output bbox as an array/list. 
+  NEVER confuse x_max/y_max with w/h. 'w' is strictly the absolute width, 'h' is the absolute height.
 """.strip()
 
 ANALYSIS_PROMPT = """
 Source image: {source_path}
+Image Dimensions: {width}px (width) x {height}px (height)
 Optional notes: {notes}
 
 The image content is attached. Analyze the slide and output a JSON object with:
 
-- canvas_width, canvas_height (numbers)
+- canvas_width: {width}, canvas_height: {height} (Must match the provided dimensions exactly)
 - background: object with type (color|gradient|image), color/gradient/image hints
   and bbox (x, y, w, h)
 - titles: list of text blocks with text, bbox, font_family, font_size_px,
@@ -28,7 +33,9 @@ The image content is attached. Analyze the slide and output a JSON object with:
 - body_text: list of text blocks with the same fields as titles
 - objects: list of visual objects with:
   name, type (icon|photo|chart|decoration|shadow|mask|texture|logo|shape),
-  bbox (x, y, w, h), z_index, needs_image (true/false), needs_transparent
+  bbox (x, y, w, h), z_index, needs_image (true/false), needs_transparent,
+  style_tags (string, ONLY if needs_image is true: output 3-5 keywords describing 
+  color, texture, and visual style, e.g., 'neon green, glowing, 3d, flat, metallic')
 - shapes: list of simple shapes (rect|roundRect|ellipse|line) with bbox, fill,
   stroke, stroke_width_px
 
@@ -37,40 +44,43 @@ in the objects list even if they overlap.
 """.strip()
 
 COMPONENT_PLAN_PROMPT = """
-You are preparing image generation tasks for non-text components.
+You are an expert prompt engineer for an image generation AI.
+I have attached the SOURCE IMAGE and a JSON list of specific elements extracted from it. 
 
-Using the Format requirements below, output a JSON object containing the exact assets needed.
+Your task is to write highly accurate `prompt` and `negative_prompt` strings to recreate each element.
 
-Rules:
-- 1. EXHAUSTIVE MAPPING: You MUST review the "background" and the entire "objects" array from the Analysis JSON. 
-- 2. ONLY include assets that should be generated or cleaned by imagegen (backgrounds, photos, icons, charts, textures, shadows, masks, decorations). Do NOT include native shapes or text.
-- 3. COMPLETENESS IS CRITICAL: Do NOT omit any icons or decorations from the "objects" list. If there are 20 icons in the analysis, there must be 20 corresponding items in your output array.
-- 4. Use short, direct prompts. Describe style and colors from the source.
-- 5. Set transparent=true for icons or assets that need alpha.
-- 6. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word'). Do NOT use unescaped double quotes.
+CRITICAL RULES:
+1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
+2. USE THE BOUNDING BOX (bbox): Look at the attached image. Use the provided "bbox" [x, y, w, h] to locate the exact element in the image.
+3. DESCRIBE WHAT YOU SEE: Base your prompt ONLY on how that specific element looks in the source image (colors, art style, flat vs 3D, textures, gradients, context).
+4. Set transparent=true for icons or assets that need alpha.
+5. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
 
-Format requirements (match this layout exactly, notice the array contains MULTIPLE items, your output must contain ALL necessary items):
+Format requirements (match this layout exactly, output MUST contain ALL items):
 {
   "assets": [
     {
       "name": "Background Image",
       "type": "texture",
       "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
-      "prompt": "...",
-      "negative_prompt": "...",
+      "prompt": "soft gradient background, light blue to white transition, subtle texture",
+      "negative_prompt": "dark colors, text, logos",
       "transparent": false
     },
     {
       "name": "icon_example",
       "type": "icon",
       "bbox": { "x": 45, "y": 255, "w": 35, "h": 45 },
-      "prompt": "...",
-      "negative_prompt": "...",
+      "prompt": "golden, flat, outline style icon...",
+      "negative_prompt": "3d, realistic, cluttered",
       "transparent": true
     }
     // ... ADD ALL OTHER OBJECTS HERE ...
   ]
 }
+
+Input JSON (Elements needing images):
+{filtered_json}
 
 """.strip()
 
@@ -87,8 +97,8 @@ Rules:
 
 Format requirements (match this layout exactly):
 {
-  "slide_width": 1920,
-  "slide_height": 1080,
+  "slide_width": "MUST strictly match the canvas_width provided in Analysis JSON",
+  "slide_height": "MUST strictly match the canvas_height provided in Analysis JSON",
   "elements": [
     {
       "type": "image|shape|text",
@@ -109,10 +119,9 @@ Format requirements (match this layout exactly):
     }
   ],
   "deck": {
-    "canvas_width": 1920,
-    "canvas_height": 1080,
+    "canvas_width": "MUST strictly match the canvas_width provided in Analysis JSON",
+    "canvas_height": "MUST strictly match the canvas_height provided in Analysis JSON",
     "slide_width_in": 13.333,
-    "slide_height_in": 7.5,
     "name": "Image2PPT Deck"
   }
 }

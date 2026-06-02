@@ -70,8 +70,7 @@ class SlideScale:
 
     def px_font_to_pt(self, value: float | int) -> float:
         # Use the average axis ratio so text remains visually close when aspect ratio is adjusted.
-        return float(value) * ((self.slide_width_in / self.canvas_width) + (self.slide_height_in / self.canvas_height)) * 36
-
+        return float(value) * (self.slide_height_in / self.canvas_height) * 72
 
 def load_json(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
@@ -509,6 +508,15 @@ def normalize_element_coords(element: dict[str, Any]) -> dict[str, Any]:
         element.setdefault("y", bbox.get("y"))
         element.setdefault("w", bbox.get("w"))
         element.setdefault("h", bbox.get("h"))
+    elif isinstance(bbox, list) and len(bbox) == 4:
+        # 兼容数组格式: [x_min, y_min, x_max, y_max]
+        element.setdefault("x", float(bbox[0]))
+        element.setdefault("y", float(bbox[1]))
+        # 自动计算宽高: width = x_max - x_min, height = y_max - y_min
+        element.setdefault("w", float(bbox[2]) - float(bbox[0]))
+        element.setdefault("h", float(bbox[3]) - float(bbox[1]))
+    else:
+        raise ValueError(f"invalid bbox format for element {element.get('name') or element.get('id')}: {bbox}")
     return element
 
 
