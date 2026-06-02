@@ -25,7 +25,6 @@ python agent_workflow.py --source /path/to/input.png --parameters
 - IMAGE2PPT_VISION_BASE_URL: OpenAI 兼容的 chat/completions 基础地址（必填）
 - IMAGE2PPT_VISION_API_KEY: 视觉模型 API Key（可选）
 - DASHSCOPE_API_KEY: 可作为 IMAGE2PPT_VISION_API_KEY 的后备（可选）
-- OPENAI_API_KEY: 可作为 IMAGE2PPT_VISION_API_KEY 的后备（可选）
 - IMAGE2PPT_VISION_MODEL: 视觉模型名称（默认: qwen-vl）
 - IMAGE2PPT_VISION_TEMPERATURE: 视觉分析温度（默认: 0.2）
 
@@ -34,9 +33,8 @@ python agent_workflow.py --source /path/to/input.png --parameters
 - IMAGE2PPT_IMAGEGEN_BASE_URL: 图片生成 API 基础地址（必填）
 - IMAGE2PPT_IMAGEGEN_API_KEY: 图片生成 API Key（可选）
 - DASHSCOPE_API_KEY: 可作为 IMAGE2PPT_IMAGEGEN_API_KEY 的后备（可选）
-- OPENAI_API_KEY: 可作为 IMAGE2PPT_IMAGEGEN_API_KEY 的后备（可选）
 - IMAGE2PPT_IMAGEGEN_MODEL: 图片生成模型名称（默认: z-image-turbo）
-- IMAGE2PPT_IMAGEGEN_BACKGROUND: 当透明背景需要生效时可设置（OpenAI 风格接口）
+
 
 ## 参数说明
 
@@ -81,14 +79,12 @@ projects/20260602_qwen3_6_35b_a3b_and_qwen_image/
 ## 项目代码结构
 
 - agent_workflow.py: 入口与流程编排
-- prompts.py: 提示词模板
+- prompts.py: 提示词
 - openai_client.py: OpenAI 兼容对话客户端
 - imagegen.py: 图片生成与后处理
 - image2pptx.py: Manifest -> PPTX 渲染
 - tools.py: 工具函数与 JSON 修复
-- test.py: 批量模型测试脚本
-- requirements.txt: 依赖清单
-- TECH_REPORT.md: 技术报告与流程细节
+
 
 ## 命令示例
 
