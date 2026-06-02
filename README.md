@@ -15,7 +15,7 @@ pip install -r requirements.txt
 3. 运行
 
 ```bash
-python agent_workflow.py --source /path/to/input.png --parameters
+python agent_workflow.py --source /path/to/input.png
 ```
 
 ## 环境变量
@@ -26,7 +26,6 @@ python agent_workflow.py --source /path/to/input.png --parameters
 - IMAGE2PPT_VISION_API_KEY: 视觉模型 API Key（可选）
 - DASHSCOPE_API_KEY: 可作为 IMAGE2PPT_VISION_API_KEY 的后备（可选）
 - IMAGE2PPT_VISION_MODEL: 视觉模型名称（默认: qwen-vl）
-- IMAGE2PPT_VISION_TEMPERATURE: 视觉分析温度（默认: 0.2）
 
 ### ImageGen (图片生成)
 
@@ -44,6 +43,8 @@ python agent_workflow.py --source /path/to/input.png --parameters
 - --date: 项目日期前缀，格式 YYYYMMDD
 - --notes: 分析补充说明，作为提示词的一部分
 - --test_vision: 只执行视觉分析和组件规划，输出诊断报告后退出
+- --analysis-temperature: 视觉分析温度（默认: 0.2）
+- --component-temperature: 组件规划与清单生成温度（默认: 0.2）
 - --skip-verify: 跳过 PPTX 验证统计
 - --vision-model: 覆盖视觉模型名称
 - --vision-base-url: 覆盖视觉模型 API Base URL

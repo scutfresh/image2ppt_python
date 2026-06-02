@@ -327,7 +327,18 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="only run vision analysis and component plan, then emit a report",
     )
-    parser.add_argument("--no_redraw", action="store_true", help="crop from source instead of imagegen")
+    parser.add_argument(
+        "--analysis_temperature",
+        type=float,
+        default=0.4,
+        help="temperature for analysis (default: 0.2)",
+    )
+    parser.add_argument(
+        "--component_temperature",
+        type=float,
+        default=0.3,
+        help="temperature for component plan and manifest (default: 0.2)",
+    )
     parser.add_argument("--skip-verify", action="store_true", help="skip pptx verification")
     parser.add_argument("--vision-model", help="override vision model")
     parser.add_argument("--vision-base-url", help="override vision base url")
@@ -386,7 +397,8 @@ def main() -> int:
         or os.getenv("DASHSCOPE_API_KEY")
         or os.getenv("OPENAI_API_KEY")
     )
-    vision_temperature = float(os.getenv("IMAGE2PPT_VISION_TEMPERATURE", "0.2"))
+    analysis_temperature = float(args.analysis_temperature)
+    component_temperature = float(args.component_temperature)
     vision_client = build_client(vision_base_url, vision_api_key)
     print(f"Vision client ready: {vision_model}")
     if args.resume_imagegen:
@@ -400,7 +412,7 @@ def main() -> int:
         manifest = generate_manifest(
             vision_client,
             vision_model,
-            vision_temperature,
+            component_temperature,
             analysis,
             asset_records,
             # raw_output_path=diagnostics_dir / "manifest_raw.txt",
@@ -426,7 +438,7 @@ def main() -> int:
         analysis = generate_analysis(
             vision_client,
             vision_model,
-            vision_temperature,
+            analysis_temperature,
             args.source,
             Path(args.source),
             args.notes,
@@ -437,7 +449,7 @@ def main() -> int:
         component_plan = generate_component_plan(
             vision_client,
             vision_model,
-            vision_temperature,
+            component_temperature,
             analysis,
             Path(args.source),  # 新增：传入原图路径
             # raw_output_path=diagnostics_dir / "component_plan_raw.txt",
@@ -453,26 +465,21 @@ def main() -> int:
         return 0
     if not args.resume_imagegen:
         asset_records: list[dict[str, Any]] = []
-        source_image = None
-        if args.no_redraw:
-            source_image = Image.open(args.source)
-            print(f"Source image loaded for cropping: {args.source}")
-        else:
-            imagegen_base_url = args.imagegen_base_url or os.getenv("IMAGE2PPT_IMAGEGEN_BASE_URL")
-            imagegen_api_key = (
-                os.getenv("IMAGE2PPT_IMAGEGEN_API_KEY")
-                or os.getenv("DASHSCOPE_API_KEY")
-                or os.getenv("OPENAI_API_KEY")
-            )
-            imagegen_size = os.getenv("IMAGE2PPT_IMAGEGEN_SIZE", "1024x1024")
-            imagegen_config = ImageGenConfig(
-                base_url=imagegen_base_url or "",
-                api_key=imagegen_api_key,
-                model=imagegen_model,
-                size=imagegen_size,
-                api_style=args.imagegen_api_style,
-            )
-            print(f"Imagegen model loaded: {imagegen_model}")
+        imagegen_base_url = args.imagegen_base_url or os.getenv("IMAGE2PPT_IMAGEGEN_BASE_URL")
+        imagegen_api_key = (
+            os.getenv("IMAGE2PPT_IMAGEGEN_API_KEY")
+            or os.getenv("DASHSCOPE_API_KEY")
+            or os.getenv("OPENAI_API_KEY")
+        )
+        imagegen_size = os.getenv("IMAGE2PPT_IMAGEGEN_SIZE", "1024x1024")
+        imagegen_config = ImageGenConfig(
+            base_url=imagegen_base_url or "",
+            api_key=imagegen_api_key,
+            model=imagegen_model,
+            size=imagegen_size,
+            api_style=args.imagegen_api_style,
+        )
+        print(f"Imagegen model loaded: {imagegen_model}")
         component_dir = project_dir / "component_images"
         for item in assets:
             name = str(item.get("name") or item.get("type") or "asset")
@@ -483,26 +490,22 @@ def main() -> int:
                 continue
             filename = safe_filename(name, suffix=".png")
             output_path = component_dir / filename
-            if args.no_redraw:
-                crop_from_source(source_image, bbox, output_path)
-                print(f"Asset cropped: {output_path}")
-            else:
-                prompt = str(item.get("prompt") or "")
-                negative_prompt = str(item.get("negative_prompt") or "") or None
-                transparent = bool(item.get("transparent", False))
-                request_size = f"{w}x{h}"
-                generate_image(
-                    imagegen_config,
-                    prompt,
-                    negative_prompt,
-                    transparent,
-                    component_dir,
-                    name,
-                    output_path,
-                    request_size,
-                    None,
-                )
-                print(f"Image generated: {output_path}")
+            prompt = str(item.get("prompt") or "")
+            negative_prompt = str(item.get("negative_prompt") or "") or None
+            transparent = bool(item.get("transparent", False))
+            request_size = f"{w}x{h}"
+            generate_image(
+                imagegen_config,
+                prompt,
+                negative_prompt,
+                transparent,
+                component_dir,
+                name,
+                output_path,
+                request_size,
+                None,
+            )
+            print(f"Image generated: {output_path}")
             asset_records.append(
                 {
                     "name": name,
@@ -542,7 +545,6 @@ def main() -> int:
         vision_model=vision_model,
         manifest_model=vision_model,
         imagegen_model=imagegen_model,
-        no_redraw=args.no_redraw,
         assets=list_assets(project_dir / "component_images"),
         notes=args.notes or "none",
     )
