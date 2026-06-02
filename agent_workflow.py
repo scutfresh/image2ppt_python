@@ -445,6 +445,12 @@ def main() -> int:
         report_path = diagnostics_dir / f"vision_report_{vision_model}.json"
         save_json(report_path, report)
         print(f"Vision report written: {report_path}")
+        ##print numbers of shapes, objects, titles, body_text, and assets in the report
+        print(f"Shapes: {len(report.get('shapes', []))}")
+        print(f"Objects: {len(report.get('objects', []))}")
+        print(f"Titles: {len(report.get('titles', []))}")
+        print(f"Body Text: {len(report.get('body_text', []))}")
+        print(f"Assets: {len(report.get('assets', []))}")
         return 0
     if not args.resume_imagegen:
         asset_records: list[dict[str, Any]] = []

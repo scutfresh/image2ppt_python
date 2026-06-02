@@ -4,6 +4,7 @@ PowerPoint slide using the specified manifest format.
 
 Rules:
 - Use the attached image as the source of truth.
+- Output JSON only. No prose, no markdown.
 - Prefer native PPT text and shapes whenever possible.
 - Only use image layers for photos, illustrations, icons, complex charts,
   textures, shadows, masks, and any content that cannot be reconstructed
@@ -22,14 +23,7 @@ Source image: {source_path}
 Image Dimensions: {width}px (width) x {height}px (height)
 Optional notes: {notes}
 
-You are performing a high-precision reverse-engineering of this slide. To avoid missing elements, you MUST mentally scan the image in layers before outputting JSON:
-Step 1. Background & Global Elements (Gradients, overall textures).
-Step 2. Connectors & Paths (Lines, arrows connecting different nodes).
-Step 3. Containers & Decor (Boxes, rounded rectangles, background cards that hold text).
-Step 4. Visual Objects (Icons, photos, complex UI elements, glowing shadows).
-Step 5. Text Elements (Titles, labels, detailed body text).
-
-Analyze the slide and output a JSON object with EXACTLY these fields:
+The image content is attached. Analyze the slide and output a JSON object with:
 
 - canvas_width: {width}, canvas_height: {height} (Must match the provided dimensions exactly)
 - background: object with type (color|gradient|image), color/gradient/image hints
@@ -58,18 +52,17 @@ GLOBAL BACKGROUND CONTEXT (The overall PPT slide background):
 
 Your task is to write highly accurate `prompt` and `negative_prompt` strings to recreate each element.
 
-CRITICAL RULES:
+CRITICAL RULES & BACKGROUND HANDLING:
 1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
-2. USE THE BOUNDING BOX (bbox): Look at the attached image. Use the provided "bbox" [x, y, w, h] to locate the exact element in the image.
-3. DESCRIBE WHAT YOU SEE: Base your prompt ONLY on how that specific element looks in the source image (colors, art style, flat vs 3D, textures, gradients, context).
-4. FOR TRANSPARENT ASSETS (icons, shapes, clean decorations):
+2. USE BOUNDING BOX & STYLE TAGS: Look at the attached image using the "bbox" to locate the element. You MUST strongly incorporate the provided `style_tags` into your `prompt` to ensure the generated art style, texture, and colors perfectly match the original design language.
+3. FOR TRANSPARENT ASSETS (icons, shapes, clean decorations):
    - You MUST set `transparent=true`.
-   - In the `prompt`, explicitly include: "isolated on a transparent background".
-   - In the `negative_prompt`, explicitly deny contrasting solid backgrounds to avoid color bleeding/halos at edges (e.g., if the global background is dark, add "white background, bright background, solid background" to negative_prompt).
-5. FOR NON-TRANSPARENT ASSETS (photos, textures, complex charts):
+   - In the `prompt`, you MUST force a solid, high-contrast background that matches the global context to aid downstream background removal. For example, if the global background is dark/black, write: "on a solid pure black background". If it's light, write: "on a solid pure white background". NEVER ask for a "transparent background" in the prompt.
+   - In the `negative_prompt`, explicitly deny messy backgrounds to ensure clean cutouts: "gradients, noisy background, cluttered background, watermarks, grids, checkerboard".
+4. FOR NON-TRANSPARENT ASSETS (photos, textures, complex charts):
    - You MUST set `transparent=false`.
-   - In the `prompt`, explicitly specify that the asset's background matches the GLOBAL BACKGROUND CONTEXT provided above (e.g., "on a smooth dark-blue gradient background"). This ensures the image blends seamlessly into the slide without harsh borders.
-6. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
+   - In the `prompt`, explicitly specify that the asset's background matches the GLOBAL BACKGROUND CONTEXT provided above (e.g., "on a smooth dark-blue gradient background").
+5. CRITICAL JSON ESCAPING: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
 
 Format requirements (match this layout exactly, output MUST contain ALL items):
 {
