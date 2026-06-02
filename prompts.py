@@ -4,7 +4,6 @@ PowerPoint slide using the specified manifest format.
 
 Rules:
 - Use the attached image as the source of truth.
-- Output JSON only. No prose, no markdown.
 - Prefer native PPT text and shapes whenever possible.
 - Only use image layers for photos, illustrations, icons, complex charts,
   textures, shadows, masks, and any content that cannot be reconstructed
@@ -23,7 +22,14 @@ Source image: {source_path}
 Image Dimensions: {width}px (width) x {height}px (height)
 Optional notes: {notes}
 
-The image content is attached. Analyze the slide and output a JSON object with:
+You are performing a high-precision reverse-engineering of this slide. To avoid missing elements, you MUST mentally scan the image in layers before outputting JSON:
+Step 1. Background & Global Elements (Gradients, overall textures).
+Step 2. Connectors & Paths (Lines, arrows connecting different nodes).
+Step 3. Containers & Decor (Boxes, rounded rectangles, background cards that hold text).
+Step 4. Visual Objects (Icons, photos, complex UI elements, glowing shadows).
+Step 5. Text Elements (Titles, labels, detailed body text).
+
+Analyze the slide and output a JSON object with EXACTLY these fields:
 
 - canvas_width: {width}, canvas_height: {height} (Must match the provided dimensions exactly)
 - background: object with type (color|gradient|image), color/gradient/image hints
@@ -47,14 +53,23 @@ COMPONENT_PLAN_PROMPT = """
 You are an expert prompt engineer for an image generation AI.
 I have attached the SOURCE IMAGE and a JSON list of specific elements extracted from it. 
 
+GLOBAL BACKGROUND CONTEXT (The overall PPT slide background):
+{global_background}
+
 Your task is to write highly accurate `prompt` and `negative_prompt` strings to recreate each element.
 
 CRITICAL RULES:
 1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
 2. USE THE BOUNDING BOX (bbox): Look at the attached image. Use the provided "bbox" [x, y, w, h] to locate the exact element in the image.
 3. DESCRIBE WHAT YOU SEE: Base your prompt ONLY on how that specific element looks in the source image (colors, art style, flat vs 3D, textures, gradients, context).
-4. Set transparent=true for icons or assets that need alpha.
-5. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
+4. FOR TRANSPARENT ASSETS (icons, shapes, clean decorations):
+   - You MUST set `transparent=true`.
+   - In the `prompt`, explicitly include: "isolated on a transparent background".
+   - In the `negative_prompt`, explicitly deny contrasting solid backgrounds to avoid color bleeding/halos at edges (e.g., if the global background is dark, add "white background, bright background, solid background" to negative_prompt).
+5. FOR NON-TRANSPARENT ASSETS (photos, textures, complex charts):
+   - You MUST set `transparent=false`.
+   - In the `prompt`, explicitly specify that the asset's background matches the GLOBAL BACKGROUND CONTEXT provided above (e.g., "on a smooth dark-blue gradient background"). This ensures the image blends seamlessly into the slide without harsh borders.
+6. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
 
 Format requirements (match this layout exactly, output MUST contain ALL items):
 {
@@ -71,8 +86,8 @@ Format requirements (match this layout exactly, output MUST contain ALL items):
       "name": "icon_example",
       "type": "icon",
       "bbox": { "x": 45, "y": 255, "w": 35, "h": 45 },
-      "prompt": "golden, flat, outline style icon...",
-      "negative_prompt": "3d, realistic, cluttered",
+      "prompt": "golden, flat, outline style icon, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered,  white background",
       "transparent": true
     }
     // ... ADD ALL OTHER OBJECTS HERE ...

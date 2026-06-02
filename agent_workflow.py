@@ -136,38 +136,36 @@ def generate_component_plan(
     # raw_output_path: Path | None = None,
 ) -> dict[str, Any]:
     
-# 1. 构建精简版的输入列表，大幅缩减 Token，防止截断
-    items_need_prompt = []
+# 1. 提取全局背景信息（新增逻辑）
+    bg_data = analysis.get("background", {})
+    bg_type = bg_data.get("type", "color")
+    # 获取背景的颜色、渐变或图片线索
+    bg_hints = bg_data.get("color") or bg_data.get("gradient") or bg_data.get("image") or "unknown background"
+    global_bg_context = f"Type: {bg_type}, Style/Color Hints: {bg_hints}"
     
-    # 加入背景（如果是图片）
-    if analysis.get("background", {}).get("type") == "image":
-        bg = analysis["background"]
+    # 2. 过滤需要生成图片的元素
+    items_need_prompt = []
+    if bg_type == "image":
         items_need_prompt.append({
             "name": "Background Image",
-            "type": bg.get("type"),
-            "bbox": bg.get("bbox"),
-            "style_tags": bg.get("image_hints", "background texture")
+            "type": "image",
+            "bbox": bg_data.get("bbox")
         })
         
-    # 加入所有 needs_image 为 true 的对象
     for obj in analysis.get("objects", []):
         if obj.get("needs_image"):
             items_need_prompt.append({
                 "name": obj.get("name"),
                 "type": obj.get("type"),
-                "bbox": obj.get("bbox"),
-                "style_tags": obj.get("style_tags", "") # 接收第一步打的标签
-            })
-            
+                "bbox": obj.get("bbox")})
     expected_count = len(items_need_prompt)    
     print(f"Component plan will include {expected_count} items that need images.")
     # 2. 组装 Prompt
     prompt_text = COMPONENT_PLAN_PROMPT.replace(
         "{filtered_json}", json.dumps(items_need_prompt, indent=2)
+    ).replace(
+        "{global_background}", global_bg_context
     )
-    # prompt_text = COMPONENT_PLAN_PROMPT.replace(
-    #     "{analysis_json}", json.dumps(analysis, indent=2)
-    # )
 
     # 3. 将原图转为 base64 数据
     image_url = encode_image_to_data_url(image_path)
@@ -175,9 +173,6 @@ def generate_component_plan(
     # 4. 关键修改：使用 build_vision_messages 发送视觉分析请求
     response_text = client.chat(model, build_vision_messages(prompt_text, image_url), temperature)
 
-    # response_text = client.chat(model, build_text_messages(prompt_text), temperature)
-    # if raw_output_path:
-    #     raw_output_path.write_text(response_text, encoding="utf-8")
     payload = parse_llm_json(response_text)
     generated_assets = payload.get("assets", [])
     if expected_count > 0 and len(generated_assets) < expected_count*0.8:
@@ -321,7 +316,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--source", required=True, help="input image file")
     parser.add_argument("--date", help="YYYYMMDD override")
     parser.add_argument("--notes", help="extra analysis notes")
-    parser.add_argument("--manifest", help="use existing manifest.json instead of LLM")
+    parser.add_argument("--resume_manifest", help="use existing manifest.json instead of LLM")
     parser.add_argument(
         "--test_vision",
         action="store_true",
@@ -351,19 +346,19 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     args = build_parser().parse_args()
-    if args.resume_analysis and args.resume_imagegen:
-        raise ValueError("resume_analysis and resume_imagegen cannot be used together")
-    if args.resume_imagegen and args.manifest:
-        raise ValueError("resume_imagegen cannot be used with --manifest")
+    resume_flags = [args.resume_analysis, args.resume_imagegen, args.resume_manifest]
+    if sum(bool(flag) for flag in resume_flags) > 1:
+        raise ValueError("resume_analysis, resume_imagegen, resume_manifest cannot be used together")
     if args.test_vision and args.resume_imagegen:
         raise ValueError("test_vision cannot be used with --resume_imagegen")
-    if args.test_vision and args.manifest:
-        raise ValueError("test_vision cannot be used with --manifest")
+    if args.test_vision and args.resume_manifest:
+        raise ValueError("test_vision cannot be used with --resume_manifest")
+
+    resume_project = args.resume_analysis or args.resume_imagegen or args.resume_manifest
 
     vision_model = args.vision_model or os.getenv("IMAGE2PPT_VISION_MODEL", "qwen-vl")
     imagegen_model = args.imagegen_model or os.getenv("IMAGE2PPT_IMAGEGEN_MODEL", "z-image-turbo")
 
-    resume_project = args.resume_analysis or args.resume_imagegen
     if resume_project:
         project_dir = PROJECTS_ROOT / resume_project
         if not project_dir.exists():
@@ -380,144 +375,137 @@ def main() -> int:
         project_dir = Path(project_info["project_dir"])
     manifest_path = project_dir / "manifest.json"
     diagnostics_dir = project_dir / "diagnostics"
-
-    if args.manifest:
-        manifest_path.write_text(Path(args.manifest).read_text(encoding="utf-8"), encoding="utf-8")
-    else:
-        vision_base_url = args.vision_base_url or os.getenv("IMAGE2PPT_VISION_BASE_URL")
-        vision_api_key = (
-            os.getenv("IMAGE2PPT_VISION_API_KEY")
-            or os.getenv("DASHSCOPE_API_KEY")
-            or os.getenv("OPENAI_API_KEY")
+    vision_base_url = args.vision_base_url or os.getenv("IMAGE2PPT_VISION_BASE_URL")
+    vision_api_key = (
+        os.getenv("IMAGE2PPT_VISION_API_KEY")
+        or os.getenv("DASHSCOPE_API_KEY")
+        or os.getenv("OPENAI_API_KEY")
+    )
+    vision_temperature = float(os.getenv("IMAGE2PPT_VISION_TEMPERATURE", "0.2"))
+    vision_client = build_client(vision_base_url, vision_api_key)
+    print(f"Vision client ready: {vision_model}")
+    if args.resume_imagegen:
+        analysis = load_json_file(diagnostics_dir / "analysis.json")
+        asset_catalog = load_json_file(diagnostics_dir / "asset_catalog.json")
+        asset_records = asset_catalog.get("assets") or []
+        if not asset_records:
+            raise ValueError("asset_catalog.json contains no assets; cannot resume_imagegen")
+        print("Analysis loaded: diagnostics/analysis.json")
+        print(f"Asset catalog loaded: {len(asset_records)} assets")
+        manifest = generate_manifest(
+            vision_client,
+            vision_model,
+            vision_temperature,
+            analysis,
+            asset_records,
+            # raw_output_path=diagnostics_dir / "manifest_raw.txt",
         )
-        vision_temperature = float(os.getenv("IMAGE2PPT_VISION_TEMPERATURE", "0.2"))
-        vision_client = build_client(vision_base_url, vision_api_key)
-        print(f"Vision client ready: {vision_model}")
-
-        if args.resume_imagegen:
-            analysis = load_json_file(diagnostics_dir / "analysis.json")
-            asset_catalog = load_json_file(diagnostics_dir / "asset_catalog.json")
-            asset_records = asset_catalog.get("assets") or []
-            if not asset_records:
-                raise ValueError("asset_catalog.json contains no assets; cannot resume_imagegen")
-            print("Analysis loaded: diagnostics/analysis.json")
-            print(f"Asset catalog loaded: {len(asset_records)} assets")
-
-            manifest = generate_manifest(
-                vision_client,
-                vision_model,
-                vision_temperature,
-                analysis,
-                asset_records,
-                # raw_output_path=diagnostics_dir / "manifest_raw.txt",
-            )
-            canvas_w = int(analysis.get("canvas_width", 0) or 0)
-            canvas_h = int(analysis.get("canvas_height", 0) or 0)
-            if canvas_w and canvas_h:
-                ensure_deck(manifest, canvas_w, canvas_h)
-            manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-            print("Manifest generated: manifest.json")
-        elif args.resume_analysis:
-            analysis = load_json_file(diagnostics_dir / "analysis.json")
-            component_plan = load_json_file(diagnostics_dir / "component_plan.json")
-            assets = component_plan.get("assets") or []
-            print("Analysis loaded: diagnostics/analysis.json")
-            print(f"Component plan loaded: {len(assets)} assets")
+        canvas_w = int(analysis.get("canvas_width", 0) or 0)
+        canvas_h = int(analysis.get("canvas_height", 0) or 0)
+        if canvas_w and canvas_h:
+            ensure_deck(manifest, canvas_w, canvas_h)
+        manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        print("Manifest generated: manifest.json")
+    elif args.resume_analysis:
+        analysis = load_json_file(diagnostics_dir / "analysis.json")
+        component_plan = load_json_file(diagnostics_dir / "component_plan.json")
+        assets = component_plan.get("assets") or []
+        print("Analysis loaded: diagnostics/analysis.json")
+        print(f"Component plan loaded: {len(assets)} assets")
+    elif args.resume_manifest:
+        manifest_path = project_dir / "manifest.json"
+        build_pptx(manifest_path, project_dir / "output.pptx", project_dir / "summary.json")
+        print("PPTX build complete")
+        return 0
+    else:
+        analysis = generate_analysis(
+            vision_client,
+            vision_model,
+            vision_temperature,
+            args.source,
+            Path(args.source),
+            args.notes,
+            # raw_output_path=diagnostics_dir / "analysis_raw.txt",
+        )
+        save_json(diagnostics_dir / "analysis.json", analysis)
+        print("Analysis complete: diagnostics/analysis.json")
+        component_plan = generate_component_plan(
+            vision_client,
+            vision_model,
+            vision_temperature,
+            analysis,
+            Path(args.source),  # 新增：传入原图路径
+            # raw_output_path=diagnostics_dir / "component_plan_raw.txt",
+        )
+        save_json(diagnostics_dir / "component_plan.json", component_plan)
+        assets = component_plan.get("assets") or []
+        print(f"Component plan ready: {len(assets)} assets")
+    if args.test_vision:
+        report = build_vision_report(analysis, component_plan, vision_model)
+        report_path = diagnostics_dir / f"vision_report_{vision_model}.json"
+        save_json(report_path, report)
+        print(f"Vision report written: {report_path}")
+        return 0
+    if not args.resume_imagegen:
+        asset_records: list[dict[str, Any]] = []
+        source_image = None
+        if args.no_redraw:
+            source_image = Image.open(args.source)
+            print(f"Source image loaded for cropping: {args.source}")
         else:
-            analysis = generate_analysis(
-                vision_client,
-                vision_model,
-                vision_temperature,
-                args.source,
-                Path(args.source),
-                args.notes,
-                # raw_output_path=diagnostics_dir / "analysis_raw.txt",
+            imagegen_base_url = args.imagegen_base_url or os.getenv("IMAGE2PPT_IMAGEGEN_BASE_URL")
+            imagegen_api_key = (
+                os.getenv("IMAGE2PPT_IMAGEGEN_API_KEY")
+                or os.getenv("DASHSCOPE_API_KEY")
+                or os.getenv("OPENAI_API_KEY")
             )
-            save_json(diagnostics_dir / "analysis.json", analysis)
-            print("Analysis complete: diagnostics/analysis.json")
-
-            component_plan = generate_component_plan(
-                vision_client,
-                vision_model,
-                vision_temperature,
-                analysis,
-                Path(args.source),  # 新增：传入原图路径
-                # raw_output_path=diagnostics_dir / "component_plan_raw.txt",
+            imagegen_size = os.getenv("IMAGE2PPT_IMAGEGEN_SIZE", "1024x1024")
+            imagegen_config = ImageGenConfig(
+                base_url=imagegen_base_url or "",
+                api_key=imagegen_api_key,
+                model=imagegen_model,
+                size=imagegen_size,
+                api_style=args.imagegen_api_style,
             )
-            save_json(diagnostics_dir / "component_plan.json", component_plan)
-            assets = component_plan.get("assets") or []
-            print(f"Component plan ready: {len(assets)} assets")
-        if args.test_vision:
-            report = build_vision_report(analysis, component_plan, vision_model)
-            report_path = diagnostics_dir / f"vision_report_{vision_model}.json"
-            save_json(report_path, report)
-            print(f"Vision report written: {report_path}")
-            return 0
-        if not args.resume_imagegen:
-            asset_records: list[dict[str, Any]] = []
-
-            source_image = None
+            print(f"Imagegen model loaded: {imagegen_model}")
+        component_dir = project_dir / "component_images"
+        for item in assets:
+            name = str(item.get("name") or item.get("type") or "asset")
+            bbox = normalize_bbox(item)
+            x, y, w, h = bbox
+            if w <= 0 or h <= 0:
+                print(f"Skip asset with invalid size: {name} ({w}x{h})")
+                continue
+            filename = safe_filename(name, suffix=".png")
+            output_path = component_dir / filename
             if args.no_redraw:
-                source_image = Image.open(args.source)
-                print(f"Source image loaded for cropping: {args.source}")
+                crop_from_source(source_image, bbox, output_path)
+                print(f"Asset cropped: {output_path}")
             else:
-                imagegen_base_url = args.imagegen_base_url or os.getenv("IMAGE2PPT_IMAGEGEN_BASE_URL")
-                imagegen_api_key = (
-                    os.getenv("IMAGE2PPT_IMAGEGEN_API_KEY")
-                    or os.getenv("DASHSCOPE_API_KEY")
-                    or os.getenv("OPENAI_API_KEY")
+                prompt = str(item.get("prompt") or "")
+                negative_prompt = str(item.get("negative_prompt") or "") or None
+                transparent = bool(item.get("transparent", False))
+                request_size = f"{w}x{h}"
+                generate_image(
+                    imagegen_config,
+                    prompt,
+                    negative_prompt,
+                    transparent,
+                    component_dir,
+                    name,
+                    output_path,
+                    request_size,
+                    None,
                 )
-                imagegen_size = os.getenv("IMAGE2PPT_IMAGEGEN_SIZE", "1024x1024")
-                imagegen_config = ImageGenConfig(
-                    base_url=imagegen_base_url or "",
-                    api_key=imagegen_api_key,
-                    model=imagegen_model,
-                    size=imagegen_size,
-                    api_style=args.imagegen_api_style,
-                )
-                print(f"Imagegen model loaded: {imagegen_model}")
-
-            component_dir = project_dir / "component_images"
-
-            for item in assets:
-                name = str(item.get("name") or item.get("type") or "asset")
-                bbox = normalize_bbox(item)
-                x, y, w, h = bbox
-                if w <= 0 or h <= 0:
-                    print(f"Skip asset with invalid size: {name} ({w}x{h})")
-                    continue
-                filename = safe_filename(name, suffix=".png")
-                output_path = component_dir / filename
-
-                if args.no_redraw:
-                    crop_from_source(source_image, bbox, output_path)
-                    print(f"Asset cropped: {output_path}")
-                else:
-                    prompt = str(item.get("prompt") or "")
-                    negative_prompt = str(item.get("negative_prompt") or "") or None
-                    transparent = bool(item.get("transparent", False))
-                    request_size = f"{w}x{h}"
-                    generate_image(
-                        imagegen_config,
-                        prompt,
-                        negative_prompt,
-                        transparent,
-                        component_dir,
-                        name,
-                        output_path,
-                        request_size,
-                        None,
-                    )
-                    print(f"Image generated: {output_path}")
-
-                asset_records.append(
-                    {
-                        "name": name,
-                        "type": item.get("type"),
-                        "file": f"component_images/{filename}",
-                        "bbox": {"x": x, "y": y, "w": w, "h": h},
-                    }
-                )
+                print(f"Image generated: {output_path}")
+            asset_records.append(
+                {
+                    "name": name,
+                    "type": item.get("type"),
+                    "file": f"component_images/{filename}",
+                    "bbox": {"x": x, "y": y, "w": w, "h": h},
+                }
+            )
 
             save_json(diagnostics_dir / "asset_catalog.json", {"assets": asset_records})
             print("Asset catalog written: diagnostics/asset_catalog.json")
@@ -536,8 +524,6 @@ def main() -> int:
             #     ensure_deck(manifest, canvas_w, canvas_h)
             manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
             print("Manifest generated: manifest.json")
-    if args.manifest:
-        manifest_path = Path(args.manifest)
     build_pptx(manifest_path, project_dir / "output.pptx", project_dir / "summary.json")
     print("PPTX build complete")
 
@@ -559,6 +545,8 @@ def main() -> int:
         notes += f"\nVerify: slides={verify_result['slides']}, shapes={verify_result['shapes']}\n"
     if args.resume_analysis:
         notes += f"\nResume analysis: {args.resume_analysis}\n"
+    if args.resume_manifest:
+        notes += f"\nResume manifest: {args.resume_manifest}\n"
 
     write_process_notes(project_dir / "process_notes.md", notes)
     print(json.dumps({"project_dir": str(project_dir), "manifest": str(manifest_path)}, indent=2))
