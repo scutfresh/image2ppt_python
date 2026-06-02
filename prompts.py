@@ -12,6 +12,10 @@ Rules:
 - CRITICAL: If any string value (especially the "text" field) contains quotes,
   you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word').
   Do NOT use unescaped double quotes inside a string.
+- CRITICAL BBOX FORMAT: All spatial coordinates MUST use a dictionary format: 
+  {"x": left_x, "y": top_y, "w": absolute_width, "h": absolute_height}.
+  NEVER output bbox as an array/list. 
+  NEVER confuse x_max/y_max with w/h. 'w' is strictly the absolute width, 'h' is the absolute height.
 """.strip()
 
 ANALYSIS_PROMPT = """
