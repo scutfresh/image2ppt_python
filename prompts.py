@@ -1,21 +1,12 @@
 SYSTEM_PROMPT = """
-You are an expert agent that converts a single visual design into an editable
-PowerPoint slide using the specified manifest format.
+You are an expert AI agent that converts a single visual design or document into an editable PowerPoint slide using a specific JSON manifest format.
 
 Rules:
 - Use the attached image as the source of truth.
-- Output JSON only. No prose, no markdown.
+- Output JSON only. No prose, no markdown formatting (e.g., do not wrap output in ```json ... ```).
 - Prefer native PPT text and shapes whenever possible.
-- Only use image layers for photos, illustrations, icons, complex charts,
-  textures, shadows, masks, and any content that cannot be reconstructed
-  as native PPT elements.
-- CRITICAL: If any string value (especially the "text" field) contains quotes,
-  you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word').
-  Do NOT use unescaped double quotes inside a string.
-- CRITICAL BBOX FORMAT: All spatial coordinates MUST use a dictionary format: 
-  {"x": left_x, "y": top_y, "w": absolute_width, "h": absolute_height}.
-  NEVER output bbox as an array/list. 
-  NEVER confuse x_max/y_max with w/h. 'w' is strictly the absolute width, 'h' is the absolute height.
+- CRITICAL JSON ESCAPING: If any string value (especially the "text" field) contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word'). Do NOT use unescaped double quotes inside a string.
+- CRITICAL BBOX FORMAT: All spatial coordinates MUST use a dictionary format: {"x": left_x, "y": top_y, "w": absolute_width, "h": absolute_height}. NEVER output bbox as an array/list. 'w' is strictly the absolute width, 'h' is the absolute height.
 """.strip()
 
 ANALYSIS_PROMPT = """
@@ -23,101 +14,90 @@ Source image: {source_path}
 Image Dimensions: {width}px (width) x {height}px (height)
 Optional notes: {notes}
 
-The image content is attached. Analyze the slide and output a JSON object with:
+The image content is attached. Analyze the slide deeply and output a JSON object with the exact following structure:
 
 - canvas_width: {width}, canvas_height: {height} (Must match the provided dimensions exactly)
-- background: object with type (color|gradient|image), color/gradient/image hints
-  and bbox (x, y, w, h)
-- titles: list of text blocks with text, bbox, font_family, font_size_px,
-  color, bold, italic, align
+- background: object with type (color|gradient|image), color/gradient/image hints and bbox (x, y, w, h)
+- titles: list of text blocks with text, bbox, font_family, font_size_px, color, bold, italic, align
 - body_text: list of text blocks with the same fields as titles
 - objects: list of visual objects with:
-  name, type (icon|photo|chart|decoration|shadow|mask|texture|logo|shape),
-  bbox (x, y, w, h), z_index, needs_image (true/false), needs_transparent,
-  style_tags (string, ONLY if needs_image is true: output 3-5 keywords describing 
-  color, texture, and visual style, e.g., 'neon green, glowing, 3d, flat, metallic')
-- shapes: list of simple shapes (rect|roundRect|ellipse|line) with bbox, fill,
-  stroke, stroke_width_px
+  name (string),
+  type (icon|photo|chart|decoration|shadow|mask|texture|logo),
+  bbox (x, y, w, h),
+  z_index (integer),
+  render_method (MUST BE EITHER "svg" OR "crop"),
+  needs_transparent (true/false),
+  style_tags (string, output 3-5 keywords describing color/style, e.g., 'flat, minimalist, blue', ONLY if render_method is "svg")
+- shapes: list of simple shapes (rect|roundRect|ellipse|line) with bbox, fill, stroke, stroke_width_px
 
-Also explicitly list any icons, photos, charts, decorations, shadows, and masks
-in the objects list even if they overlap.
+CRITICAL ROUTING RULES FOR 'objects':
+1. Flat icons, simple logos, geometric decorations, and flowcharts MUST use render_method: "svg".
+2. Real photographs, photorealistic 3D renders, dense textures, and complex gradients MUST use render_method: "crop". Do NOT attempt to map these to SVG.
+3. NEVER classify text as an object. All visible text MUST be extracted natively into `titles` or `body_text`. If an icon contains text, extract the text to `titles`/`body_text` and classify the icon background/symbol as an object.
 """.strip()
 
 COMPONENT_PLAN_PROMPT = """
-You are an expert prompt engineer for an image generation AI.
-I have attached the SOURCE IMAGE and a JSON list of specific elements extracted from it. 
+You are an expert SVG illustrator and frontend developer.
+I have attached the SOURCE IMAGE and a JSON list of specific graphical elements extracted from it. 
 
-GLOBAL BACKGROUND CONTEXT (The overall PPT slide background):
-{global_background}
+Your task is to generate highly accurate SVG code ONLY for the elements provided in the Input JSON list.
 
-Your task is to write highly accurate `prompt` and `negative_prompt` strings to recreate each element.
+CRITICAL RULES FOR SVG GENERATION:
+1. EXHAUSTIVE MAPPING: Generate an asset for EVERY item in the Input JSON. Do not omit any.
+2. PURE VECTOR ONLY: 
+   - NO TEXT: Do NOT use the <text> tag under any circumstances. (Text is handled elsewhere).
+   - NO RASTER EMBEDS: Do NOT use <image href="data:image...>. The SVG must be mathematically drawn using <path>, <rect>, <circle>, etc.
+3. SVG CONSTRAINTS:
+   - Canvas: Use viewBox="0 0 w h" with unitless numbers based on the element's w and h.
+   - Styling: Use presentation attributes (e.g., fill="#ffffff", stroke="#000000"). Do NOT use `<style>` blocks or CSS classes.
+   - Colors: Solid hex/RGB only. NO `<linearGradient>`, `<radialGradient>`, or `<filter>`.
+   - Geometry: Prefer absolute path commands (M, L, C). Flatten all transforms (do not use transform="translate(...)").
+4. JSON INTEGRITY: Output RAW JSON. Escape all double quotes inside the `svg_code` string using backslashes (\\").
 
-CRITICAL RULES & BACKGROUND HANDLING:
-1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
-2. USE BOUNDING BOX & STYLE TAGS: Look at the attached image using the "bbox" to locate the element. You MUST strongly incorporate the provided `style_tags` into your `prompt` to ensure the generated art style, texture, and colors perfectly match the original design language.
-3. FOR TRANSPARENT ASSETS (icons, shapes, clean decorations):
-   - You MUST set `transparent=true`.
-   - In the `prompt`, you MUST force a solid, high-contrast background that matches the global context to aid downstream background removal. For example, if the global background is dark/black, write: "on a solid pure black background". If it's light, write: "on a solid pure white background". NEVER ask for a "transparent background" in the prompt.
-   - In the `negative_prompt`, explicitly deny messy backgrounds to ensure clean cutouts: "gradients, noisy background, cluttered background, watermarks, grids, checkerboard".
-4. FOR NON-TRANSPARENT ASSETS (photos, textures, complex charts):
-   - You MUST set `transparent=false`.
-   - In the `prompt`, explicitly specify that the asset's background matches the GLOBAL BACKGROUND CONTEXT provided above (e.g., "on a smooth dark-blue gradient background").
-5. CRITICAL JSON ESCAPING: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
-
-Format requirements (match this layout exactly, output MUST contain ALL items):
+Format requirements (match this layout exactly):
 {
   "assets": [
-    {
-      "name": "Background Image",
-      "type": "texture",
-      "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
-      "prompt": "soft gradient background, light blue to white transition, subtle texture",
-      "negative_prompt": "dark colors, text, logos",
-      "transparent": false
-    },
     {
       "name": "icon_example",
       "type": "icon",
       "bbox": { "x": 45, "y": 255, "w": 35, "h": 45 },
-      "prompt": "golden, flat, outline style icon, isolated on a transparent background",
-      "negative_prompt": "3d, realistic, cluttered,  white background",
-      "transparent": true
+      "transparent": true,
+      "svg_code": "<svg viewBox=\\"0 0 35 45\\" xmlns=\\"http://www.w3.org/2000/svg\\"><path d=\\"M4 4 L31 4 L31 41 L4 41 Z\\" fill=\\"#f5c542\\" stroke=\\"#a67c00\\"/></svg>"
     }
-    // ... ADD ALL OTHER OBJECTS HERE ...
   ]
 }
 
-Input JSON (Elements needing images):
+Input JSON (Elements needing SVG generation):
 {filtered_json}
-
 """.strip()
 
 MANIFEST_PROMPT = """
-Using the analysis JSON and asset list below, output a valid
-specified manifest.json for one slide.
+Using the Analysis JSON and the generated Asset List JSON below, output a valid manifest.json for one slide.
 
 Rules:
-- Output JSON only.
-- Use coordinates in source pixel space.
-- Use native text and shapes whenever possible.
-- For image elements, reference files in component_images/ using the asset list.
-- Elements must be ordered from back to front.
+- Output JSON only. No markdown formatting.
+- Coordinates remain in source pixel space.
+- Elements must be ordered from back to front (based on z_index and natural flow).
+- Asset Mapping: 
+  - If an object was routed to "svg", its file path must be "component_images/[name].svg".
+  - If an object was routed to "crop" (or previously raster), its file path must be "component_images/[name].png".
+- Native text (`titles`, `body_text`) and `shapes` do not use file paths.
 
 Format requirements (match this layout exactly):
 {
-  "slide_width": "MUST strictly match the canvas_width provided in Analysis JSON",
-  "slide_height": "MUST strictly match the canvas_height provided in Analysis JSON",
+  "slide_width": <match canvas_width from Analysis JSON>,
+  "slide_height": <match canvas_height from Analysis JSON>,
   "elements": [
     {
       "type": "image|shape|text",
       "name": "...",
-      "file": "component_images/...png",
-      "shape_type": "rect|roundRect|round_rect|ellipse|line|custom",
+      "file": "component_images/icon.svg", 
+      "shape_type": "rect|roundRect|ellipse|line|custom",
       "fill": "#RRGGBB" | "none",
       "stroke": "#RRGGBB" | "none",
       "stroke_width_px": 1,
       "text": "...",
-      "font_family": "Microsoft YaHei",
+      "font_family": "Arial",
       "font_size_px": 16,
       "color": "#RRGGBB",
       "bold": true,
@@ -127,20 +107,13 @@ Format requirements (match this layout exactly):
     }
   ],
   "deck": {
-    "canvas_width": "MUST strictly match the canvas_width provided in Analysis JSON",
-    "canvas_height": "MUST strictly match the canvas_height provided in Analysis JSON",
+    "canvas_width": <match canvas_width>,
+    "canvas_height": <match canvas_height>,
     "slide_width_in": 13.333,
-    "name": "Image2PPT Deck"
+    "name": "Vector-First PPTX Deck"
   }
 }
 
-Notes:
-- Always include slide_width, slide_height, elements, and deck.
-- For each element, include only the fields relevant to its type.
-- Keep bbox for every element.
-- If any string value (especially the "text" field) contains quotes,
-  you MUST escape them (e.g., \\"word\\") or use single quotes (e.g., 'word').
-  Do NOT use unescaped double quotes inside a string.
 Analysis JSON:
 {analysis_json}
 
@@ -149,13 +122,12 @@ Asset list JSON:
 """.strip()
 
 PROCESS_NOTES_TEMPLATE = """
-Workflow: openai-compat agent (vision + imagegen)
+Workflow: Vector-First PPTX Pipeline
 Mode: {mode}
 Sources: {sources}
 Vision model: {vision_model}
+SVG/Component model: {component_model}
 Manifest model: {manifest_model}
-Imagegen model: {imagegen_model}
-No redraw: {no_redraw}
-Assets generated: {assets}
+Assets generated: {assets} (SVGs: {svg_count}, Crops/PNGs: {crop_count})
 Notes: {notes}
 """.strip()
