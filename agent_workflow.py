@@ -371,6 +371,8 @@ def main() -> int:
         slug = f"{vision_model}_and_{imagegen_model}"
         if args.test_vision:
             slug = f"{vision_model}_test_vision"
+        if args.no_redraw:
+            slug = f"{vision_model}_no_redraw"
         project_info = init_project(PROJECTS_ROOT, slug, [args.source], args.date)
         project_dir = Path(project_info["project_dir"])
     manifest_path = project_dir / "manifest.json"
@@ -485,8 +487,9 @@ def main() -> int:
             filename = safe_filename(name, suffix=".png")
             output_path = component_dir / filename
             if args.no_redraw:
-                crop_from_source(source_image, bbox, output_path)
-                print(f"Asset cropped: {output_path}")
+                # crop_from_source(source_image, bbox, output_path)
+                # print(f"Asset cropped: {output_path}")
+                continue
             else:
                 prompt = str(item.get("prompt") or "")
                 negative_prompt = str(item.get("negative_prompt") or "") or None
