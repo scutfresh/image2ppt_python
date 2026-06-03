@@ -336,7 +336,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--component_temperature",
         type=float,
-        default=0.3,
+        default=0.2,
         help="temperature for component plan and manifest (default: 0.2)",
     )
     parser.add_argument("--skip-verify", action="store_true", help="skip pptx verification")

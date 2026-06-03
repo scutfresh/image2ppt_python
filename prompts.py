@@ -147,7 +147,6 @@ Sources: {sources}
 Vision model: {vision_model}
 Manifest model: {manifest_model}
 Imagegen model: {imagegen_model}
-No redraw: {no_redraw}
 Assets generated: {assets}
 Notes: {notes}
 """.strip()
