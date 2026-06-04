@@ -47,14 +47,20 @@ COMPONENT_PLAN_PROMPT = """
 You are an expert prompt engineer for an image generation AI.
 I have attached the SOURCE IMAGE and a JSON list of specific elements extracted from it. 
 
+
+
 Your task is to write highly accurate `prompt` and `negative_prompt` strings to recreate each element.
 
-CRITICAL RULES:
+CRITICAL RULES & BACKGROUND HANDLING:
 1. EXHAUSTIVE MAPPING: You MUST generate an asset for EVERY single item provided in the Input JSON list. Do not omit any.
-2. USE THE BOUNDING BOX (bbox): Look at the attached image. Use the provided "bbox" [x, y, w, h] to locate the exact element in the image.
-3. DESCRIBE WHAT YOU SEE: Base your prompt ONLY on how that specific element looks in the source image (colors, art style, flat vs 3D, textures, gradients, context).
-4. Set transparent=true for icons or assets that need alpha.
-5. CRITICAL: If any string value contains quotes, you MUST escape them (e.g., \\"word\\") or use single quotes. Do NOT use unescaped double quotes.
+2. USE BOUNDING BOX & STYLE TAGS: Look at the attached image using the "bbox" to locate the element. You MUST strongly incorporate the provided `style_tags` into your `prompt` to ensure the generated art style, texture, and colors perfectly match the original design language.
+3. FOR TRANSPARENT ASSETS (icons, shapes, clean decorations):
+   - You MUST set `transparent=true`.
+   - In the `prompt`, you MUST force a solid, high-contrast background that matches the global context to aid downstream background removal. For example, if the global background is dark/black, write: "on a solid pure black background". If it's light, write: "on a solid pure white background". NEVER ask for a "transparent background" in the prompt.
+   - In the `negative_prompt`, explicitly deny messy backgrounds to ensure clean cutouts: "gradients, noisy background, cluttered background, watermarks, grids, checkerboard".
+4. FOR NON-TRANSPARENT ASSETS (photos, textures):
+   - You MUST set `transparent=false`.
+   - In the `prompt`, explicitly specify that the asset's background matches the GLOBAL BACKGROUND CONTEXT provided above (e.g., "on a smooth dark-blue gradient background").
 
 Format requirements (match this layout exactly, output MUST contain ALL items):
 {
