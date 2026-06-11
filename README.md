@@ -50,7 +50,6 @@ flowchart TD
   C --> D[组件规划]
   D --> E{生成组件图}
   E -->|imagegen| F[图像生成与后处理]
-  E -->|no-redraw| G[从源图裁剪]
   F --> H[资产清单]
   G --> H[资产清单]
   H --> I[Manifest 生成]
@@ -79,7 +78,6 @@ flowchart TD
 ### 4.4 组件生成与裁剪
 
 - 默认走 imagegen 生成：调用 OpenAI 兼容或 DashScope/Qwen 风格 API 生成图像，支持自动尺寸调整与 PNG 标准化。
-- `--no-redraw` 时改为从源图按 bbox 进行裁剪输出。
 - 图像生成与后处理实现位于 [langchain/imagegen.py](langchain/imagegen.py)，控制流程在 [langchain/agent_workflow.py](langchain/agent_workflow.py)。
 
 ### 4.5 资产清单与 Manifest 生成
