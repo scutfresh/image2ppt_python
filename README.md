@@ -1,6 +1,6 @@
 # Image-to-PPT：从位图到可编辑 PPTX 的端到端 LLM 工作流
 
-> **一句话概述**：将一张幻灯片截图（PNG / JPEG / WebP）自动转换为原生可编辑的 `.pptx` 文件，保留文本、形状、图标等所有元素的布局与样式。
+> **一句话概述**：将幻灯片截图（PNG / JPEG / WebP）自动转换为原生可编辑的 `.pptx` 文件，保留文本、形状、图标等所有元素的布局与样式。支持**单张图片**和**批量文件夹**两种运行模式。
 
 ---
 
@@ -12,7 +12,12 @@
   - [安装依赖](#安装依赖)
   - [环境变量配置](#环境变量配置)
   - [运行示例](#运行示例)
-- [命令行参数](#命令行参数)
+- [主程序：批量文件夹转换](#主程序批量文件夹转换)
+  - [基本用法](#基本用法)
+  - [批量程序参数](#批量程序参数)
+  - [批量输出结构](#批量输出结构)
+- [单图模式：agent_workflow.py](#单图模式agent_workflowpy)
+  - [命令行参数](#命令行参数)
 - [工作流解析](#工作流解析)
   - [总体流程](#总体流程)
   - [Step 1 — 项目初始化](#step-1--项目初始化)
@@ -24,6 +29,7 @@
 - [Analysis 方法详解](#analysis-方法详解)
   - [方法 1：单次联合分析（默认）](#方法-1单次联合分析默认)
   - [方法 2：分离分析 —— 文本与图形分步提取](#方法-2分离分析--文本与图形分步提取)
+  - [方法 3：分离分析 + OCR（批量程序默认）](#方法-3分离分析--ocr批量程序默认)
 - [模型选择](#模型选择)
   - [视觉模型](#视觉模型)
   - [图像生成模型](#图像生成模型)
@@ -40,30 +46,39 @@
 
 ```
 Image-to-ppt/
-├── agent_workflow.py          # 🔧 主入口：工作流编排器 (~687 行)
+├── batch_folder_image2ppt.py  # 🚀 主程序：批量文件夹转 PPTX
+├── agent_workflow.py          # 🔧 单图模式：工作流编排器 (~687 行)
 ├── requirements.txt           # Python 依赖清单
 ├── README.md                  # 本文档
 ├── docs/
-│   └── TECH_REPORT.md         # 技术报告
+│   └── TECH_REPORT.md         # 详细技术报告（项目交接用）
 ├── source/
 │   ├── prompts.py             # 📝 所有 LLM 提示词模板
 │   ├── openai_client.py       # 🌐 OpenAI 兼容对话客户端
 │   ├── imagegen.py            # 🎨 图像生成模块（多 API 适配）
 │   ├── image2pptx.py          # 📊 PPTX 渲染器 (~680 行)
-│   └── tools.py               # 🛠 工具函数（JSON 修复、抠图、项目初始化等）
+│   ├── tools.py               # 🛠 工具函数（JSON 修复、抠图、项目初始化等）
+│   ├── ocr.py                 # 🔤 本地 OCR 引擎封装
+│   └── qa_agent.py            # ✅ QA 视觉质量反思循环
 ├── scripts/
 │   ├── bgremove.py            # 批量背景移除脚本
 │   ├── imagegen_local.py      # 本地图像生成测试
+│   ├── multi_run.py           # 多模型批量回归测试
 │   ├── rename_vision_reports.py# 批量重命名视觉报告
-│   ├── test.py                # 多模型批量测试
+│   ├── test_ocr.py            # OCR → VLM → PPTX 流水线测试
+│   ├── test_vlm.py            # VLM 视觉识别连通性测试
 │   └── vlm_local.py           # 本地 VLM 测试脚本
-├── package/                   # 预下载的 wheel 包
+├── package/                   # 预下载的 wheel 包（离线安装用）
 ├── rembg/                     # rembg 相关 wheel 包
 └── projects/                  # 按日期组织的运行产物目录
-    └── 20260611_qwen3_6_35b_a3b_test_vision/
-        ├── original_inputs/   # 原始输入副本
-        ├── component_images/  # 生成的组件图
-        └── diagnostics/       # 中间 JSON 文件
+    └── batch_<folder_name>/   # 批量输出根目录
+        └── YYYYMMDD_slug/     # 单张图片的项目子目录
+            ├── original_inputs/   # 原始输入副本
+            ├── component_images/  # 生成的组件图
+            ├── diagnostics/       # 中间 JSON 文件
+            ├── manifest.json      # 渲染清单
+            ├── output.pptx        # 最终可编辑 PPTX
+            └── summary.json       # 统计信息
 ```
 
 ---
@@ -115,6 +130,23 @@ export IMAGE2PPT_IMAGEGEN_SIZE="1024x1024"                # 可选，默认 1024
 
 ### 运行示例
 
+#### 批量模式（推荐，主程序）
+
+```bash
+# 将整个文件夹的图片批量转为 PPTX（使用分离分析 + OCR 获得最佳精度）
+python batch_folder_image2ppt.py "path/to/image/folder"
+
+# 指定输出目录和日期前缀
+python batch_folder_image2ppt.py "path/to/image/folder" --output_root "output/batch_result" --date 20260701
+
+# 显式指定 API 地址
+python batch_folder_image2ppt.py "path/to/image/folder" \
+  --vision_base_url "http://your-vlm:8000/v1/chat/completions" \
+  --imagegen_base_url "http://your-imagegen:9011/v1/chat/completions"
+```
+
+#### 单图模式（精细控制）
+
 ```bash
 # 1. 最简运行：单次分析 + 图像生成
 python agent_workflow.py --source "path/to/your/slide.png"
@@ -145,7 +177,60 @@ python agent_workflow.py --source "slide.png" --resume_analysis "20260610_projec
 
 ---
 
-## 命令行参数
+## 主程序：批量文件夹转换
+
+`batch_folder_image2ppt.py` 是本项目的**主要入口程序**。它将一个文件夹中的所有图片逐一转换为独立的 PPTX 文件，每张图片经历完整的端到端流水线。
+
+### 基本用法
+
+```bash
+python batch_folder_image2ppt.py <input_dir> [options]
+```
+
+**执行流程：**
+
+1. 扫描 `input_dir` 下所有图片文件（支持 PNG / JPG / JPEG / WebP / BMP / TIF / TIFF）
+2. 每张图片独立运行完整流水线：
+   - 将图片对齐到 1920×1080 标准画布
+   - 视觉分析（分离模式 + OCR）：Layout → OCR 文字提取 → 排版样式 → 图形对象
+   - 组件规划：为需要生成的元素编写图像生成 prompt
+   - 资产生成：调用图像生成 API 生成组件 PNG
+   - Manifest 生成：程序化组装渲染清单
+   - PPTX 构建：输出可编辑 `.pptx` 文件
+3. 逐张报告进度，最终汇总成功/失败统计
+
+### 批量程序参数
+
+| 参数 | 说明 | 默认值 |
+|---|---|---|
+| `input_dir` | **必填**，包含输入图片的文件夹路径 | - |
+| `--output_root` | 批量输出根目录 | `projects/batch_<folder_name>` |
+| `--date` | YYYYMMDD 日期前缀覆盖 | 当天日期 |
+| `--vision_base_url` | 视觉模型 API 地址 | 环境变量 `IMAGE2PPT_VISION_BASE_URL` |
+| `--imagegen_base_url` | 图像生成 API 地址 | 环境变量 `IMAGE2PPT_IMAGEGEN_BASE_URL` |
+
+### 批量输出结构
+
+```
+batch_<folder_name>/
+├── YYYYMMDD_image1_slug/
+│   ├── component_images/   # 生成的组件 PNG
+│   ├── diagnostics/        # analysis.json, component_plan.json, asset_catalog.json
+│   ├── manifest.json
+│   ├── output.pptx
+│   └── summary.json
+├── YYYYMMDD_image2_slug/
+│   └── ...
+└── ...
+```
+
+---
+
+## 单图模式：agent_workflow.py
+
+`agent_workflow.py` 提供更细粒度的单图处理能力，适合调试、模型评估和精细化参数调整。
+
+### 命令行参数
 
 | 参数 | 说明 | 默认值 |
 |---|---|---|
@@ -394,16 +479,57 @@ merged_payload = {
 
 ---
 
+### 方法 3：分离分析 + OCR（批量程序默认）
+
+```bash
+python agent_workflow.py --source "slide.png" --seperate_analysis --ocr
+```
+
+> `batch_folder_image2ppt.py` 默认使用此模式以获得最佳精度。
+
+**流程**：三阶段 VLM 调用 + 一次本地 OCR 调用，共四阶段：
+
+#### Pass 0：宏观布局分析
+
+使用 `ANALYSIS_PROMPT_LAYOUT`，识别幻灯片类型（Title-Only、Two-Column-Split、Card-Grid、Process-Steps 等），输出区域划分建议。
+
+#### Pass 1 (OCR)：硬件级文字提取
+
+调用本地 OCR 引擎（`192.168.210.128:50623`）直接提取文字及**亚像素级精度的四点坐标**，完全不依赖视觉模型猜测。OCR 结果按字号（≥24px → titles，<24px → body_text）初步分类。
+
+#### Pass 1.5 (VLM)：排版样式分析
+
+仅将 OCR 提取的 text 和 bbox 发给 VLM（**不传原图文字坐标，仅传原图用于取色**），由 VLM 分析每个文本块的：
+- `font_size_px`、`color`、`bold`、`italic`、`align`
+
+**关键防护**：OCR 提取的 `text` 和 `bbox` 被强制锁定，VLM 不可覆盖，仅允许追加样式属性。
+
+#### Pass 2：图形与对象提取
+
+同方法 2 的 Pass 2，但额外接收 OCR 文本的空间上下文。
+
+**优点**：
+- 文字坐标精度极高（OCR 硬件级别），几乎无位置偏差
+- 文本内容 100% 准确，不会出现 VLM 幻觉导致的文字错误
+- 样式分析由 VLM 专职完成，不受文字提取任务干扰
+
+**缺点**：
+- 需要本地 OCR 服务运行
+- 总调用次数最多（3×VLM + 1×OCR）
+
+---
+
 ### 两种方法对比
 
-| 维度 | 单次联合分析 | 分离分析 |
-|---|---|---|
-| LLM 调用次数 | 1 | 2 |
-| 速度 | ⚡ 快 | 🐢 较慢 |
-| 文本提取精度 | 中等 | ⬆️ 高（专用 prompt） |
-| 图形提取精度 | 中等 | ⬆️ 高（有空间上下文） |
-| 适用场景 | 简单幻灯片 | 复杂、元素密集的幻灯片 |
-| 启用方式 | 默认 | `--seperate_analysis` |
+| 维度 | 单次联合分析 | 分离分析 | 分离分析 + OCR |
+|---|---|---|---|
+| LLM 调用次数 | 1 | 2 (文本+图形) | 3 (Layout+排版+图形) |
+| OCR 调用 | 无 | 无 | 1 次 |
+| 速度 | ⚡ 快 | 🐢 较慢 | 🐢 较慢 |
+| 文本提取精度 | 中等 | ⬆️ 高（专用 prompt） | ⬆️⬆️ 极高（硬件 OCR） |
+| 图形提取精度 | 中等 | ⬆️ 高（有空间上下文） | ⬆️ 高（有空间上下文） |
+| 适用场景 | 简单幻灯片 | 复杂、元素密集 | 文字密集型、需要精确坐标 |
+| 启用方式 | 默认 | `--seperate_analysis` | 批量程序默认 / `--seperate_analysis --ocr` |
 
 ---
 
