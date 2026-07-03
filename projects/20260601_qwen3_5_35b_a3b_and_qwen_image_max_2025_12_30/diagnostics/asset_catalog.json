@@ -1,0 +1,268 @@
+{
+  "assets": [
+    {
+      "name": "Background Texture",
+      "type": "texture",
+      "file": "component_images/background_texture.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "Top Right Globe",
+      "type": "photo",
+      "file": "component_images/top_right_globe.png",
+      "bbox": {
+        "x": 1450,
+        "y": 20,
+        "w": 200,
+        "h": 150
+      }
+    },
+    {
+      "name": "Icon Plug",
+      "type": "icon",
+      "file": "component_images/icon_plug.png",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Stack",
+      "type": "icon",
+      "file": "component_images/icon_stack.png",
+      "bbox": {
+        "x": 260,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Transformer",
+      "type": "icon",
+      "file": "component_images/icon_transformer.png",
+      "bbox": {
+        "x": 440,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Network Nodes",
+      "type": "icon",
+      "file": "component_images/icon_network_nodes.png",
+      "bbox": {
+        "x": 620,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Brain",
+      "type": "icon",
+      "file": "component_images/icon_brain.png",
+      "bbox": {
+        "x": 800,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Blueprint",
+      "type": "icon",
+      "file": "component_images/icon_blueprint.png",
+      "bbox": {
+        "x": 980,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Molecule",
+      "type": "icon",
+      "file": "component_images/icon_molecule.png",
+      "bbox": {
+        "x": 1160,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Globe Power",
+      "type": "icon",
+      "file": "component_images/icon_globe_power.png",
+      "bbox": {
+        "x": 1340,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "People Icon",
+      "type": "icon",
+      "file": "component_images/people_icon.png",
+      "bbox": {
+        "x": 60,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Cube Icon",
+      "type": "icon",
+      "file": "component_images/cube_icon.png",
+      "bbox": {
+        "x": 60,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Book Icon",
+      "type": "icon",
+      "file": "component_images/book_icon.png",
+      "bbox": {
+        "x": 1490,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Wrench Icon",
+      "type": "icon",
+      "file": "component_images/wrench_icon.png",
+      "bbox": {
+        "x": 1490,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Door Icon",
+      "type": "icon",
+      "file": "component_images/door_icon.png",
+      "bbox": {
+        "x": 120,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Chart Icon",
+      "type": "icon",
+      "file": "component_images/chart_icon.png",
+      "bbox": {
+        "x": 270,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Towers Icon",
+      "type": "icon",
+      "file": "component_images/towers_icon.png",
+      "bbox": {
+        "x": 420,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "People Group Icon",
+      "type": "icon",
+      "file": "component_images/people_group_icon.png",
+      "bbox": {
+        "x": 570,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Brain Icon Bottom",
+      "type": "icon",
+      "file": "component_images/brain_icon_bottom.png",
+      "bbox": {
+        "x": 720,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Blueprint Icon Bottom",
+      "type": "icon",
+      "file": "component_images/blueprint_icon_bottom.png",
+      "bbox": {
+        "x": 870,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Network Icon Bottom",
+      "type": "icon",
+      "file": "component_images/network_icon_bottom.png",
+      "bbox": {
+        "x": 1020,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Globe Icon Bottom",
+      "type": "icon",
+      "file": "component_images/globe_icon_bottom.png",
+      "bbox": {
+        "x": 1170,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "photo",
+      "file": "component_images/central_engine_graphic.png",
+      "bbox": {
+        "x": 400,
+        "y": 500,
+        "w": 872,
+        "h": 250
+      }
+    },
+    {
+      "name": "Bottom Path Arrow",
+      "type": "photo",
+      "file": "component_images/bottom_path_arrow.png",
+      "bbox": {
+        "x": 0,
+        "y": 800,
+        "w": 1672,
+        "h": 150
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "assets": [
+    {
+      "name": "Column 1 Diagram",
+      "type": "chart",
+      "bbox": {
+        "x": 100,
+        "y": 200,
+        "w": 200,
+        "h": 250
+      },
+      "prompt": "A vertical flowchart diagram with a central brain icon connected by blue circular arrows to four surrounding icons: people, bar chart, location pin, checklist. On the left, three stacked icons representing experts. At the bottom, a row of small data type icons. Clean flat design, blue and white color palette.",
+      "negative_prompt": "3D, realistic, cluttered, dark background, text heavy",
+      "transparent": false
+    },
+    {
+      "name": "Column 2 Diagram",
+      "type": "chart",
+      "bbox": {
+        "x": 420,
+        "y": 200,
+        "w": 320,
+        "h": 300
+      },
+      "prompt": "A vertical schematic diagram divided into three horizontal bands. Top band has a blue shield and five small icons. Middle band has a green shield and five green icons. Bottom band has a purple shield and five purple icons. Below is a blue button and a robot head icon. Grid layout, flat design, security theme.",
+      "negative_prompt": "3D, realistic, messy, unstructured, dark colors",
+      "transparent": false
+    },
+    {
+      "name": "Column 3 Diagram",
+      "type": "chart",
+      "bbox": {
+        "x": 800,
+        "y": 200,
+        "w": 300,
+        "h": 280
+      },
+      "prompt": "A workflow diagram featuring a top row of four icons (book, gauge, network, document). Below, a central 'RAG' circle connected to a wrench icon and a magnifying glass icon. At the bottom, a large shield with a checkmark next to three rectangular boxes. Blue theme, flat design.",
+      "negative_prompt": "3D, realistic, cluttered, red colors, text heavy",
+      "transparent": false
+    },
+    {
+      "name": "Bottom Left Diagram",
+      "type": "chart",
+      "bbox": {
+        "x": 40,
+        "y": 590,
+        "w": 460,
+        "h": 60
+      },
+      "prompt": "A horizontal process flow diagram enclosed in a rounded rectangle. Features icons for two people, a database cylinder, a human head, a shield with a checkmark, and another database cylinder, connected by blue arrows. Continuous loop style, flat design.",
+      "negative_prompt": "Vertical layout, 3D, realistic, cluttered, dark background",
+      "transparent": false
+    },
+    {
+      "name": "Bottom Right Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 800,
+        "y": 600,
+        "w": 280,
+        "h": 40
+      },
+      "prompt": "Four flat icons arranged horizontally: a target bullseye, a shield with a checkmark, a document with a magnifying glass, and an upward trending bar chart. Blue and grey color scheme, clean vector style.",
+      "negative_prompt": "3D, realistic, cluttered, colorful, text",
+      "transparent": true
+    },
+    {
+      "name": "Robot Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 420,
+        "y": 480,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "A cute, friendly cartoon robot head icon. Blue and white colors, simple geometric shapes, AI assistant style.",
+      "negative_prompt": "Realistic, scary, complex, 3D render",
+      "transparent": true
+    }
+  ]
+}

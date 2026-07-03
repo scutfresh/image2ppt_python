@@ -1,0 +1,106 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.5-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 40
+    },
+    "objects": {
+      "count": 18,
+      "types": {
+        "decoration": 4,
+        "icon": 13,
+        "chart": 1
+      },
+      "needs_image": {
+        "true": 18,
+        "false": 0
+      },
+      "names_by_type": {
+        "decoration": [
+          "Top Arrow Connector",
+          "Bottom Path Curve",
+          "Top Left Power Tower",
+          "Top Right Globe"
+        ],
+        "icon": [
+          "Column 1 Icon",
+          "Column 2 Icon",
+          "Column 3 Icon",
+          "Column 4 Icon",
+          "Column 5 Icon",
+          "Column 6 Icon",
+          "Column 7 Icon",
+          "Column 8 Icon",
+          "Left Ecosystem Icons",
+          "Left Model Icon",
+          "Right Knowledge Icon",
+          "Right Tool Icon",
+          "Bottom Path Icons"
+        ],
+        "chart": [
+          "Central Engine Graphic"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 0,
+      "types": {}
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 18,
+      "types": {
+        "decoration": 4,
+        "icon": 13,
+        "chart": 1
+      },
+      "transparent": {
+        "true": 13,
+        "false": 5
+      },
+      "names_by_type": {
+        "decoration": [
+          "Top Arrow Connector",
+          "Bottom Path Curve",
+          "Top Left Power Tower",
+          "Top Right Globe"
+        ],
+        "icon": [
+          "Column 1 Icon",
+          "Column 2 Icon",
+          "Column 3 Icon",
+          "Column 4 Icon",
+          "Column 5 Icon",
+          "Column 6 Icon",
+          "Column 7 Icon",
+          "Column 8 Icon",
+          "Left Ecosystem Icons",
+          "Left Model Icon",
+          "Right Knowledge Icon",
+          "Right Tool Icon",
+          "Bottom Path Icons"
+        ],
+        "chart": [
+          "Central Engine Graphic"
+        ]
+      }
+    }
+  }
+}

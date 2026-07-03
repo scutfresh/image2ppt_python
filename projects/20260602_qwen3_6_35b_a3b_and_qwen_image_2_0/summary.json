@@ -1,0 +1,28 @@
+{
+  "manifest": "D:\\Desktop\\image2ppt\\langchain\\projects\\20260602_qwen3_6_35b_a3b_and_qwen_image_2_0\\manifest.json",
+  "output": "D:\\Desktop\\image2ppt\\langchain\\projects\\20260602_qwen3_6_35b_a3b_and_qwen_image_2_0\\output.pptx",
+  "slide_width_in": 13.333,
+  "slide_height_in": 7.60293143812709,
+  "canvas_width": 1196.0,
+  "canvas_height": 682.0,
+  "counts": {
+    "slides": 1,
+    "background": 0,
+    "image": 6,
+    "text": 65,
+    "shape": 17,
+    "table": 0,
+    "unsupported": 0
+  },
+  "slides": [
+    {
+      "name": "Slide 1",
+      "elements": 88,
+      "image": 6,
+      "text": 65,
+      "shape": 17,
+      "table": 0,
+      "background": 0
+    }
+  ]
+}

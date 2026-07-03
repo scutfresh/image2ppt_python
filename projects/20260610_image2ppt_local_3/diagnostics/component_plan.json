@@ -1,0 +1,316 @@
+{
+  "assets": [
+    {
+      "name": "Power Pylons Left",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      },
+      "prompt": "silhouette of high voltage power pylons and transmission towers, dark blue color, minimalist vector style, on a solid pure black background",
+      "negative_prompt": "realistic photo, sky, clouds, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Globe Top Right",
+      "type": "decoration",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 200
+      },
+      "prompt": "digital wireframe globe, network nodes and connections, glowing blue lines, tech concept, on a solid pure black background",
+      "negative_prompt": "realistic earth, clouds, oceans, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Central Platform",
+      "type": "photo",
+      "bbox": {
+        "x": 200,
+        "y": 450,
+        "w": 1272,
+        "h": 250
+      },
+      "prompt": "futuristic 3D circular platform, glowing blue data rings, holographic interface, concentric circles, technology theme, smooth dark-blue gradient background",
+      "negative_prompt": "text, logos, people, low resolution, blurry",
+      "transparent": false
+    },
+    {
+      "name": "Icon Step 1",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "stylized electrical plug icon, glowing blue neon outline, energy symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 2",
+      "type": "icon",
+      "bbox": {
+        "x": 280,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "stacked server blocks or database cylinders, isometric view, glowing blue edges, tech icon, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 3",
+      "type": "icon",
+      "bbox": {
+        "x": 480,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "electrical transformer with a lightning bolt symbol, glowing blue, technical illustration style, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 4",
+      "type": "icon",
+      "bbox": {
+        "x": 680,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "network topology diagram, connected nodes and lines, glowing blue dots, abstract tech icon, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 5",
+      "type": "icon",
+      "bbox": {
+        "x": 880,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "human brain combined with an image icon, representing AI vision, glowing blue outline, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 6",
+      "type": "icon",
+      "bbox": {
+        "x": 1080,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "rolled-up blueprint or architectural plan, glowing blue lines, technical drawing icon, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1280,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "molecular structure or complex geometric network, glowing blue nodes, abstract science icon, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Step 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1480,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "globe with transmission towers overlaid, representing global infrastructure, glowing blue, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Business Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 30,
+        "y": 490,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "group of people icons, business team, glowing blue outline, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Model Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 30,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "3D cube model, isometric view, glowing blue edges, abstract shape, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Knowledge Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 1490,
+        "y": 490,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "open book or document icon, glowing blue lines, knowledge symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Tool Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 1490,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "wrench and gear crossed, technical tool icon, glowing blue, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 1",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "door with an arrow entering, glowing blue, entrance symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 2",
+      "type": "icon",
+      "bbox": {
+        "x": 250,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "bar chart with upward trend arrow, glowing blue, growth symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 3",
+      "type": "icon",
+      "bbox": {
+        "x": 400,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "industrial towers or factory silhouettes, glowing blue, professional symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 4",
+      "type": "icon",
+      "bbox": {
+        "x": 550,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "group of people collaborating, glowing blue, teamwork symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 5",
+      "type": "icon",
+      "bbox": {
+        "x": 700,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "brain icon with circuitry, glowing blue, reasoning symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 6",
+      "type": "icon",
+      "bbox": {
+        "x": 850,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blueprint scroll with technical drawings, glowing blue, industrial symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1000,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "network topology map, glowing blue nodes, cognitive symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1150,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "digital globe with simulation rings, glowing blue, world symbol, flat design, on a solid pure black background",
+      "negative_prompt": "3d, realistic, shadows, gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Arrow",
+      "type": "decoration",
+      "bbox": {
+        "x": 20,
+        "y": 200,
+        "w": 1632,
+        "h": 20
+      },
+      "prompt": "long horizontal glowing blue line with arrowheads, connecting points, tech style, on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.6-plus",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "color",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 4
+    },
+    "body_text": {
+      "count": 78
+    },
+    "objects": {
+      "count": 26,
+      "types": {
+        "decoration": 4,
+        "icon": 22
+      },
+      "needs_image": {
+        "true": 26,
+        "false": 0
+      },
+      "names_by_type": {
+        "decoration": [
+          "Background Texture",
+          "Top Arrow Line",
+          "Central Engine Rings",
+          "Bottom Path Line"
+        ],
+        "icon": [
+          "Icon 1 Plug",
+          "Icon 2 Stack",
+          "Icon 3 Transformer",
+          "Icon 4 Network",
+          "Icon 5 Brain",
+          "Icon 6 Blueprint",
+          "Icon 7 Graph",
+          "Icon 8 Globe",
+          "Central Server Icon",
+          "Central Building Icon",
+          "Icon Business Eco",
+          "Icon Model Eco",
+          "Icon Knowledge Eco",
+          "Icon Tool Eco",
+          "Icon Path 1 Door",
+          "Icon Path 2 Chart",
+          "Icon Path 3 Towers",
+          "Icon Path 4 People",
+          "Icon Path 5 Brain",
+          "Icon Path 6 Blueprint",
+          "Icon Path 7 Network",
+          "Icon Path 8 Globe"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 23,
+      "types": {
+        "ellipse": 8,
+        "roundRect": 15
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 26,
+      "types": {
+        "decoration": 4,
+        "icon": 22
+      },
+      "transparent": {
+        "true": 25,
+        "false": 1
+      },
+      "names_by_type": {
+        "decoration": [
+          "Background Texture",
+          "Top Arrow Line",
+          "Central Engine Rings",
+          "Bottom Path Line"
+        ],
+        "icon": [
+          "Icon 1 Plug",
+          "Icon 2 Stack",
+          "Icon 3 Transformer",
+          "Icon 4 Network",
+          "Icon 5 Brain",
+          "Icon 6 Blueprint",
+          "Icon 7 Graph",
+          "Icon 8 Globe",
+          "Central Server Icon",
+          "Central Building Icon",
+          "Icon Business Eco",
+          "Icon Model Eco",
+          "Icon Knowledge Eco",
+          "Icon Tool Eco",
+          "Icon Path 1 Door",
+          "Icon Path 2 Chart",
+          "Icon Path 3 Towers",
+          "Icon Path 4 People",
+          "Icon Path 5 Brain",
+          "Icon Path 6 Blueprint",
+          "Icon Path 7 Network",
+          "Icon Path 8 Globe"
+        ]
+      }
+    }
+  }
+}

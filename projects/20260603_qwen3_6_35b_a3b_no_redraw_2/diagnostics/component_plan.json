@@ -1,0 +1,212 @@
+{
+  "assets": [
+    {
+      "name": "Timeline Connector",
+      "type": "decoration",
+      "bbox": {
+        "x": 30,
+        "y": 160,
+        "w": 1612,
+        "h": 40
+      },
+      "prompt": "futuristic glowing cyan horizontal timeline connector line with subtle nodes, high-tech interface style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, text",
+      "transparent": true
+    },
+    {
+      "name": "Version 1 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing wireframe plug socket icon, electric power symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 2 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing 3D stacked server blocks icon, data layer visualization, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 3 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 460,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing electrical substation tower with lightning bolt icon, power grid symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 4 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 650,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing network nodes mesh graph icon, connectivity symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 5 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 840,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing brain outline with image symbol icon, AI cognition concept, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 6 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1030,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing rolled blueprint paper icon, engineering design symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 7 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1220,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing molecular structure topology icon, connected spheres network, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Version 8 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1410,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue glowing globe with power transmission towers icon, world model symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "photo",
+      "bbox": {
+        "x": 300,
+        "y": 450,
+        "w": 1072,
+        "h": 300
+      },
+      "prompt": "complex 3D infographic composition, glowing blue concentric rings, futuristic industrial engine core, holographic data layers, smooth dark-blue gradient background",
+      "negative_prompt": "white background, plain background, low resolution, blurry, distorted geometry",
+      "transparent": false
+    },
+    {
+      "name": "Business Ecosystem Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 550,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue glowing group of people silhouette icon, team collaboration symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Model Ecosystem Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 650,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue glowing isometric cube icon, modular block symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Knowledge Ecosystem Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1470,
+        "y": 550,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue glowing open book icon, knowledge base symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Tool Ecosystem Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1470,
+        "y": 650,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue glowing crossed wrench and screwdriver icon, tools symbol, futuristic tech style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Arrow",
+      "type": "decoration",
+      "bbox": {
+        "x": 100,
+        "y": 850,
+        "w": 1472,
+        "h": 40
+      },
+      "prompt": "long glowing blue curved arrow path pointing right, futuristic trajectory line, high-tech interface style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons Row",
+      "type": "decoration",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1472,
+        "h": 60
+      },
+      "prompt": "horizontal row of futuristic blue glowing icons including plug, bar chart, towers, people, brain, blueprint, molecule, and globe, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard, realistic photo",
+      "transparent": true
+    }
+  ]
+}

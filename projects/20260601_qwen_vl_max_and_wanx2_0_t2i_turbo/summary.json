@@ -1,0 +1,28 @@
+{
+  "manifest": "D:\\Desktop\\image2ppt\\langchain\\projects\\20260601_qwen_vl_max_and_wanx2_0_t2i_turbo\\manifest.json",
+  "output": "D:\\Desktop\\image2ppt\\langchain\\projects\\20260601_qwen_vl_max_and_wanx2_0_t2i_turbo\\output.pptx",
+  "slide_width_in": 13.333,
+  "slide_height_in": 7.504,
+  "canvas_width": 1672.0,
+  "canvas_height": 941.0,
+  "counts": {
+    "slides": 1,
+    "background": 0,
+    "image": 28,
+    "text": 5,
+    "shape": 69,
+    "table": 0,
+    "unsupported": 0
+  },
+  "slides": [
+    {
+      "name": "Slide 1",
+      "elements": 102,
+      "image": 28,
+      "text": 5,
+      "shape": 69,
+      "table": 0,
+      "background": 0
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "assets": [
+    {
+      "name": "Background Towers",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue background, faint silhouette of high voltage power transmission towers and pylons, subtle circuit board patterns, cyberpunk atmosphere, tech texture",
+      "negative_prompt": "bright colors, text, logos, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 70,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon plug icon, flat design, circular base, futuristic energy symbol, cyan outline",
+      "negative_prompt": "3d realistic, brown, copper, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon server stack icon, three stacked rectangular blocks, flat design, data center symbol, cyan outline",
+      "negative_prompt": "3d realistic, wood, metal texture, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 470,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon transformer icon with lightning bolt, flat design, electrical substation symbol, cyan outline",
+      "negative_prompt": "3d realistic, yellow warning sign, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 670,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon network nodes icon, connected dots forming a hexagon cluster, flat design, connectivity symbol, cyan outline",
+      "negative_prompt": "3d realistic, messy lines, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 870,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon brain icon, abstract neural network representation, flat design, AI symbol, cyan outline",
+      "negative_prompt": "3d realistic, pink flesh, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 1070,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon blueprint roll icon, rolled paper with grid lines, flat design, engineering document symbol, cyan outline",
+      "negative_prompt": "3d realistic, old paper, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon molecular structure icon, connected spheres and bonds, flat design, chemistry science symbol, cyan outline",
+      "negative_prompt": "3d realistic, colorful balls, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1470,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue neon globe icon with transmission towers overlay, flat design, global infrastructure symbol, cyan outline",
+      "negative_prompt": "3d realistic earth map, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "decoration",
+      "bbox": {
+        "x": 300,
+        "y": 450,
+        "w": 1072,
+        "h": 250
+      },
+      "prompt": "futuristic 3D disk interface, concentric glowing blue rings, central holographic platform, data flow visualization, abstract technology core, cyan and deep blue gradients",
+      "negative_prompt": "text, simple shapes, flat 2d, white background",
+      "transparent": false
+    },
+    {
+      "name": "Arrow Path Bottom",
+      "type": "decoration",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1500,
+        "h": 100
+      },
+      "prompt": "glowing blue curved arrow path, futuristic trajectory line, light trail effect, pointing right, tech style, transparent background",
+      "negative_prompt": "straight line, red, thick border, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Side Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "glowing blue neon people icon, group of silhouettes, flat design, team symbol, cyan outline",
+      "negative_prompt": "3d realistic faces, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Side Icons 2",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "glowing blue neon cube icon, isometric block, flat design, model data symbol, cyan outline",
+      "negative_prompt": "3d realistic box, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Side Icons 3",
+      "type": "icon",
+      "bbox": {
+        "x": 1490,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "glowing blue neon open book icon, pages visible, flat design, knowledge symbol, cyan outline",
+      "negative_prompt": "3d realistic book, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Side Icons 4",
+      "type": "icon",
+      "bbox": {
+        "x": 1490,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "glowing blue neon wrench and gear crossed icon, flat design, tools maintenance symbol, cyan outline",
+      "negative_prompt": "3d realistic metal tools, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 150,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon door icon with entry arrow, flat design, access point symbol, cyan outline",
+      "negative_prompt": "3d realistic door, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 2",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon bar chart icon, rising bars, flat design, growth symbol, cyan outline",
+      "negative_prompt": "3d realistic chart, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 3",
+      "type": "icon",
+      "bbox": {
+        "x": 450,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon transmission tower icon, lattice structure, flat design, power grid symbol, cyan outline",
+      "negative_prompt": "3d realistic tower, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 4",
+      "type": "icon",
+      "bbox": {
+        "x": 600,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon people network icon, connected heads, flat design, collaboration symbol, cyan outline",
+      "negative_prompt": "3d realistic people, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 5",
+      "type": "icon",
+      "bbox": {
+        "x": 750,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon brain icon, neural connections, flat design, intelligence symbol, cyan outline",
+      "negative_prompt": "3d realistic brain, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 6",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon blueprint scroll icon, technical drawing, flat design, engineering symbol, cyan outline",
+      "negative_prompt": "3d realistic paper, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1050,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon network nodes icon, interconnected points, flat design, topology symbol, cyan outline",
+      "negative_prompt": "3d realistic nodes, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icons 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1200,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue neon globe icon, wireframe sphere, flat design, world symbol, cyan outline",
+      "negative_prompt": "3d realistic earth, shadow",
+      "transparent": true
+    }
+  ]
+}

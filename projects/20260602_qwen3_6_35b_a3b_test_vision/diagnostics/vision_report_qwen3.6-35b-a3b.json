@@ -1,0 +1,117 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.6-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 72
+    },
+    "objects": {
+      "count": 23,
+      "types": {
+        "decoration": 3,
+        "icon": 20
+      },
+      "needs_image": {
+        "true": 23,
+        "false": 0
+      },
+      "names_by_type": {
+        "decoration": [
+          "Background Towers",
+          "Central Engine Graphic",
+          "Arrow Path Bottom"
+        ],
+        "icon": [
+          "Icon 1",
+          "Icon 2",
+          "Icon 3",
+          "Icon 4",
+          "Icon 5",
+          "Icon 6",
+          "Icon 7",
+          "Icon 8",
+          "Side Icons",
+          "Side Icons 2",
+          "Side Icons 3",
+          "Side Icons 4",
+          "Bottom Icons",
+          "Bottom Icons 2",
+          "Bottom Icons 3",
+          "Bottom Icons 4",
+          "Bottom Icons 5",
+          "Bottom Icons 6",
+          "Bottom Icons 7",
+          "Bottom Icons 8"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 27,
+      "types": {
+        "line": 3,
+        "ellipse": 8,
+        "roundRect": 16
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 23,
+      "types": {
+        "texture": 1,
+        "icon": 20,
+        "decoration": 2
+      },
+      "transparent": {
+        "true": 21,
+        "false": 2
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Towers"
+        ],
+        "icon": [
+          "Icon 1",
+          "Icon 2",
+          "Icon 3",
+          "Icon 4",
+          "Icon 5",
+          "Icon 6",
+          "Icon 7",
+          "Icon 8",
+          "Side Icons",
+          "Side Icons 2",
+          "Side Icons 3",
+          "Side Icons 4",
+          "Bottom Icons",
+          "Bottom Icons 2",
+          "Bottom Icons 3",
+          "Bottom Icons 4",
+          "Bottom Icons 5",
+          "Bottom Icons 6",
+          "Bottom Icons 7",
+          "Bottom Icons 8"
+        ],
+        "decoration": [
+          "Central Engine Graphic",
+          "Arrow Path Bottom"
+        ]
+      }
+    }
+  }
+}

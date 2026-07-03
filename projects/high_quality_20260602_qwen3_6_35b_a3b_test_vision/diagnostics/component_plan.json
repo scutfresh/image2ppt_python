@@ -1,0 +1,290 @@
+{
+  "assets": [
+    {
+      "name": "Central Engine Graphic",
+      "type": "image",
+      "bbox": {
+        "x": 400,
+        "y": 430,
+        "w": 872,
+        "h": 290
+      },
+      "prompt": "futuristic glowing blue engine core, layered circular platforms, neon cyan lights, industrial server buildings on sides, high-tech dashboard style, dark blue background, 3d render style but flat composition",
+      "negative_prompt": "text, cluttered, low resolution, warm colors",
+      "transparent": false
+    },
+    {
+      "name": "Bottom Arrow Graphic",
+      "type": "image",
+      "bbox": {
+        "x": 100,
+        "y": 780,
+        "w": 1472,
+        "h": 120
+      },
+      "prompt": "long horizontal glowing blue arrow, futuristic timeline path, neon light trail, dark blue background, sleek design",
+      "negative_prompt": "text, cluttered, vertical orientation",
+      "transparent": false
+    },
+    {
+      "name": "Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue electrical plug icon, flat design, glowing outline, minimalist, tech style",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "stack of blue data layers or books, isometric view, glowing edges, flat design, technology icon",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "electrical transformer tower icon, blue outline, lightning bolt symbol, flat design, power grid style",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 700,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "network node diagram, connected dots and lines, blue glowing circles, flat design, topology map",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "human brain icon, blue glowing outline, flat design, neural network style",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "rolled blueprint scroll icon, technical drawing visible, blue glowing lines, flat design",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1300,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "complex network topology graph, interconnected nodes, blue glowing lines, flat design",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 240,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "globe with electricity towers, blue wireframe sphere, flat design, global network icon",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Side Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "group of people icons, blue outline, flat design, business ecosystem symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Side Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "isometric cube icon, blue outline, flat design, model ecosystem symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Side Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 1472,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "open book icon, blue outline, flat design, knowledge ecosystem symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Side Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 1472,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "crossed wrench and screwdriver icon, blue outline, flat design, tool ecosystem symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 150,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "doorway with arrow icon, blue outline, flat design, entry point symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "rising bar chart icon, blue outline, flat design, growth symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 450,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "power transmission towers icon, blue outline, flat design, industry symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 600,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "network node diagram, blue outline, flat design, collaboration symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 750,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "human brain icon, blue outline, flat design, reasoning symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "rolled blueprint scroll icon, blue outline, flat design, engineering symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1050,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "complex network topology graph, blue outline, flat design, cognitive symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1200,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "globe with electricity towers, blue outline, flat design, world model symbol",
+      "negative_prompt": "3d, realistic, cluttered, text",
+      "transparent": true
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "image",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue technology background, subtle grid pattern, faint power transmission towers silhouette in distance, deep navy gradient, high tech atmosphere",
+      "negative_prompt": "light colors, white background, cluttered, low resolution",
+      "transparent": false
+    },
+    {
+      "name": "Power Tower Background",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 200
+      },
+      "prompt": "silhouette of high voltage power transmission towers, night sky background, blueprint style technical drawing lines, dark blue tones, industrial infrastructure",
+      "negative_prompt": "bright sunlight, cartoonish, colorful flowers, animals",
+      "transparent": false
+    },
+    {
+      "name": "Globe Graphic Top Right",
+      "type": "photo",
+      "bbox": {
+        "x": 1350,
+        "y": 20,
+        "w": 1600,
+        "h": 180
+      },
+      "prompt": "digital wireframe globe, network nodes connection, blue holographic earth, data visualization graphic, futuristic technology icon",
+      "negative_prompt": "realistic photo, solid color, text, map details",
+      "transparent": true
+    },
+    {
+      "name": "Step 1 Icon (Plug)",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 300,
+        "w": 120,
+        "h": 360
+      },
+      "prompt": "blue electric plug socket icon, glowing neon effect, energy symbol, simple vector graphic, flat design with slight 3d depth",
+      "negative_prompt": "realistic photo, complex details, red color, black background",
+      "transparent": true
+    },
+    {
+      "name": "Step 2 Icon (Server Stack)",
+      "type": "icon",
+      "bbox": {
+        "x": 220,
+        "y": 300,
+        "w": 260,
+        "h": 360
+      },
+      "prompt": "isometric stack of server racks, data center icon, blue glowing edges, technology hardware, 3d render style",
+      "negative_prompt": "flat 2d, laptop, computer monitor, red color",
+      "transparent": true
+    },
+    {
+      "name": "Step 3 Icon (Transformer)",
+      "type": "icon",
+      "bbox": {
+        "x": 360,
+        "y": 300,
+        "w": 400,
+        "h": 360
+      },
+      "prompt": "industrial electrical transformer, metallic blue finish, lightning bolt symbol, power equipment, detailed 3d model",
+      "negative_prompt": "cartoon, soft colors, wooden texture, house",
+      "transparent": true
+    },
+    {
+      "name": "Step 4 Icon (Network Nodes)",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 300,
+        "w": 540,
+        "h": 360
+      },
+      "prompt": "network topology graph, connected nodes and lines, geometric mesh structure, blue digital connection, abstract technology icon",
+      "negative_prompt": "solid shape, text, chaotic lines, red color",
+      "transparent": true
+    },
+    {
+      "name": "Step 5 Icon (Brain)",
+      "type": "icon",
+      "bbox": {
+        "x": 640,
+        "y": 300,
+        "w": 680,
+        "h": 360
+      },
+      "prompt": "human brain with digital circuitry overlay, artificial intelligence concept, neural network visualization, blue glowing lines, futuristic icon",
+      "negative_prompt": "biological realistic, red color, plain brain, medical illustration",
+      "transparent": true
+    },
+    {
+      "name": "Step 6 Icon (Blueprint)",
+      "type": "icon",
+      "bbox": {
+        "x": 780,
+        "y": 300,
+        "w": 820,
+        "h": 360
+      },
+      "prompt": "rolled up architectural blueprint, engineering drawing paper, technical plans, blue print style, construction document icon",
+      "negative_prompt": "photograph, color photo, painting, sketch",
+      "transparent": true
+    },
+    {
+      "name": "Step 7 Icon (Topology)",
+      "type": "icon",
+      "bbox": {
+        "x": 920,
+        "y": 300,
+        "w": 960,
+        "h": 360
+      },
+      "prompt": "abstract topological structure, interconnected spheres and bonds, molecular or network structure, blue scientific diagram, geometric icon",
+      "negative_prompt": "organic shape, messy, text, red color",
+      "transparent": true
+    },
+    {
+      "name": "Step 8 Icon (Globe/Tower)",
+      "type": "icon",
+      "bbox": {
+        "x": 1060,
+        "y": 300,
+        "w": 1100,
+        "h": 360
+      },
+      "prompt": "digital globe with power transmission towers superimposed, world model concept, blue holographic sphere, global energy network icon",
+      "negative_prompt": "realistic earth, satellite photo, red color, text",
+      "transparent": true
+    },
+    {
+      "name": "Central Circular Diagram Base",
+      "type": "photo",
+      "bbox": {
+        "x": 250,
+        "y": 500,
+        "w": 1200,
+        "h": 750
+      },
+      "prompt": "large layered circular holographic platform, concentric rings, engine base design, blue tech aesthetic, futuristic interface element, 3d render",
+      "negative_prompt": "flat design, static image, text, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "Left Side Boxes",
+      "type": "decoration",
+      "bbox": {
+        "x": 20,
+        "y": 530,
+        "w": 150,
+        "h": 720
+      },
+      "prompt": "glassmorphism rectangular panels, translucent blue material, frosted glass effect, modern ui cards, sleek tech design",
+      "negative_prompt": "opaque, solid color, rough edges, old style",
+      "transparent": true
+    },
+    {
+      "name": "Right Side Boxes",
+      "type": "decoration",
+      "bbox": {
+        "x": 1300,
+        "y": 530,
+        "w": 1450,
+        "h": 720
+      },
+      "prompt": "glassmorphism rectangular panels, translucent blue material, frosted glass effect, modern ui cards, sleek tech design",
+      "negative_prompt": "opaque, solid color, rough edges, old style",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Timeline Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1400,
+        "h": 880
+      },
+      "prompt": "series of small technology icons arranged along a curved timeline, orange and blue color scheme, step markers, infographic elements, flat vector style",
+      "negative_prompt": "3d render, realistic photos, disconnected elements, random colors",
+      "transparent": true
+    }
+  ]
+}

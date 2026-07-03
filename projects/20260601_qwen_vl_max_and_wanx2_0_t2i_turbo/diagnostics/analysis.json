@@ -1,0 +1,1819 @@
+{
+  "canvas_width": 1672,
+  "canvas_height": 941,
+  "background": {
+    "type": "image",
+    "image": "D:\\Desktop\\\u5357\u7f51\\ppt\u56fe\u7247.png",
+    "bbox": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "titles": [
+    {
+      "text": "\u201c\u5927\u74e6\u7279\u201d\u6f14\u8fdb\u8def\u7ebf\u56fe",
+      "bbox": [
+        435,
+        18,
+        1050,
+        72
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 56,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u8def\u6807\u4e0e\u6838\u5fc3\u4eae\u70b9",
+      "bbox": [
+        620,
+        88,
+        850,
+        108
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 28,
+      "color": "#FFD700",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u4ece\u591a\u6a21\u6001\u670d\u52a1\u5316\u8fc8\u5411\u7535\u529b\u4e16\u754c\u6a21\u578b",
+      "bbox": [
+        600,
+        115,
+        870,
+        135
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    }
+  ],
+  "body_text": [
+    {
+      "text": "\u5927\u74e6\u7279 1.0\n\u5b9a\u4f4d\uff1a\u591a\u6a21\u6001\u670d\u52a1\u5316",
+      "bbox": [
+        35,
+        178,
+        180,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5efa\u6210\u5357\u7f51\u9996\u4e2a\uff0c\n\u7535\u529b\u591a\u6a21\u6001\u80fd\u529b\u5165\u53e3\uff0c\n\u6210\u529f\u9002\u914d\u56fd\u4ea7\u7b97\u529b\uff0c\n\u5b9e\u73b0\u5168\u81ea\u4e3b\u5b89\u5168\u53ef\u63a7\u3002",
+      "bbox": [
+        35,
+        315,
+        180,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 1.1\n\u5b9a\u4f4d\uff1a\u80fd\u529b\u89c4\u6a21\u5316",
+      "bbox": [
+        235,
+        178,
+        380,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5e95\u5ea7\u5168\u9762\u8fed\u4ee3\u5347\u7ea7\uff0c\n\u6b63\u5f0f\u5907\u5343\u4ebf\u7ea7\u53c2\u6570\n\u89c4\u6a21\u6a21\u578b\u80fd\u529b\u3002",
+      "bbox": [
+        235,
+        315,
+        380,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 2.0\n\u5b9a\u4f4d\uff1a\u884c\u4e1a\u4e13\u4e1a\u5316",
+      "bbox": [
+        410,
+        178,
+        555,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5b8c\u621072B\u884c\u4e1a\u5fae\u8c03\u6a21\u578b\n\u5168\u9762\u5347\u7ea7\uff0c\u5f3a\u5316\u7535\u529b\u4e13\n\u4e1a\u80fd\u529b\uff0c\u9ad8\u6548\u6d41\u8f6c\u5178\u578b\n\u4e1a\u52a1\u573a\u666f\u3002",
+      "bbox": [
+        410,
+        315,
+        555,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 2.1\n\u5b9a\u4f4d\uff1a\u67b6\u6784\u534f\u540c\u5316",
+      "bbox": [
+        595,
+        178,
+        740,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u4e0a\u7ebf MoE \u67b6\u6784\u5fae\u8c03\u6a21\u578b\uff0c\n\u5b9e\u73b0\u4e13\u5bb6\u534f\u540c\u3001\u4efb\u52a1\u5206\u6d41\n\u548c\u591a\u4e1a\u52a1\u57df\u534f\u540c\uff0c\u6309\u9700\u8c03\u7528\n\u4e13\u4e1a\u80fd\u529b\u3002",
+      "bbox": [
+        595,
+        315,
+        740,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 2.2\n\u5b9a\u4f4d\uff1a\u63a8\u7406\u539f\u751f\u5316",
+      "bbox": [
+        780,
+        178,
+        925,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5f15\u5165\u5f3a\u5316\u5b66\u4e60\u4e0e\u6162\u601d\u8003\n\u673a\u5236\uff0c\u589e\u5f3a\u903b\u8f91\u63a8\u7406\u3001\n\u77e5\u8bc6\u589e\u5f3a\u548c\u5de5\u5177\u8c03\u7528\n\u80fd\u529b\u3002",
+      "bbox": [
+        780,
+        315,
+        925,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 3.0\n\u5b9a\u4f4d\uff1a\u5de5\u4e1a\u56fe\u7eb8\u5316",
+      "bbox": [
+        965,
+        178,
+        1110,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u884c\u4e1a\u9996\u53d1\u7535\u529b\u591a\u6a21\u6001\n\u5de5\u4e1a\u56fe\u7eb8\u6a21\u578b\uff0c\u5177\u5907\n\u56fe\u7eb8\u89e3\u6790\u3001\u89c4\u5219\u6821\u6838\n\u548c\u8f85\u52a9\u8bbe\u8ba1\u80fd\u529b\u3002",
+      "bbox": [
+        965,
+        315,
+        1110,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 3.1\n\u5b9a\u4f4d\uff1a\u62d3\u6251\u8ba4\u77e5\u5316",
+      "bbox": [
+        1150,
+        178,
+        1295,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u878d\u5408\u591a\u6e90\u6570\u636e\uff0c\u6784\u5efa\u201c\u56fe\u50cf\n\u4e00\u8bbe\u5907\u4e00\u7a7a\u95f4\u4e00\u62d3\u6251\u201d\u8054\u5408\n\u63a8\u7406\u80fd\u529b\uff0c\u5f62\u6210\u7535\u529b\u884c\u4e1a\n\u7ed3\u6784\u5316\u8ba4\u77e5\u57fa\u5ea7\u3002",
+      "bbox": [
+        1150,
+        315,
+        1295,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 4.0\n\u5b9a\u4f4d\uff1a\u4e16\u754c\u6a21\u578b\u5316",
+      "bbox": [
+        1335,
+        178,
+        1480,
+        225
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u53d1\u5e03\u7535\u529b\u591a\u6a21\u6001\u4e16\u754c\u6a21\u578b\uff0c\n\u5b9e\u73b0\u7269\u7406\u4eff\u771f\u4e0e\u667a\u80fd\u63a8\u6f14\uff0c\n\u4ece\u7406\u89e3\u73b0\u573a\u8fc8\u5411\u63a8\u6f14\u73b0\u573a\u3001\n\u8f85\u52a9\u51b3\u7b56\u3002",
+      "bbox": [
+        1335,
+        315,
+        1480,
+        410
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u7edf\u4e00\u670d\u52a1",
+      "bbox": [
+        710,
+        430,
+        820,
+        455
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 20,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u7535\u529b\u4e13\u4e1a\u591a\u6a21\u6001\u80fd\u529b\u5f15\u64ce",
+      "bbox": [
+        605,
+        460,
+        925,
+        495
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 32,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u7edf\u4e00\u4e1a\u52a1\u5e95\u5ea7\n\u4e1a\u52a1\u9a71\u52a8\u00b7\u573a\u666f\u666e\u60e0",
+      "bbox": [
+        430,
+        490,
+        570,
+        540
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u7edf\u4e00\u6570\u636e\u5e95\u5ea7\n\u6570\u636e\u878d\u5408\u00b7\u77e5\u8bc6\u589e\u5f3a",
+      "bbox": [
+        655,
+        490,
+        800,
+        540
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u7edf\u4e00\u6280\u672f\u5e95\u5ea7\n\u7b97\u6cd5\u9886\u5148\u00b7\u5de5\u7a0b\u53ef\u9760",
+      "bbox": [
+        930,
+        490,
+        1070,
+        540
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u5168\u57df\u6570\u636e\u878d\u5408\u4e0e\u77e5\u8bc6\u6c89\u6dc0",
+      "bbox": [
+        640,
+        580,
+        1030,
+        605
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u7535\u7f51\u751f\u4ea7\u57df",
+      "bbox": [
+        440,
+        615,
+        530,
+        635
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u8bbe\u5907\u8d44\u4ea7\u57df",
+      "bbox": [
+        570,
+        615,
+        660,
+        635
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u8425\u9500\u670d\u52a1\u57df",
+      "bbox": [
+        700,
+        615,
+        790,
+        635
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u5b89\u5168\u7ba1\u7406\u57df",
+      "bbox": [
+        830,
+        615,
+        920,
+        635
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u5916\u90e8\u73af\u5883\u57df",
+      "bbox": [
+        960,
+        615,
+        1050,
+        635
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#FFFFFF",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u4e1a\u52a1\u751f\u6001\n\u591a\u4e1a\u52a1\u57df\u534f\u540c\u8d4b\u80fd",
+      "bbox": [
+        35,
+        455,
+        210,
+        520
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u6a21\u578b\u751f\u6001\n\u591a\u6a21\u6001\u6a21\u578b\u534f\u540c\u6f14\u8fdb",
+      "bbox": [
+        35,
+        540,
+        210,
+        605
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u77e5\u8bc6\u751f\u6001\n\u7535\u529b\u4e13\u4e1a\u77e5\u8bc6\u4f53\u7cfb",
+      "bbox": [
+        1295,
+        455,
+        1470,
+        520
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u5de5\u5177\u751f\u6001\n\u5de5\u5177\u94fe\u4e0e\u5e94\u7528\u96c6\u6210",
+      "bbox": [
+        1295,
+        540,
+        1470,
+        605
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u6f14\u8fdb\u8def\u5f84",
+      "bbox": [
+        30,
+        655,
+        105,
+        695
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 28,
+      "color": "#FFD700",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u670d\u52a1\u5316\u5165\u53e3\n\u6253\u901a\u80fd\u529b\u5165\u53e3",
+      "bbox": [
+        120,
+        755,
+        220,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u89c4\u6a21\u5316\u8dc3\u5347\n\u63d0\u5347\u6a21\u578b\u89c4\u6a21",
+      "bbox": [
+        280,
+        755,
+        380,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u884c\u4e1a\u4e13\u4e1a\u5316\n\u6df1\u8015\u7535\u529b\u573a\u666f",
+      "bbox": [
+        440,
+        755,
+        540,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u67b6\u6784\u534f\u540c\u5316\n\u4e13\u5bb6\u534f\u540c\u667a\u80fd",
+      "bbox": [
+        600,
+        755,
+        700,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u63a8\u7406\u539f\u751f\u5316\n\u5f3a\u5316\u63a8\u7406\u80fd\u529b",
+      "bbox": [
+        760,
+        755,
+        860,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u5de5\u4e1a\u56fe\u7eb8\u5316\n\u7406\u89e3\u5de5\u7a0b\u56fe\u7eb8",
+      "bbox": [
+        920,
+        755,
+        1020,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u62d3\u6251\u8ba4\u77e5\u5316\n\u63a8\u7406\u7535\u7f51\u7ed3\u6784",
+      "bbox": [
+        1080,
+        755,
+        1180,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u4e16\u754c\u6a21\u578b\u5316\n\u4eff\u771f\u63a8\u6f14\u51b3\u7b56",
+      "bbox": [
+        1240,
+        755,
+        1340,
+        795
+      ],
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 18,
+      "color": "#FFFFFF",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    }
+  ],
+  "objects": [
+    {
+      "name": "icon_power_socket",
+      "type": "icon",
+      "bbox": [
+        40,
+        255,
+        80,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "blue glow, electric, futuristic, neon, 3d"
+    },
+    {
+      "name": "icon_stack",
+      "type": "icon",
+      "bbox": [
+        235,
+        255,
+        290,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "blue glow, layered, digital, 3d, modern"
+    },
+    {
+      "name": "icon_factory",
+      "type": "icon",
+      "bbox": [
+        415,
+        255,
+        470,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "industrial, blue glow, power, 3d, metallic"
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": [
+        595,
+        255,
+        650,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "neural network, blue glow, connection, abstract, futuristic"
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": [
+        775,
+        255,
+        830,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "brain, neural, blue glow, cognitive, 3d"
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": [
+        955,
+        255,
+        1010,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "blueprint, technical, blueprint lines, blue glow, industrial"
+    },
+    {
+      "name": "icon_graph",
+      "type": "icon",
+      "bbox": [
+        1135,
+        255,
+        1190,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "network graph, blue glow, data, nodes, futuristic"
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": [
+        1315,
+        255,
+        1370,
+        310
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "globe, earth, blue glow, global, 3d"
+    },
+    {
+      "name": "icon_people",
+      "type": "icon",
+      "bbox": [
+        45,
+        465,
+        90,
+        510
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "users, group, blue glow, simple, flat"
+    },
+    {
+      "name": "icon_cube",
+      "type": "icon",
+      "bbox": [
+        45,
+        550,
+        90,
+        595
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "cube, model, blue glow, 3d, geometric"
+    },
+    {
+      "name": "icon_document",
+      "type": "icon",
+      "bbox": [
+        1305,
+        465,
+        1350,
+        510
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "document, paper, blue glow, knowledge, flat"
+    },
+    {
+      "name": "icon_wrench",
+      "type": "icon",
+      "bbox": [
+        1305,
+        550,
+        1350,
+        595
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "wrench, tool, blue glow, mechanical, flat"
+    },
+    {
+      "name": "icon_phone",
+      "type": "icon",
+      "bbox": [
+        165,
+        675,
+        205,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "mobile phone, blue glow, device, modern, flat"
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "bbox": [
+        305,
+        675,
+        365,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "bar chart, growth, yellow, upward, flat"
+    },
+    {
+      "name": "icon_power_tower",
+      "type": "icon",
+      "bbox": [
+        455,
+        675,
+        515,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "power tower, electricity, blue glow, industrial, 3d"
+    },
+    {
+      "name": "icon_people_group",
+      "type": "icon",
+      "bbox": [
+        615,
+        675,
+        675,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "group, collaboration, blue glow, social, flat"
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": [
+        775,
+        675,
+        835,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "brain, neural, blue glow, cognition, 3d"
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": [
+        945,
+        675,
+        1005,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "blueprint, technical, blue glow, engineering, flat"
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": [
+        1115,
+        675,
+        1175,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "network, nodes, blue glow, data, abstract"
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": [
+        1275,
+        675,
+        1335,
+        725
+      ],
+      "z_index": 10,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "globe, earth, blue glow, global, 3d"
+    },
+    {
+      "name": "arrow_path",
+      "type": "decoration",
+      "bbox": [
+        120,
+        675,
+        1470,
+        735
+      ],
+      "z_index": 5,
+      "needs_image": false,
+      "needs_transparent": false,
+      "style_tags": "blue glow, curved arrow, path, futuristic, light trail"
+    },
+    {
+      "name": "central_engine",
+      "type": "decoration",
+      "bbox": [
+        370,
+        430,
+        1150,
+        635
+      ],
+      "z_index": 8,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "futuristic engine, blue glow, circular layers, 3d, holographic"
+    },
+    {
+      "name": "top_right_globe",
+      "type": "decoration",
+      "bbox": [
+        1290,
+        15,
+        1470,
+        150
+      ],
+      "z_index": 3,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "globe, earth, blue glow, digital, 3d"
+    },
+    {
+      "name": "bottom_left_building",
+      "type": "decoration",
+      "bbox": [
+        320,
+        545,
+        410,
+        605
+      ],
+      "z_index": 7,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "building, cityscape, blue glow, digital, 3d"
+    },
+    {
+      "name": "bottom_right_factory",
+      "type": "decoration",
+      "bbox": [
+        1060,
+        510,
+        1170,
+        605
+      ],
+      "z_index": 7,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "factory, industrial, blue glow, 3d, futuristic"
+    },
+    {
+      "name": "background_grid",
+      "type": "texture",
+      "bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "z_index": 1,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "dark blue, grid lines, circuit pattern, glowing, tech"
+    },
+    {
+      "name": "light_effects",
+      "type": "decoration",
+      "bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "z_index": 2,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "glow effects, light trails, blue neon, dynamic, futuristic"
+    },
+    {
+      "name": "shadow_under_central_engine",
+      "type": "shadow",
+      "bbox": [
+        370,
+        635,
+        1150,
+        700
+      ],
+      "z_index": 6,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "soft shadow, blue tint, subtle, depth, ambient"
+    }
+  ],
+  "shapes": [
+    {
+      "type": "roundRect",
+      "bbox": [
+        25,
+        165,
+        195,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        225,
+        165,
+        395,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        405,
+        165,
+        575,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        585,
+        165,
+        755,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        765,
+        165,
+        935,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        945,
+        165,
+        1115,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        1125,
+        165,
+        1295,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        1305,
+        165,
+        1475,
+        425
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        35,
+        455,
+        210,
+        520
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        35,
+        540,
+        210,
+        605
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        1295,
+        455,
+        1470,
+        520
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "roundRect",
+      "bbox": [
+        1295,
+        540,
+        1470,
+        605
+      ],
+      "fill": "#0A1F44",
+      "stroke": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        200,
+        165,
+        1470,
+        175
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        175,
+        1475,
+        185
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        185,
+        1475,
+        195
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        195,
+        1475,
+        205
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        205,
+        1475,
+        215
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        215,
+        1475,
+        225
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        225,
+        1475,
+        235
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        235,
+        1475,
+        245
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        245,
+        1475,
+        255
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        255,
+        1475,
+        265
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        265,
+        1475,
+        275
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        275,
+        1475,
+        285
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        285,
+        1475,
+        295
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        295,
+        1475,
+        305
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        305,
+        1475,
+        315
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        315,
+        1475,
+        325
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        325,
+        1475,
+        335
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        335,
+        1475,
+        345
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        345,
+        1475,
+        355
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        355,
+        1475,
+        365
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        365,
+        1475,
+        375
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        375,
+        1475,
+        385
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        385,
+        1475,
+        395
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        395,
+        1475,
+        405
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        405,
+        1475,
+        415
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        415,
+        1475,
+        425
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        425,
+        1475,
+        435
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        435,
+        1475,
+        445
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        445,
+        1475,
+        455
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        455,
+        1475,
+        465
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        465,
+        1475,
+        475
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        475,
+        1475,
+        485
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        485,
+        1475,
+        495
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        495,
+        1475,
+        505
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        505,
+        1475,
+        515
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        515,
+        1475,
+        525
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        525,
+        1475,
+        535
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        535,
+        1475,
+        545
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        545,
+        1475,
+        555
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        555,
+        1475,
+        565
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        565,
+        1475,
+        575
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        575,
+        1475,
+        585
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        585,
+        1475,
+        595
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        595,
+        1475,
+        605
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        605,
+        1475,
+        615
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        615,
+        1475,
+        625
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        625,
+        1475,
+        635
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        635,
+        1475,
+        645
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        645,
+        1475,
+        655
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        655,
+        1475,
+        665
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        665,
+        1475,
+        675
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        675,
+        1475,
+        685
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        685,
+        1475,
+        695
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        695,
+        1475,
+        705
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        705,
+        1475,
+        715
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": 2
+    },
+    {
+      "type": "line",
+      "bbox": [
+        195,
+        715,
+        1475,
+        725
+      ],
+      "fill": "#00BFFF",
+      "stroke_width_px": ""
+    }
+  ]
+}

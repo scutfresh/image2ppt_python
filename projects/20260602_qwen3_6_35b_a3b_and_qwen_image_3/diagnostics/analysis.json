@@ -1,0 +1,440 @@
+{
+  "canvas_width": 1672,
+  "canvas_height": 941,
+  "background": {
+    "type": "gradient",
+    "color": "#051024",
+    "gradient": {
+      "type": "radial",
+      "center_x": 0.5,
+      "center_y": 0.5,
+      "radius": 0.8,
+      "stops": [
+        {
+          "offset": 0,
+          "color": "#0a1f3d"
+        },
+        {
+          "offset": 1,
+          "color": "#030b1a"
+        }
+      ]
+    },
+    "bbox": {
+      "x": 0,
+      "y": 0,
+      "w": 1672,
+      "h": 941
+    }
+  },
+  "titles": [
+    {
+      "text": "\"\u5927\u74e6\u7279\" \u6f14\u8fdb\u8def\u7ebf\u56fe",
+      "bbox": {
+        "x": 436,
+        "y": 35,
+        "w": 800,
+        "h": 70
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 48,
+      "color": "#ffffff",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u8def\u6807\u4e0e\u6838\u5fc3\u4eae\u70b9",
+      "bbox": {
+        "x": 686,
+        "y": 115,
+        "w": 300,
+        "h": 40
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 24,
+      "color": "#ffaa00",
+      "bold": true,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u4ece\u591a\u6a21\u6001\u670d\u52a1\u5316\u8fc8\u5411\u7535\u529b\u4e16\u754c\u6a21\u578b",
+      "bbox": {
+        "x": 636,
+        "y": 160,
+        "w": 400,
+        "h": 30
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#88ccff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    }
+  ],
+  "body_text": [
+    {
+      "text": "\u5927\u74e6\u7279 1.0\n2025.05\n\u5b9a\u4f4d\uff1a\u591a\u6a21\u6001\u670d\u52a1\u5316\n\u4eae\u70b9\uff1a\n\u5efa\u6210\u5357\u7f51\u9996\u4e2a\uff0c\u7535\u529b\u591a\u6a21\u6001\u80fd\u529b\u5165\u53e3\uff0c\u6210\u529f\u9002\u914d\u56fd\u4ea7\u7b97\u529b\uff0c\u5b9e\u73b0\u5168\u81ea\u4e3b\u5b89\u5168\u53ef\u63a7\u3002",
+      "bbox": {
+        "x": 30,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 1.1\n2025.12\n\u5b9a\u4f4d\uff1a\u80fd\u529b\u89c4\u6a21\u5316\n\u4eae\u70b9\uff1a\n\u5e95\u5ea7\u5168\u9762\u8fed\u4ee3\u5347\u7ea7\uff0c\u6b63\u5f0f\u5907\u5343\u4ebf\u7ea7\u53c2\u89c4\u6a21\u578b\u80fd\u529b\u3002",
+      "bbox": {
+        "x": 230,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 2.0\n2026.04\n\u5b9a\u4f4d\uff1a\u884c\u4e1a\u4e13\u4e1a\u5316\n\u4eae\u70b9\uff1a\n\u5b8c\u621072B\u884c\u4e1a\u5fae\u8c03\u6a21\u578b\u5168\u9762\u5347\u7ea7\uff0c\u5f3a\u5316\u7535\u529b\u4e13\u4e1a\u80fd\u529b\uff0c\u9ad8\u6548\u6d41\u8f6c\u5178\u578b\u4e1a\u52a1\u573a\u666f\u3002",
+      "bbox": {
+        "x": 430,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 2.1\n2026.06\n\u5b9a\u4f4d\uff1a\u67b6\u6784\u534f\u540c\u5316\n\u4eae\u70b9\uff1a\n\u4e0a\u7ebf MoE \u67b6\u6784\u5fae\u8c03\u6a21\u578b\uff0c\u5b9e\u73b0\u4e13\u5bb6\u534f\u540c\u3001\u4efb\u52a1\u5206\u6d41\u548c\u591a\u4e1a\u52a1\u57df\u534f\u540c\uff0c\u6309\u9700\u8c03\u7528\u4e13\u4e1a\u80fd\u529b\u3002",
+      "bbox": {
+        "x": 630,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 2.2\n2026.08\n\u5b9a\u4f4d\uff1a\u63a8\u7406\u539f\u751f\u5316\n\u4eae\u70b9\uff1a\n\u5f15\u5165\u5f3a\u5316\u5b66\u4e60\u4e0e\u6162\u601d\u8003\u673a\u5236\uff0c\u589e\u5f3a\u903b\u8f91\u63a8\u7406\u3001\u77e5\u8bc6\u589e\u5f3a\u548c\u5de5\u5177\u8c03\u7528\u80fd\u529b\u3002",
+      "bbox": {
+        "x": 830,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 3.0\n2026.01\n\u5b9a\u4f4d\uff1a\u5de5\u4e1a\u56fe\u7eb8\u5316\n\u4eae\u70b9\uff1a\n\u884c\u4e1a\u9996\u53d1\u7535\u529b\u591a\u6a21\u6001\u5de5\u4e1a\u56fe\u7eb8\u6a21\u578b\uff0c\u5177\u5907\u56fe\u7eb8\u89e3\u6790\u3001\u89c4\u5219\u6821\u6838\u548c\u8f85\u52a9\u8bbe\u8ba1\u80fd\u529b\u3002",
+      "bbox": {
+        "x": 1030,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 3.1\n2027.04\n\u5b9a\u4f4d\uff1a\u62d3\u6251\u8ba4\u77e5\u5316\n\u4eae\u70b9\uff1a\n\u878d\u5408\u591a\u6e90\u6570\u636e\uff0c\u6784\u5efa\u201c\u56fe\u50cf\u2014\u8bbe\u5907\u2014\u7a7a\u95f4\u2014\u62d3\u6251\u201d\u8054\u5408\u63a8\u7406\u80fd\u529b\uff0c\u5f62\u6210\u7535\u529b\u884c\u4e1a\u7ed3\u6784\u5316\u8ba4\u77e5\u58c1\u5792\u3002",
+      "bbox": {
+        "x": 1230,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u5927\u74e6\u7279 4.0\n2027.12\n\u5b9a\u4f4d\uff1a\u4e16\u754c\u6a21\u578b\u5316\n\u4eae\u70b9\uff1a\n\u53d1\u5e03\u7535\u529b\u591a\u6a21\u6001\u4e16\u754c\u6a21\u578b\uff0c\u5b9e\u73b0\u7269\u7406\u4eff\u771f\u4e0e\u667a\u80fd\u63a8\u6f14\u3001\u4ece\u7406\u89e3\u73b0\u573a\u8fc8\u5411\u63a8\u6f14\u73b0\u573a\u3001\u8f85\u52a9\u51b3\u7b56\u3002",
+      "bbox": {
+        "x": 1430,
+        "y": 210,
+        "w": 160,
+        "h": 260
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u7edf\u4e00\u670d\u52a1\n\u7535\u529b\u4e13\u4e1a\u591a\u6a21\u6001\u80fd\u529b\u5f15\u64ce\n\u7edf\u4e00\u4e1a\u52a1\u5e95\u5ea7\n\u4e1a\u52a1\u9a71\u52a8 \u00b7 \u573a\u666f\u666e\u60e0\n\u7edf\u4e00\u6570\u636e\u5e95\u5ea7\n\u6570\u636e\u878d\u5408 \u00b7 \u77e5\u8bc6\u589e\u5f3a\n\u7edf\u4e00\u6280\u672f\u5e95\u5ea7\n\u7b97\u6cd5\u9886\u5148 \u00b7 \u5de5\u7a0b\u53ef\u9760\n\u5168\u57df\u6570\u636e\u878d\u5408\u4e0e\u77e5\u8bc6\u6c89\u6dc0\n\u7535\u7f51\u751f\u4ea7\u57df\n\u8bbe\u5907\u8d44\u4ea7\u57df\n\u8425\u9500\u670d\u52a1\u57df\n\u5b89\u5168\u7ba1\u7406\u57df\n\u5916\u90e8\u73af\u5883\u57df",
+      "bbox": {
+        "x": 300,
+        "y": 500,
+        "w": 1072,
+        "h": 200
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 16,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    },
+    {
+      "text": "\u4e1a\u52a1\u751f\u6001\n\u591a\u4e1a\u52a1\u57df\u534f\u540c\u8d4b\u80fd\n\u6a21\u578b\u751f\u6001\n\u591a\u6a21\u6001\u6a21\u578b\u534f\u540c\u6f14\u8fdb\n\u77e5\u8bc6\u751f\u6001\n\u7535\u529b\u4e13\u4e1a\u77e5\u8bc6\u4f53\u7cfb\n\u5de5\u5177\u751f\u6001\n\u5de5\u5177\u94fe\u4e0e\u5e94\u7528\u96c6\u6210",
+      "bbox": {
+        "x": 30,
+        "y": 520,
+        "w": 180,
+        "h": 180
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "left"
+    },
+    {
+      "text": "\u6f14\u8fdb\u8def\u5f84\n\u670d\u52a1\u5316\u5165\u53e3\n\u6253\u901a\u80fd\u529b\u5165\u53e3\n\u89c4\u6a21\u5316\u8dc3\u5347\n\u63d0\u5347\u6a21\u578b\u89c4\u6a21\n\u884c\u4e1a\u4e13\u4e1a\u5316\n\u6df1\u8015\u7535\u529b\u573a\u666f\n\u67b6\u6784\u534f\u540c\u5316\n\u4e13\u5bb6\u534f\u540c\u667a\u80fd\n\u63a8\u7406\u539f\u751f\u5316\n\u5f3a\u5316\u63a8\u7406\u80fd\u529b\n\u5de5\u4e1a\u56fe\u7eb8\u5316\n\u7406\u89e3\u5de5\u7a0b\u56fe\u7eb8\n\u62d3\u6251\u8ba4\u77e5\u5316\n\u63a8\u7406\u7535\u7f51\u7ed3\u6784\n\u4e16\u754c\u6a21\u578b\u5316\n\u4eff\u771f\u63a8\u6f14\u51b3\u7b56",
+      "bbox": {
+        "x": 30,
+        "y": 750,
+        "w": 1600,
+        "h": 150
+      },
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 14,
+      "color": "#ffffff",
+      "bold": false,
+      "italic": false,
+      "align": "center"
+    }
+  ],
+  "objects": [
+    {
+      "name": "Background Power Towers",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      },
+      "z_index": 0,
+      "needs_image": true,
+      "needs_transparent": false,
+      "style_tags": "silhouette, dark blue, faint, power lines"
+    },
+    {
+      "name": "Background Globe",
+      "type": "decoration",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 200
+      },
+      "z_index": 0,
+      "needs_image": true,
+      "needs_transparent": false,
+      "style_tags": "wireframe, blue, glowing, tech, globe"
+    },
+    {
+      "name": "Timeline Connector Line",
+      "type": "shape",
+      "bbox": {
+        "x": 100,
+        "y": 180,
+        "w": 1472,
+        "h": 20
+      },
+      "z_index": 1,
+      "needs_image": false,
+      "needs_transparent": false,
+      "style_tags": "neon blue, glowing line"
+    },
+    {
+      "name": "Version Number Circles",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 150,
+        "w": 1472,
+        "h": 40
+      },
+      "z_index": 2,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "blue circle, white number, glowing border"
+    },
+    {
+      "name": "Timeline Cards Backgrounds",
+      "type": "shape",
+      "bbox": {
+        "x": 20,
+        "y": 200,
+        "w": 1632,
+        "h": 280
+      },
+      "z_index": 1,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "glassmorphism, blue gradient, rounded corners, border glow"
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "chart",
+      "bbox": {
+        "x": 300,
+        "y": 500,
+        "w": 1072,
+        "h": 200
+      },
+      "z_index": 5,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "3D cylinder, layered, glowing blue, tech, data flow"
+    },
+    {
+      "name": "Side Ecosystem Boxes",
+      "type": "shape",
+      "bbox": {
+        "x": 20,
+        "y": 520,
+        "w": 180,
+        "h": 180
+      },
+      "z_index": 4,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "rounded rectangle, blue gradient, glass effect"
+    },
+    {
+      "name": "Bottom Path Arrow",
+      "type": "shape",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1472,
+        "h": 100
+      },
+      "z_index": 6,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "curved arrow, neon blue, glowing, 3D"
+    },
+    {
+      "name": "Bottom Path Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 750,
+        "w": 1472,
+        "h": 80
+      },
+      "z_index": 7,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "white icons, blue background circles, flat design"
+    },
+    {
+      "name": "Timeline Icons (Plug, Server, etc.)",
+      "type": "icon",
+      "bbox": {
+        "x": 30,
+        "y": 300,
+        "w": 1612,
+        "h": 100
+      },
+      "z_index": 3,
+      "needs_image": true,
+      "needs_transparent": true,
+      "style_tags": "blue glowing icons, tech style, 3D render"
+    }
+  ],
+  "shapes": [
+    {
+      "name": "Timeline Card Borders",
+      "type": "roundRect",
+      "bbox": {
+        "x": 20,
+        "y": 200,
+        "w": 1632,
+        "h": 280
+      },
+      "fill": "rgba(0, 100, 200, 0.1)",
+      "stroke": "#00aaff",
+      "stroke_width_px": 2
+    },
+    {
+      "name": "Central Engine Outer Ring",
+      "type": "ellipse",
+      "bbox": {
+        "x": 350,
+        "y": 520,
+        "w": 972,
+        "h": 120
+      },
+      "fill": "rgba(0, 150, 255, 0.2)",
+      "stroke": "#00aaff",
+      "stroke_width_px": 3
+    },
+    {
+      "name": "Inner Bubbles",
+      "type": "roundRect",
+      "bbox": {
+        "x": 400,
+        "y": 560,
+        "w": 250,
+        "h": 60
+      },
+      "fill": "rgba(0, 100, 200, 0.5)",
+      "stroke": "#ffffff",
+      "stroke_width_px": 1
+    },
+    {
+      "name": "Bottom Path Curve",
+      "type": "line",
+      "bbox": {
+        "x": 100,
+        "y": 820,
+        "w": 1472,
+        "h": 50
+      },
+      "fill": "none",
+      "stroke": "#00aaff",
+      "stroke_width_px": 4
+    }
+  ]
+}

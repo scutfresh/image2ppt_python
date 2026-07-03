@@ -1,0 +1,95 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.6-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 5
+    },
+    "body_text": {
+      "count": 25
+    },
+    "objects": {
+      "count": 22,
+      "types": {
+        "icon": 20,
+        "decoration": 2
+      },
+      "needs_image": {
+        "true": 0,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "timeline_icon_1",
+          "timeline_icon_2",
+          "timeline_icon_3",
+          "timeline_icon_4",
+          "timeline_icon_5",
+          "timeline_icon_6",
+          "timeline_icon_7",
+          "timeline_icon_8",
+          "bottom_icon_1",
+          "bottom_icon_2",
+          "bottom_icon_3",
+          "bottom_icon_4",
+          "bottom_icon_5",
+          "bottom_icon_6",
+          "bottom_icon_7",
+          "bottom_icon_8",
+          "ecology_icon_1",
+          "ecology_icon_2",
+          "ecology_icon_3",
+          "ecology_icon_4"
+        ],
+        "decoration": [
+          "central_diagram_base",
+          "global_arrow"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 26,
+      "types": {
+        "roundRect": 12,
+        "line": 1,
+        "ellipse": 13
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 8,
+      "types": {
+        "icon": 8
+      },
+      "transparent": {
+        "true": 8,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "icon_plug_1_0",
+          "icon_server_1_1",
+          "icon_transformer_2_0",
+          "icon_network_2_1",
+          "icon_brain_2_2",
+          "icon_blueprint_3_0",
+          "icon_molecule_3_1",
+          "icon_globe_4_0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "assets": [
+    {
+      "name": "Power Pylons Left",
+      "type": "decoration",
+      "file": "component_images/power_pylons_left.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      }
+    },
+    {
+      "name": "Globe Top Right",
+      "type": "decoration",
+      "file": "component_images/globe_top_right.png",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 200
+      }
+    },
+    {
+      "name": "Central Platform",
+      "type": "photo",
+      "file": "component_images/central_platform.png",
+      "bbox": {
+        "x": 200,
+        "y": 450,
+        "w": 1272,
+        "h": 250
+      }
+    },
+    {
+      "name": "Icon Step 1",
+      "type": "icon",
+      "file": "component_images/icon_step_1.png",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 2",
+      "type": "icon",
+      "file": "component_images/icon_step_2.png",
+      "bbox": {
+        "x": 280,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 3",
+      "type": "icon",
+      "file": "component_images/icon_step_3.png",
+      "bbox": {
+        "x": 480,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 4",
+      "type": "icon",
+      "file": "component_images/icon_step_4.png",
+      "bbox": {
+        "x": 680,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 5",
+      "type": "icon",
+      "file": "component_images/icon_step_5.png",
+      "bbox": {
+        "x": 880,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 6",
+      "type": "icon",
+      "file": "component_images/icon_step_6.png",
+      "bbox": {
+        "x": 1080,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 7",
+      "type": "icon",
+      "file": "component_images/icon_step_7.png",
+      "bbox": {
+        "x": 1280,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Step 8",
+      "type": "icon",
+      "file": "component_images/icon_step_8.png",
+      "bbox": {
+        "x": 1480,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon Business Eco",
+      "type": "icon",
+      "file": "component_images/icon_business_eco.png",
+      "bbox": {
+        "x": 30,
+        "y": 490,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Model Eco",
+      "type": "icon",
+      "file": "component_images/icon_model_eco.png",
+      "bbox": {
+        "x": 30,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Knowledge Eco",
+      "type": "icon",
+      "file": "component_images/icon_knowledge_eco.png",
+      "bbox": {
+        "x": 1490,
+        "y": 490,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Tool Eco",
+      "type": "icon",
+      "file": "component_images/icon_tool_eco.png",
+      "bbox": {
+        "x": 1490,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Bottom 1",
+      "type": "icon",
+      "file": "component_images/icon_bottom_1.png",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 2",
+      "type": "icon",
+      "file": "component_images/icon_bottom_2.png",
+      "bbox": {
+        "x": 250,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 3",
+      "type": "icon",
+      "file": "component_images/icon_bottom_3.png",
+      "bbox": {
+        "x": 400,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 4",
+      "type": "icon",
+      "file": "component_images/icon_bottom_4.png",
+      "bbox": {
+        "x": 550,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 5",
+      "type": "icon",
+      "file": "component_images/icon_bottom_5.png",
+      "bbox": {
+        "x": 700,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 6",
+      "type": "icon",
+      "file": "component_images/icon_bottom_6.png",
+      "bbox": {
+        "x": 850,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 7",
+      "type": "icon",
+      "file": "component_images/icon_bottom_7.png",
+      "bbox": {
+        "x": 1000,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Bottom 8",
+      "type": "icon",
+      "file": "component_images/icon_bottom_8.png",
+      "bbox": {
+        "x": 1150,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Timeline Arrow",
+      "type": "decoration",
+      "file": "component_images/timeline_arrow.png",
+      "bbox": {
+        "x": 20,
+        "y": 200,
+        "w": 1632,
+        "h": 20
+      }
+    }
+  ]
+}

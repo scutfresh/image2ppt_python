@@ -1,0 +1,92 @@
+{
+  "assets": [
+    {
+      "name": "Column 1 Circular Flow",
+      "type": "chart",
+      "file": "component_images/column_1_circular_flow.png",
+      "bbox": {
+        "x": 100,
+        "y": 200,
+        "w": 200,
+        "h": 250
+      }
+    },
+    {
+      "name": "Column 2 Layers",
+      "type": "chart",
+      "file": "component_images/column_2_layers.png",
+      "bbox": {
+        "x": 440,
+        "y": 160,
+        "w": 320,
+        "h": 300
+      }
+    },
+    {
+      "name": "Column 3 RAG Flow",
+      "type": "chart",
+      "file": "component_images/column_3_rag_flow.png",
+      "bbox": {
+        "x": 820,
+        "y": 160,
+        "w": 320,
+        "h": 300
+      }
+    },
+    {
+      "name": "Bottom Left Flow",
+      "type": "chart",
+      "file": "component_images/bottom_left_flow.png",
+      "bbox": {
+        "x": 80,
+        "y": 590,
+        "w": 600,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Right Icons",
+      "type": "icon",
+      "file": "component_images/bottom_right_icons.png",
+      "bbox": {
+        "x": 820,
+        "y": 600,
+        "w": 240,
+        "h": 50
+      }
+    },
+    {
+      "name": "Robot Icon",
+      "type": "icon",
+      "file": "component_images/robot_icon.png",
+      "bbox": {
+        "x": 450,
+        "y": 470,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Shield Icons",
+      "type": "icon",
+      "file": "component_images/shield_icons.png",
+      "bbox": {
+        "x": 450,
+        "y": 180,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Checkmark Shield",
+      "type": "icon",
+      "file": "component_images/checkmark_shield.png",
+      "bbox": {
+        "x": 840,
+        "y": 450,
+        "w": 40,
+        "h": 40
+      }
+    }
+  ]
+}

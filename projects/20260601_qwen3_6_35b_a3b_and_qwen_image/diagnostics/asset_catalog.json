@@ -1,0 +1,323 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "file": "component_images/background_image.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "Timeline Circle 1",
+      "type": "icon",
+      "file": "component_images/timeline_circle_1.png",
+      "bbox": {
+        "x": 100,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 2",
+      "type": "icon",
+      "file": "component_images/timeline_circle_2.png",
+      "bbox": {
+        "x": 300,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 3",
+      "type": "icon",
+      "file": "component_images/timeline_circle_3.png",
+      "bbox": {
+        "x": 500,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 4",
+      "type": "icon",
+      "file": "component_images/timeline_circle_4.png",
+      "bbox": {
+        "x": 700,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 5",
+      "type": "icon",
+      "file": "component_images/timeline_circle_5.png",
+      "bbox": {
+        "x": 900,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 6",
+      "type": "icon",
+      "file": "component_images/timeline_circle_6.png",
+      "bbox": {
+        "x": 1100,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 7",
+      "type": "icon",
+      "file": "component_images/timeline_circle_7.png",
+      "bbox": {
+        "x": 1300,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Timeline Circle 8",
+      "type": "icon",
+      "file": "component_images/timeline_circle_8.png",
+      "bbox": {
+        "x": 1500,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      }
+    },
+    {
+      "name": "Icon Card 1",
+      "type": "icon",
+      "file": "component_images/icon_card_1.png",
+      "bbox": {
+        "x": 80,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 2",
+      "type": "icon",
+      "file": "component_images/icon_card_2.png",
+      "bbox": {
+        "x": 280,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 3",
+      "type": "icon",
+      "file": "component_images/icon_card_3.png",
+      "bbox": {
+        "x": 480,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 4",
+      "type": "icon",
+      "file": "component_images/icon_card_4.png",
+      "bbox": {
+        "x": 680,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 5",
+      "type": "icon",
+      "file": "component_images/icon_card_5.png",
+      "bbox": {
+        "x": 880,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 6",
+      "type": "icon",
+      "file": "component_images/icon_card_6.png",
+      "bbox": {
+        "x": 1080,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 7",
+      "type": "icon",
+      "file": "component_images/icon_card_7.png",
+      "bbox": {
+        "x": 1280,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Card 8",
+      "type": "icon",
+      "file": "component_images/icon_card_8.png",
+      "bbox": {
+        "x": 1480,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Icon Business Ecosystem",
+      "type": "icon",
+      "file": "component_images/icon_business_ecosystem.png",
+      "bbox": {
+        "x": 40,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Model Ecosystem",
+      "type": "icon",
+      "file": "component_images/icon_model_ecosystem.png",
+      "bbox": {
+        "x": 40,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Knowledge Ecosystem",
+      "type": "icon",
+      "file": "component_images/icon_knowledge_ecosystem.png",
+      "bbox": {
+        "x": 1500,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Tool Ecosystem",
+      "type": "icon",
+      "file": "component_images/icon_tool_ecosystem.png",
+      "bbox": {
+        "x": 1500,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Icon Bottom 1",
+      "type": "icon",
+      "file": "component_images/icon_bottom_1.png",
+      "bbox": {
+        "x": 130,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 2",
+      "type": "icon",
+      "file": "component_images/icon_bottom_2.png",
+      "bbox": {
+        "x": 280,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 3",
+      "type": "icon",
+      "file": "component_images/icon_bottom_3.png",
+      "bbox": {
+        "x": 430,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 4",
+      "type": "icon",
+      "file": "component_images/icon_bottom_4.png",
+      "bbox": {
+        "x": 580,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 5",
+      "type": "icon",
+      "file": "component_images/icon_bottom_5.png",
+      "bbox": {
+        "x": 730,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 6",
+      "type": "icon",
+      "file": "component_images/icon_bottom_6.png",
+      "bbox": {
+        "x": 880,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 7",
+      "type": "icon",
+      "file": "component_images/icon_bottom_7.png",
+      "bbox": {
+        "x": 1030,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    },
+    {
+      "name": "Icon Bottom 8",
+      "type": "icon",
+      "file": "component_images/icon_bottom_8.png",
+      "bbox": {
+        "x": 1180,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      }
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "assets": [
+    {
+      "name": "Timeline Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 60,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of an electric plug icon, blue neon glow, cybernetic style, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 240,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of stacked server layers icon, blue neon glow, database style, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 420,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of an electrical transformer icon with lightning bolt, blue neon glow, power grid style, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 600,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of connected network nodes icon, blue neon glow, molecular structure, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 780,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of a digital brain icon with circuits, blue neon glow, AI style, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 960,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of a blueprint scroll icon with pencil, blue neon glow, engineering style, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1140,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of a network topology graph icon, blue neon glow, connected dots, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1320,
+        "y": 270,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3d render of a globe icon with power towers, blue neon glow, world model style, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Ecosystem Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "3d render of a group of people icon, blue neon glow, team collaboration, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Ecosystem Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "3d render of a wireframe cube icon, blue neon glow, 3d model, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Ecosystem Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 1520,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "3d render of an open book icon, blue neon glow, knowledge base, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Ecosystem Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 1520,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "3d render of crossed wrench and screwdriver icon, blue neon glow, tools, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 120,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of a smartphone with entry arrow icon, blue neon glow, mobile access, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 270,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of a bar chart with growth arrow icon, orange neon glow, data growth, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry, blue color",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 420,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of high voltage power towers icon, blue neon glow, electricity grid, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 570,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of connected people network icon, blue neon glow, collaboration, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 720,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of a brain circuit chip icon, blue neon glow, AI processing, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 870,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of a blueprint engineering plan icon, blue neon glow, technical drawing, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1020,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of network nodes topology icon, blue neon glow, connection graph, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Path Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1170,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "3d render of a digital globe icon, blue neon glow, world map, high tech, glossy finish, isolated on black",
+      "negative_prompt": "2d, flat, sketch, text, watermark, low quality, blurry",
+      "transparent": true
+    },
+    {
+      "name": "Background Globe",
+      "type": "decoration",
+      "bbox": {
+        "x": 1450,
+        "y": 20,
+        "w": 200,
+        "h": 200
+      },
+      "prompt": "digital wireframe globe, blue glowing lines, earth grid, transparent background, tech style, holographic",
+      "negative_prompt": "solid surface, realistic photo, opaque, text, watermark",
+      "transparent": true
+    },
+    {
+      "name": "Background Towers Left",
+      "type": "decoration",
+      "bbox": {
+        "x": 50,
+        "y": 20,
+        "w": 150,
+        "h": 150
+      },
+      "prompt": "digital wireframe high voltage towers, blue glowing lines, power grid, transparent background, tech style, holographic",
+      "negative_prompt": "solid structure, realistic photo, opaque, text, watermark",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Rings",
+      "type": "decoration",
+      "bbox": {
+        "x": 400,
+        "y": 540,
+        "w": 872,
+        "h": 200
+      },
+      "prompt": "concentric glowing elliptical rings, blue neon light, tech interface, energy field, transparent background, holographic",
+      "negative_prompt": "solid metal, opaque, text, watermark, low quality",
+      "transparent": true
+    }
+  ]
+}

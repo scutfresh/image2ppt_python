@@ -1,0 +1,246 @@
+{
+  "assets": [
+    {
+      "name": "Plug Icon",
+      "type": "icon",
+      "file": "component_images/plug_icon.png",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Server Stack Icon",
+      "type": "icon",
+      "file": "component_images/server_stack_icon.png",
+      "bbox": {
+        "x": 270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Transformer Icon",
+      "type": "icon",
+      "file": "component_images/transformer_icon.png",
+      "bbox": {
+        "x": 460,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Network Graph Icon",
+      "type": "icon",
+      "file": "component_images/network_graph_icon.png",
+      "bbox": {
+        "x": 650,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Brain Icon",
+      "type": "icon",
+      "file": "component_images/brain_icon.png",
+      "bbox": {
+        "x": 840,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Blueprint Icon",
+      "type": "icon",
+      "file": "component_images/blueprint_icon.png",
+      "bbox": {
+        "x": 1030,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Molecule Icon",
+      "type": "icon",
+      "file": "component_images/molecule_icon.png",
+      "bbox": {
+        "x": 1220,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Globe Icon",
+      "type": "icon",
+      "file": "component_images/globe_icon.png",
+      "bbox": {
+        "x": 1410,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "People Icon",
+      "type": "icon",
+      "file": "component_images/people_icon.png",
+      "bbox": {
+        "x": 40,
+        "y": 530,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Cube Icon",
+      "type": "icon",
+      "file": "component_images/cube_icon.png",
+      "bbox": {
+        "x": 40,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Book Icon",
+      "type": "icon",
+      "file": "component_images/book_icon.png",
+      "bbox": {
+        "x": 1480,
+        "y": 530,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Wrench Icon",
+      "type": "icon",
+      "file": "component_images/wrench_icon.png",
+      "bbox": {
+        "x": 1480,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Arrow Icon",
+      "type": "icon",
+      "file": "component_images/arrow_icon.png",
+      "bbox": {
+        "x": 180,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Chart Icon",
+      "type": "icon",
+      "file": "component_images/chart_icon.png",
+      "bbox": {
+        "x": 330,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Transformer Bottom Icon",
+      "type": "icon",
+      "file": "component_images/transformer_bottom_icon.png",
+      "bbox": {
+        "x": 480,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Network Bottom Icon",
+      "type": "icon",
+      "file": "component_images/network_bottom_icon.png",
+      "bbox": {
+        "x": 630,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Brain Bottom Icon",
+      "type": "icon",
+      "file": "component_images/brain_bottom_icon.png",
+      "bbox": {
+        "x": 780,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Blueprint Bottom Icon",
+      "type": "icon",
+      "file": "component_images/blueprint_bottom_icon.png",
+      "bbox": {
+        "x": 930,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Molecule Bottom Icon",
+      "type": "icon",
+      "file": "component_images/molecule_bottom_icon.png",
+      "bbox": {
+        "x": 1080,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Globe Bottom Icon",
+      "type": "icon",
+      "file": "component_images/globe_bottom_icon.png",
+      "bbox": {
+        "x": 1230,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Background Grid",
+      "type": "texture",
+      "file": "component_images/background_grid.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "Central Glow Effect",
+      "type": "shadow",
+      "file": "component_images/central_glow_effect.png",
+      "bbox": {
+        "x": 400,
+        "y": 300,
+        "w": 872,
+        "h": 400
+      }
+    }
+  ]
+}

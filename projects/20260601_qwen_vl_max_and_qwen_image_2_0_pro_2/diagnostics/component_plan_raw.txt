@@ -1,0 +1,212 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
+      "prompt": "soft gradient background with pastel blue and lavender hues, subtle texture resembling brushed paper, smooth and professional appearance",
+      "negative_prompt": "sharp lines, text, logos, patterns, cluttered elements",
+      "transparent": false
+    },
+    {
+      "name": "icon_user",
+      "type": "icon",
+      "bbox": { "x": 45, "y": 255, "w": 35, "h": 45 },
+      "prompt": "simple user profile icon, outline style, light gray color, minimalistic design",
+      "negative_prompt": "filled shape, complex details, colors other than gray",
+      "transparent": true
+    },
+    {
+      "name": "icon_settings",
+      "type": "icon",
+      "bbox": { "x": 120, "y": 255, "w": 35, "h": 45 },
+      "prompt": "gear icon, thin line style, dark gray, clean and modern",
+      "negative_prompt": "3D effect, shadow, filled color",
+      "transparent": true
+    },
+    {
+      "name": "icon_search",
+      "type": "icon",
+      "bbox": { "x": 195, "y": 255, "w": 35, "h": 45 },
+      "prompt": "magnifying glass icon, simple outline, medium gray, flat design",
+      "negative_prompt": "gradient, texture, thick lines",
+      "transparent": true
+    },
+    {
+      "name": "icon_notification",
+      "type": "icon",
+      "bbox": { "x": 270, "y": 255, "w": 35, "h": 45 },
+      "prompt": "bell icon, thin stroke, light gray, minimalist style",
+      "negative_prompt": "filled bell, animation, bright colors",
+      "transparent": true
+    },
+    {
+      "name": "icon_menu",
+      "type": "icon",
+      "bbox": { "x": 345, "y": 255, "w": 35, "h": 45 },
+      "prompt": "three horizontal lines (hamburger menu), black outline, clean and sharp",
+      "negative_prompt": "rounded corners, color fill, decorative elements",
+      "transparent": true
+    },
+    {
+      "name": "icon_calendar",
+      "type": "icon",
+      "bbox": { "x": 420, "y": 255, "w": 35, "h": 45 },
+      "prompt": "calendar icon, simple line art, dark gray, flat style",
+      "negative_prompt": "3D, shadows, intricate details",
+      "transparent": true
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "bbox": { "x": 495, "y": 255, "w": 35, "h": 45 },
+      "prompt": "bar chart icon, thin lines, blue accent, minimalistic",
+      "negative_prompt": "complex graph, data labels, gradients",
+      "transparent": true
+    },
+    {
+      "name": "icon_share",
+      "type": "icon",
+      "bbox": { "x": 570, "y": 255, "w": 35, "h": 45 },
+      "prompt": "share icon, two connected circles, light blue, simple outline",
+      "negative_prompt": "arrow, filled shapes, multiple colors",
+      "transparent": true
+    },
+    {
+      "name": "icon_download",
+      "type": "icon",
+      "bbox": { "x": 645, "y": 255, "w": 35, "h": 45 },
+      "prompt": "download arrow icon, downward pointing, dark gray, clean lines",
+      "negative_prompt": "upward arrow, filled, animated",
+      "transparent": true
+    },
+    {
+      "name": "icon_upload",
+      "type": "icon",
+      "bbox": { "x": 720, "y": 255, "w": 35, "h": 45 },
+      "prompt": "upload arrow icon, upward pointing, medium gray, minimal style",
+      "negative_prompt": "downward arrow, color variation, shadow",
+      "transparent": true
+    },
+    {
+      "name": "icon_home",
+      "type": "icon",
+      "bbox": { "x": 795, "y": 255, "w": 35, "h": 45 },
+      "prompt": "house icon, simple outline, light gray, flat design",
+      "negative_prompt": "doorway, windows, detailed structure",
+      "transparent": true
+    },
+    {
+      "name": "icon_message",
+      "type": "icon",
+      "bbox": { "x": 870, "y": 255, "w": 35, "h": 45 },
+      "prompt": "speech bubble icon, thin line, soft blue, clean edges",
+      "negative_prompt": "text inside, filled, complex pattern",
+      "transparent": true
+    },
+    {
+      "name": "icon_star",
+      "type": "icon",
+      "bbox": { "x": 945, "y": 255, "w": 35, "h": 45 },
+      "prompt": "star icon, five-pointed, yellow gold, outlined style",
+      "negative_prompt": "filled star, gradient, sparkle effects",
+      "transparent": true
+    },
+    {
+      "name": "icon_heart",
+      "type": "icon",
+      "bbox": { "x": 1020, "y": 255, "w": 35, "h": 45 },
+      "prompt": "heart icon, simple outline, red, minimalistic",
+      "negative_prompt": "filled heart, shadow, texture",
+      "transparent": true
+    },
+    {
+      "name": "icon_plus",
+      "type": "icon",
+      "bbox": { "x": 1095, "y": 255, "w": 35, "h": 45 },
+      "prompt": "plus sign icon, bold line, green, centered",
+      "negative_prompt": "minus sign, cross, decorative border",
+      "transparent": true
+    },
+    {
+      "name": "icon_minus",
+      "type": "icon",
+      "bbox": { "x": 1170, "y": 255, "w": 35, "h": 45 },
+      "prompt": "minus sign icon, thin line, red, simple",
+      "negative_prompt": "plus sign, filled, curved lines",
+      "transparent": true
+    },
+    {
+      "name": "icon_delete",
+      "type": "icon",
+      "bbox": { "x": 1245, "y": 255, "w": 35, "h": 45 },
+      "prompt": "trash bin icon, outline style, dark gray, minimal",
+      "negative_prompt": "filled trash, lid open, detailed",
+      "transparent": true
+    },
+    {
+      "name": "icon_edit",
+      "type": "icon",
+      "bbox": { "x": 1320, "y": 255, "w": 35, "h": 45 },
+      "prompt": "pencil icon, simple line, blue, flat design",
+      "negative_prompt": "eraser, colored pencil, shading",
+      "transparent": true
+    },
+    {
+      "name": "icon_save",
+      "type": "icon",
+      "bbox": { "x": 1395, "y": 255, "w": 35, "h": 45 },
+      "prompt": "floppy disk icon, thin outline, teal, retro but clean",
+      "negative_prompt": "modern save symbol, filled, complex",
+      "transparent": true
+    },
+    {
+      "name": "icon_refresh",
+      "type": "icon",
+      "bbox": { "x": 1470, "y": 255, "w": 35, "h": 45 },
+      "prompt": "circular arrow icon, clockwise, light blue, minimal",
+      "negative_prompt": "counter-clockwise, filled, motion blur",
+      "transparent": true
+    },
+    {
+      "name": "icon_lock",
+      "type": "icon",
+      "bbox": { "x": 1545, "y": 255, "w": 35, "h": 45 },
+      "prompt": "lock icon, simple outline, dark gray, secure look",
+      "negative_prompt": "open lock, key, colorful",
+      "transparent": true
+    },
+    {
+      "name": "icon_unlock",
+      "type": "icon",
+      "bbox": { "x": 1620, "y": 255, "w": 35, "h": 45 },
+      "prompt": "unlock icon, open padlock, light gray, minimal",
+      "negative_prompt": "closed lock, keyhole, filled",
+      "transparent": true
+    },
+    {
+      "name": "icon_info",
+      "type": "icon",
+      "bbox": { "x": 1695, "y": 255, "w": 35, "h": 45 },
+      "prompt": "information icon, circle with 'i', blue, clean",
+      "negative_prompt": "question mark, exclamation, filled",
+      "transparent": true
+    },
+    {
+      "name": "icon_warning",
+      "type": "icon",
+      "bbox": { "x": 1770, "y": 255, "w": 35, "h": 45 },
+      "prompt": "warning triangle icon, yellow, exclamation mark inside, simple",
+      "negative_prompt": "red, filled, complex details",
+      "transparent": true
+    },
+    {
+      "name": "icon_power",
+      "type": "icon",
+      "bbox": { "x": 1845, "y": 255, "w": 35, "h": 45 },
+      "prompt": "power button icon, circle with vertical line, black, minimal",
+      "negative_prompt": "off symbol, glowing, animated",
+      "transparent": true
+    }
+  ]
+}

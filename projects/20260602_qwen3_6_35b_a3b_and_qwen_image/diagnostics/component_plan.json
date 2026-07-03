@@ -1,0 +1,290 @@
+{
+  "assets": [
+    {
+      "name": "Plug Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "glowing blue electric plug icon, neon style, flat design, centered in a faint circle, high tech aesthetic, cyan highlights",
+      "negative_prompt": "realistic, 3d render, cluttered, brown colors",
+      "transparent": true
+    },
+    {
+      "name": "Server Stack Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "stacked server blocks icon, glowing blue neon lines, isometric view, flat tech style, cyan accents",
+      "negative_prompt": "messy, low resolution, wooden texture",
+      "transparent": true
+    },
+    {
+      "name": "Transformer Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 460,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "electrical transformer tower icon, lightning bolt symbol, glowing blue neon, flat vector style, industrial tech",
+      "negative_prompt": "photorealistic, complex background, green colors",
+      "transparent": true
+    },
+    {
+      "name": "Network Graph Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 650,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "network graph icon, connected nodes and lines, glowing blue dots, flat tech illustration, data visualization style",
+      "negative_prompt": "chaotic, disconnected, hand drawn",
+      "transparent": true
+    },
+    {
+      "name": "Brain Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 840,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "brain icon, neural network connections, glowing blue circuitry, flat design, artificial intelligence concept",
+      "negative_prompt": "anatomical, biological, pink colors",
+      "transparent": true
+    },
+    {
+      "name": "Blueprint Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1030,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "rolled blueprint scroll icon, technical drawing lines, glowing blue, flat vector, engineering document style",
+      "negative_prompt": "old paper, yellowed, crumpled",
+      "transparent": true
+    },
+    {
+      "name": "Molecule Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1220,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "molecule structure icon, connected spheres and bonds, glowing blue, scientific diagram style, abstract chemistry",
+      "negative_prompt": "organic, food, liquid",
+      "transparent": true
+    },
+    {
+      "name": "Globe Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1410,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "globe icon with power transmission towers, glowing blue wireframe, world model concept, digital earth",
+      "negative_prompt": "map, continents, realistic earth",
+      "transparent": true
+    },
+    {
+      "name": "People Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 530,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "group of people silhouette icon, team collaboration, glowing blue outline, flat style, business concept",
+      "negative_prompt": "detailed faces, cartoonish, colorful clothes",
+      "transparent": true
+    },
+    {
+      "name": "Cube Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "isometric cube icon, 3d block, glowing blue edges, flat tech style, data storage symbol",
+      "negative_prompt": "sphere, pyramid, red colors",
+      "transparent": true
+    },
+    {
+      "name": "Book Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1480,
+        "y": 530,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "open book icon, knowledge symbol, glowing blue pages, flat vector, education concept",
+      "negative_prompt": "closed book, magazine, leather cover",
+      "transparent": true
+    },
+    {
+      "name": "Wrench Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1480,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "crossed wrench and screwdriver icon, tools symbol, glowing blue outline, flat style, maintenance concept",
+      "negative_prompt": "hammer, drill, rusty metal",
+      "transparent": true
+    },
+    {
+      "name": "Arrow Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 180,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "arrow pointing right icon, entry symbol, glowing blue, flat vector, door frame style",
+      "negative_prompt": "left arrow, down arrow, jagged lines",
+      "transparent": true
+    },
+    {
+      "name": "Chart Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 330,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "bar chart icon with upward trend, growth symbol, glowing blue bars, flat style, analytics graphic",
+      "negative_prompt": "pie chart, downward trend, line graph",
+      "transparent": true
+    },
+    {
+      "name": "Transformer Bottom Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 480,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "electrical pylon icon, high voltage tower, glowing blue, flat vector, power grid symbol",
+      "negative_prompt": "house, tree, wind turbine",
+      "transparent": true
+    },
+    {
+      "name": "Network Bottom Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 630,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "network node icon, interconnected points, glowing blue, flat tech style, connectivity symbol",
+      "negative_prompt": "isolated dot, random shapes",
+      "transparent": true
+    },
+    {
+      "name": "Brain Bottom Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 780,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "brain icon, cognitive processing, glowing blue circuitry, flat design, AI reasoning symbol",
+      "negative_prompt": "skull, bone, biological tissue",
+      "transparent": true
+    },
+    {
+      "name": "Blueprint Bottom Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 930,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blueprint scroll icon, engineering plan, glowing blue lines, flat vector, construction document",
+      "negative_prompt": "photo, painting, sketch",
+      "transparent": true
+    },
+    {
+      "name": "Molecule Bottom Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1080,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "molecular structure icon, topological network, glowing blue nodes, flat style, complex system symbol",
+      "negative_prompt": "chemical formula, simple circle",
+      "transparent": true
+    },
+    {
+      "name": "Globe Bottom Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1230,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "globe icon, global simulation, glowing blue wireframe, flat vector, world model symbol",
+      "negative_prompt": "earth texture, satellite image",
+      "transparent": true
+    },
+    {
+      "name": "Background Grid",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue background with subtle grid lines, tech atmosphere, faint horizontal and vertical lines, deep space feel",
+      "negative_prompt": "bright colors, busy patterns, text",
+      "transparent": false
+    },
+    {
+      "name": "Central Glow Effect",
+      "type": "shadow",
+      "bbox": {
+        "x": 400,
+        "y": 300,
+        "w": 872,
+        "h": 400
+      },
+      "prompt": "radial blue glow effect, ethereal light, soft gradient, center focus, futuristic ambiance",
+      "negative_prompt": "hard edges, sharp shadows, black background",
+      "transparent": true
+    }
+  ]
+}

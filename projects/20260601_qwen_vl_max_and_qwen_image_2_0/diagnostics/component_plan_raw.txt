@@ -1,0 +1,204 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
+      "prompt": "dark blue futuristic background with subtle circuit patterns, glowing blue lines, digital grid texture, deep space ambiance, high-tech atmosphere",
+      "negative_prompt": "text, logos, people, bright colors, cluttered elements",
+      "transparent": false
+    },
+    {
+      "name": "icon_power_plug",
+      "type": "icon",
+      "bbox": { "x": 35, "y": 255, "w": 50, "h": 50 },
+      "prompt": "blue glowing power plug icon, flat design with 3D depth, neon outline, electric glow effect, modern tech style",
+      "negative_prompt": "realistic, shadowed, complex details, 2D flat without glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_data_stack",
+      "type": "icon",
+      "bbox": { "x": 235, "y": 255, "w": 50, "h": 50 },
+      "prompt": "stack of data blocks, layered digital cubes, blue glow, abstract 3D rendering, modern tech aesthetic",
+      "negative_prompt": "realistic materials, shadows, non-geometric shapes",
+      "transparent": true
+    },
+    {
+      "name": "icon_power_station",
+      "type": "icon",
+      "bbox": { "x": 435, "y": 255, "w": 50, "h": 50 },
+      "prompt": "industrial power station icon, blue glowing towers and wires, detailed 3D structure, futuristic energy plant",
+      "negative_prompt": "simple outline, cartoonish, no glow, low detail",
+      "transparent": true
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": { "x": 635, "y": 255, "w": 50, "h": 50 },
+      "prompt": "neural network or connection graph, abstract nodes and links, blue glow, futuristic data flow, 3D wireframe",
+      "negative_prompt": "solid shapes, realistic, text, non-network pattern",
+      "transparent": true
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": { "x": 835, "y": 255, "w": 50, "h": 50 },
+      "prompt": "human brain icon, neural pathways visible, blue glowing surface, 3D rendered, cognitive technology theme",
+      "negative_prompt": "flat, no glow, anatomical realism, red or pink color",
+      "transparent": true
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": { "x": 1035, "y": 255, "w": 50, "h": 50 },
+      "prompt": "technical blueprint roll, blue lines on white paper, glowing blue edges, 3D perspective, engineering design",
+      "negative_prompt": "colorful, non-technical, cartoon, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_graph",
+      "type": "icon",
+      "bbox": { "x": 1235, "y": 255, "w": 50, "h": 50 },
+      "prompt": "abstract network graph, interconnected nodes, blue glow, dynamic data visualization, futuristic 3D style",
+      "negative_prompt": "bar chart, pie chart, real-world data, flat design",
+      "transparent": true
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": { "x": 1435, "y": 255, "w": 50, "h": 50 },
+      "prompt": "globe earth icon, blue glowing surface, continents visible, 3D spherical shape, global connectivity theme",
+      "negative_prompt": "flat map, no glow, dark, non-earth planet",
+      "transparent": true
+    },
+    {
+      "name": "icon_people",
+      "type": "icon",
+      "bbox": { "x": 45, "y": 465, "w": 50, "h": 50 },
+      "prompt": "group of people icon, simple human silhouettes, blue glow, 3D flat style, collaborative team concept",
+      "negative_prompt": "detailed faces, realistic, individual portraits, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_cube",
+      "type": "icon",
+      "bbox": { "x": 45, "y": 555, "w": 50, "h": 50 },
+      "prompt": "geometric cube, 3D isometric view, blue glowing edges, modern minimal design, abstract data block",
+      "negative_prompt": "complex textures, non-cube shape, no glow, flat 2D",
+      "transparent": true
+    },
+    {
+      "name": "icon_document",
+      "type": "icon",
+      "bbox": { "x": 1305, "y": 465, "w": 50, "h": 50 },
+      "prompt": "document icon, paper sheet with folded corner, blue glow, clean 3D style, technical report symbol",
+      "negative_prompt": "handwritten, messy, colored text, non-paper material",
+      "transparent": true
+    },
+    {
+      "name": "icon_wrench",
+      "type": "icon",
+      "bbox": { "x": 1305, "y": 555, "w": 50, "h": 50 },
+      "prompt": "wrench tool icon, metallic look, blue glow, mechanical design, 3D rendered, maintenance symbol",
+      "negative_prompt": "cartoon, no glow, broken, non-metallic",
+      "transparent": true
+    },
+    {
+      "name": "icon_mobile",
+      "type": "icon",
+      "bbox": { "x": 165, "y": 675, "w": 50, "h": 50 },
+      "prompt": "mobile phone icon, sleek smartphone silhouette, blue glow, modern tech device, vertical orientation",
+      "negative_prompt": "tablet, old phone, colorful, non-glowing",
+      "transparent": true
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "bbox": { "x": 305, "y": 675, "w": 50, "h": 50 },
+      "prompt": "bar chart icon, upward trend, gold bars with blue glow, 3D effect, growth and analytics theme",
+      "negative_prompt": "downward trend, flat colors, no glow, negative values",
+      "transparent": true
+    },
+    {
+      "name": "icon_power_tower",
+      "type": "icon",
+      "bbox": { "x": 455, "y": 675, "w": 50, "h": 50 },
+      "prompt": "power transmission tower, blue glowing structure, industrial design, 3D model, electricity infrastructure",
+      "negative_prompt": "non-electrical, cartoon, no glow, simple line",
+      "transparent": true
+    },
+    {
+      "name": "icon_people_group",
+      "type": "icon",
+      "bbox": { "x": 615, "y": 675, "w": 50, "h": 50 },
+      "prompt": "group of people icon, multiple human figures, blue glow, 3D style, collaboration and teamwork theme",
+      "negative_prompt": "single person, realistic faces, no glow, scattered layout",
+      "transparent": true
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": { "x": 765, "y": 675, "w": 50, "h": 50 },
+      "prompt": "brain icon, neural network pattern, blue glow, 3D rendered, cognitive intelligence theme",
+      "negative_prompt": "anatomical detail, red color, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": { "x": 945, "y": 675, "w": 50, "h": 50 },
+      "prompt": "blueprint icon, rolled technical drawing, blue lines, glowing edges, engineering design theme",
+      "negative_prompt": "non-technical, colorful, no glow, unfolded",
+      "transparent": true
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": { "x": 1115, "y": 675, "w": 50, "h": 50 },
+      "prompt": "network graph icon, connected nodes, blue glow, abstract data flow, futuristic 3D style",
+      "negative_prompt": "solid shapes, non-network, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": { "x": 1275, "y": 675, "w": 50, "h": 50 },
+      "prompt": "globe earth icon, blue glowing surface, continents visible, 3D spherical shape, global connectivity",
+      "negative_prompt": "flat map, no glow, dark, non-earth planet",
+      "transparent": true
+    },
+    {
+      "name": "central_engine",
+      "type": "decoration",
+      "bbox": { "x": 375, "y": 435, "w": 770, "h": 200 },
+      "prompt": "futuristic engine core, glowing blue rings, layered circular platforms, holographic interface, central AI processing unit, 3D sci-fi design",
+      "negative_prompt": "realistic engine, metal only, no glow, flat design",
+      "transparent": false
+    },
+    {
+      "name": "top_right_globe",
+      "type": "photo",
+      "bbox": { "x": 1295, "y": 15, "w": 180, "h": 125 },
+      "prompt": "globe with cityscape at night, blue glow, illuminated buildings, futuristic urban environment, transparent overlay",
+      "negative_prompt": "daytime, no glow, plain globe, no city",
+      "transparent": true
+    },
+    {
+      "name": "bottom_left_building",
+      "type": "photo",
+      "bbox": { "x": 325, "y": 545, "w": 100, "h": 60 },
+      "prompt": "digital building structure, blue glowing windows, 3D modern architecture, futuristic city element",
+      "negative_prompt": "real photo, daylight, no glow, old building",
+      "transparent": true
+    },
+    {
+      "name": "bottom_right_factory",
+      "type": "photo",
+      "bbox": { "x": 1075, "y": 505, "w": 100, "h": 100 },
+      "prompt": "industrial factory, blue glowing pipes and towers, detailed 3D rendering, futuristic manufacturing plant",
+      "negative_prompt": "old factory, no glow, daytime, simple outline",
+      "transparent": true
+    }
+  ]
+}

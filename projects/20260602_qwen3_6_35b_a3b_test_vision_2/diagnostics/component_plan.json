@@ -1,0 +1,316 @@
+{
+  "assets": [
+    {
+      "name": "icon_1",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "glowing blue electric plug icon, flat design, minimalist style, white outline on dark blue background, centered in a subtle circular glow",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_2",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "stack of three blue cubes, isometric view, glowing edges, flat design, technology icon, minimalist",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_3",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "electrical transformer tower icon with a lightning bolt symbol, glowing blue lines, flat design, technology theme",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_4",
+      "type": "icon",
+      "bbox": {
+        "x": 700,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "network nodes connected by lines forming a web, glowing blue dots and lines, flat design, connectivity icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_5",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "human brain icon combined with a rising bar chart, glowing blue, flat design, artificial intelligence concept",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_6",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "rolled-up blueprint or technical drawing scroll, glowing blue lines, flat design, engineering icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_7",
+      "type": "icon",
+      "bbox": {
+        "x": 1300,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "complex network topology graph with interconnected nodes, glowing blue, flat design, data structure icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_8",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "globe with power transmission towers superimposed, glowing blue wireframe, flat design, global energy icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "central_engine_bg",
+      "type": "shape",
+      "bbox": {
+        "x": 300,
+        "y": 450,
+        "w": 1000,
+        "h": 250
+      },
+      "prompt": "abstract high-tech circular interface, concentric glowing blue rings, futuristic dashboard background, deep blue gradients, digital aesthetic",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "icon_business_eco",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 535,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "three stylized human figures representing a team or group, glowing blue outline, flat design, business ecosystem icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_model_eco",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 615,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "single isometric cube, glowing blue edges, flat design, 3D modeling icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_knowledge_eco",
+      "type": "icon",
+      "bbox": {
+        "x": 1460,
+        "y": 535,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "open book or document icon, glowing blue lines, flat design, knowledge base icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "icon_tool_eco",
+      "type": "icon",
+      "bbox": {
+        "x": 1460,
+        "y": 615,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "crossed wrench and gear icon, glowing blue, flat design, tools and maintenance icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_path_arrow",
+      "type": "shape",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1400,
+        "h": 100
+      },
+      "prompt": "long, curved arrow pointing right, glowing blue gradient, high-tech trail effect, smooth curve",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "bottom_icon_1",
+      "type": "icon",
+      "bbox": {
+        "x": 150,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "simple door icon, glowing blue outline, flat design, entry point symbol",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_2",
+      "type": "icon",
+      "bbox": {
+        "x": 310,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "bar chart with an upward trending arrow, glowing blue, flat design, growth metric icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_3",
+      "type": "icon",
+      "bbox": {
+        "x": 470,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "two electricity pylons or transmission towers, glowing blue, flat design, infrastructure icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_4",
+      "type": "icon",
+      "bbox": {
+        "x": 630,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "group of people icons connected by lines, glowing blue, flat design, collaboration network icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_5",
+      "type": "icon",
+      "bbox": {
+        "x": 790,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "brain icon with circuit-like patterns, glowing blue, flat design, cognitive intelligence icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_6",
+      "type": "icon",
+      "bbox": {
+        "x": 950,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "technical blueprint or schematic drawing, glowing blue, flat design, engineering design icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_7",
+      "type": "icon",
+      "bbox": {
+        "x": 1110,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "network graph with nodes and connections, glowing blue, flat design, system topology icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "bottom_icon_8",
+      "type": "icon",
+      "bbox": {
+        "x": 1270,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "globe with grid lines, glowing blue, flat design, world model icon",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "globe_background",
+      "type": "decoration",
+      "bbox": {
+        "x": 1400,
+        "y": 20,
+        "w": 250,
+        "h": 150
+      },
+      "prompt": "large wireframe globe, blue tint, transparent, high-tech background element, digital earth",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "power_lines_background",
+      "type": "decoration",
+      "bbox": {
+        "x": 20,
+        "y": 20,
+        "w": 200,
+        "h": 200
+      },
+      "prompt": "faint silhouette of high-voltage power lines and towers, blue tint, subtle background texture, industrial atmosphere",
+      "negative_prompt": "text, logos, realistic, 3d render, cluttered",
+      "transparent": true
+    }
+  ]
+}

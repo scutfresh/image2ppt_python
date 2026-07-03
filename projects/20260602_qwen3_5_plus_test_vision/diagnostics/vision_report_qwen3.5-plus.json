@@ -1,0 +1,114 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.5-plus",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 4
+    },
+    "body_text": {
+      "count": 55
+    },
+    "objects": {
+      "count": 23,
+      "types": {
+        "icon": 20,
+        "decoration": 3
+      },
+      "needs_image": {
+        "true": 23,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "Timeline Icon 1",
+          "Timeline Icon 2",
+          "Timeline Icon 3",
+          "Timeline Icon 4",
+          "Timeline Icon 5",
+          "Timeline Icon 6",
+          "Timeline Icon 7",
+          "Timeline Icon 8",
+          "Ecosystem Icon 1",
+          "Ecosystem Icon 2",
+          "Ecosystem Icon 3",
+          "Ecosystem Icon 4",
+          "Path Icon 1",
+          "Path Icon 2",
+          "Path Icon 3",
+          "Path Icon 4",
+          "Path Icon 5",
+          "Path Icon 6",
+          "Path Icon 7",
+          "Path Icon 8"
+        ],
+        "decoration": [
+          "Background Globe",
+          "Background Towers Left",
+          "Central Engine Rings"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 28,
+      "types": {
+        "roundRect": 12,
+        "ellipse": 8,
+        "line": 8
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 23,
+      "types": {
+        "icon": 20,
+        "decoration": 3
+      },
+      "transparent": {
+        "true": 23,
+        "false": 0
+      },
+      "names_by_type": {
+        "icon": [
+          "Timeline Icon 1",
+          "Timeline Icon 2",
+          "Timeline Icon 3",
+          "Timeline Icon 4",
+          "Timeline Icon 5",
+          "Timeline Icon 6",
+          "Timeline Icon 7",
+          "Timeline Icon 8",
+          "Ecosystem Icon 1",
+          "Ecosystem Icon 2",
+          "Ecosystem Icon 3",
+          "Ecosystem Icon 4",
+          "Path Icon 1",
+          "Path Icon 2",
+          "Path Icon 3",
+          "Path Icon 4",
+          "Path Icon 5",
+          "Path Icon 6",
+          "Path Icon 7",
+          "Path Icon 8"
+        ],
+        "decoration": [
+          "Background Globe",
+          "Background Towers Left",
+          "Central Engine Rings"
+        ]
+      }
+    }
+  }
+}

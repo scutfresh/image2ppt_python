@@ -1,0 +1,290 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "file": "component_images/background_image.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      }
+    },
+    {
+      "name": "icon_power_plug",
+      "type": "icon",
+      "file": "component_images/icon_power_plug.png",
+      "bbox": {
+        "x": 35,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_stack",
+      "type": "icon",
+      "file": "component_images/icon_stack.png",
+      "bbox": {
+        "x": 235,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_factory",
+      "type": "icon",
+      "file": "component_images/icon_factory.png",
+      "bbox": {
+        "x": 415,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "file": "component_images/icon_network.png",
+      "bbox": {
+        "x": 595,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "file": "component_images/icon_brain.png",
+      "bbox": {
+        "x": 775,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "file": "component_images/icon_blueprint.png",
+      "bbox": {
+        "x": 955,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_graph",
+      "type": "icon",
+      "file": "component_images/icon_graph.png",
+      "bbox": {
+        "x": 1135,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "file": "component_images/icon_earth.png",
+      "bbox": {
+        "x": 1315,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      }
+    },
+    {
+      "name": "icon_people",
+      "type": "icon",
+      "file": "component_images/icon_people.png",
+      "bbox": {
+        "x": 45,
+        "y": 465,
+        "w": 45,
+        "h": 45
+      }
+    },
+    {
+      "name": "icon_cube",
+      "type": "icon",
+      "file": "component_images/icon_cube.png",
+      "bbox": {
+        "x": 45,
+        "y": 550,
+        "w": 45,
+        "h": 45
+      }
+    },
+    {
+      "name": "icon_document",
+      "type": "icon",
+      "file": "component_images/icon_document.png",
+      "bbox": {
+        "x": 1305,
+        "y": 465,
+        "w": 45,
+        "h": 45
+      }
+    },
+    {
+      "name": "icon_wrench",
+      "type": "icon",
+      "file": "component_images/icon_wrench.png",
+      "bbox": {
+        "x": 1305,
+        "y": 550,
+        "w": 45,
+        "h": 45
+      }
+    },
+    {
+      "name": "icon_phone",
+      "type": "icon",
+      "file": "component_images/icon_phone.png",
+      "bbox": {
+        "x": 165,
+        "y": 675,
+        "w": 40,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "file": "component_images/icon_chart.png",
+      "bbox": {
+        "x": 305,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_power_tower",
+      "type": "icon",
+      "file": "component_images/icon_power_tower.png",
+      "bbox": {
+        "x": 445,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_people_group",
+      "type": "icon",
+      "file": "component_images/icon_people_group.png",
+      "bbox": {
+        "x": 625,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_brain_2",
+      "type": "icon",
+      "file": "component_images/icon_brain_2.png",
+      "bbox": {
+        "x": 765,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_equation",
+      "type": "icon",
+      "file": "component_images/icon_equation.png",
+      "bbox": {
+        "x": 945,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_network_2",
+      "type": "icon",
+      "file": "component_images/icon_network_2.png",
+      "bbox": {
+        "x": 1105,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "icon_earth_2",
+      "type": "icon",
+      "file": "component_images/icon_earth_2.png",
+      "bbox": {
+        "x": 1265,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      }
+    },
+    {
+      "name": "central_engine",
+      "type": "decoration",
+      "file": "component_images/central_engine.png",
+      "bbox": {
+        "x": 370,
+        "y": 430,
+        "w": 780,
+        "h": 205
+      }
+    },
+    {
+      "name": "top_right_globe",
+      "type": "photo",
+      "file": "component_images/top_right_globe.png",
+      "bbox": {
+        "x": 1290,
+        "y": 15,
+        "w": 170,
+        "h": 135
+      }
+    },
+    {
+      "name": "bottom_left_building",
+      "type": "photo",
+      "file": "component_images/bottom_left_building.png",
+      "bbox": {
+        "x": 320,
+        "y": 540,
+        "w": 100,
+        "h": 65
+      }
+    },
+    {
+      "name": "bottom_right_factory",
+      "type": "photo",
+      "file": "component_images/bottom_right_factory.png",
+      "bbox": {
+        "x": 1050,
+        "y": 510,
+        "w": 120,
+        "h": 95
+      }
+    },
+    {
+      "name": "background_pattern",
+      "type": "texture",
+      "file": "component_images/background_pattern.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      }
+    }
+  ]
+}

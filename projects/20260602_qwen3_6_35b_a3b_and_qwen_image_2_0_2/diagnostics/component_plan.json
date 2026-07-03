@@ -1,0 +1,108 @@
+{
+  "assets": [
+    {
+      "name": "Column 1 Circular Flow",
+      "type": "chart",
+      "bbox": {
+        "x": 100,
+        "y": 200,
+        "w": 200,
+        "h": 250
+      },
+      "prompt": "A vertical infographic column featuring a circular workflow diagram. On the left, three user profile icons labeled 'Business Expert', 'Safety Expert', 'Operation Expert'. In the center, a stylized blue brain icon labeled 'SFT Foundation Capability'. Surrounding the brain are curved blue arrows forming a cycle, connecting to text labels like 'Expert Preference Feedback' and 'Reward Model'. At the bottom, a row of small icons for text, image, drawing, time series, structured data. Flat design, professional blue color palette.",
+      "negative_prompt": "3d, realistic, cluttered, messy lines",
+      "transparent": false
+    },
+    {
+      "name": "Column 2 Layers",
+      "type": "chart",
+      "bbox": {
+        "x": 440,
+        "y": 160,
+        "w": 320,
+        "h": 300
+      },
+      "prompt": "A vertical infographic column divided into three horizontal sections: Input, Model, Output. Top section has a blue header and contains small icons for text filtering, image filtering, drawing filtering, time series filtering. Middle section has a green header and contains icons for safety strategy, rule constraints, risk identification. Bottom section has a purple header and contains icons for fact checking, unified refusal, compliance tuning. Flat design, clean layout.",
+      "negative_prompt": "3d, realistic, shadows, gradients",
+      "transparent": false
+    },
+    {
+      "name": "Column 3 RAG Flow",
+      "type": "chart",
+      "bbox": {
+        "x": 820,
+        "y": 160,
+        "w": 320,
+        "h": 300
+      },
+      "prompt": "A vertical infographic column focused on RAG (Retrieval-Augmented Generation). Top row has four icons representing knowledge bases (book, gauge, network, document). Center features a large blue circle labeled 'RAG' connected by arrows to 'Tool Invocation' (wrench icon) and 'Evidence Backtracking' (magnifying glass). Bottom section shows a 'Safe Trustworthy Output' box with a shield icon and buttons for 'Verifiable', 'Real-time Update', 'Assisted Decision'. Blue theme.",
+      "negative_prompt": "3d, realistic, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "Bottom Left Flow",
+      "type": "chart",
+      "bbox": {
+        "x": 80,
+        "y": 590,
+        "w": 600,
+        "h": 60
+      },
+      "prompt": "A horizontal process flow diagram. Starts with two people icons ('Expert Feedback'), followed by a database cylinder ('Sample Accumulation'), then a brain icon ('Strategy Learning'), then a shield icon ('Safety Check'), ending with another database cylinder ('Knowledge Return'). Connected by blue arrows. Light blue background strip. Flat vector style.",
+      "negative_prompt": "3d, realistic, complex textures",
+      "transparent": false
+    },
+    {
+      "name": "Bottom Right Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 820,
+        "y": 600,
+        "w": 240,
+        "h": 50
+      },
+      "prompt": "Four distinct icons arranged horizontally. From left to right: a target/crosshair symbol, a shield with a checkmark, a document with a magnifying glass, a rising bar chart. All icons are filled with dark blue color. Flat design.",
+      "negative_prompt": "3d, realistic, colorful gradients",
+      "transparent": true
+    },
+    {
+      "name": "Robot Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 450,
+        "y": 470,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "A cute, simple blue robot head icon. Cartoon style, friendly face, antenna on top. White outline.",
+      "negative_prompt": "realistic, 3d, detailed",
+      "transparent": true
+    },
+    {
+      "name": "Shield Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 450,
+        "y": 180,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "Small blue shield icons with a white border. Security symbol. Flat design.",
+      "negative_prompt": "3d, realistic, metallic",
+      "transparent": true
+    },
+    {
+      "name": "Checkmark Shield",
+      "type": "icon",
+      "bbox": {
+        "x": 840,
+        "y": 450,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "A large blue shield icon containing a white checkmark in the center. Represents security or verification. Flat design.",
+      "negative_prompt": "3d, realistic, metallic",
+      "transparent": true
+    }
+  ]
+}

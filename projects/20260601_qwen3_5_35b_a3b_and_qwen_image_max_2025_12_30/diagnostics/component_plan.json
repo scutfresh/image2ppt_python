@@ -1,0 +1,316 @@
+{
+  "assets": [
+    {
+      "name": "Background Texture",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue background with subtle grid pattern, faint network nodes, power line silhouettes, tech atmosphere, deep navy gradient",
+      "negative_prompt": "bright colors, white background, cluttered, text",
+      "transparent": false
+    },
+    {
+      "name": "Top Right Globe",
+      "type": "photo",
+      "bbox": {
+        "x": 1450,
+        "y": 20,
+        "w": 200,
+        "h": 150
+      },
+      "prompt": "blue wireframe globe, digital sphere, transparent, glowing lines, network overlay",
+      "negative_prompt": "solid color, realistic earth, opaque, dark",
+      "transparent": true
+    },
+    {
+      "name": "Icon Plug",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon plug icon, energy symbol, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Stack",
+      "type": "icon",
+      "bbox": {
+        "x": 260,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon server stack icon, data storage layers, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Transformer",
+      "type": "icon",
+      "bbox": {
+        "x": 440,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon transformer icon, lightning bolt symbol, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Network Nodes",
+      "type": "icon",
+      "bbox": {
+        "x": 620,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon network icon, connected nodes, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Brain",
+      "type": "icon",
+      "bbox": {
+        "x": 800,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon brain icon, AI concept, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 980,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon blueprint icon, engineering drawing, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Molecule",
+      "type": "icon",
+      "bbox": {
+        "x": 1160,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon molecule icon, topology structure, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Icon Globe Power",
+      "type": "icon",
+      "bbox": {
+        "x": 1340,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "blue neon globe icon, power plant towers, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "People Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 60,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue neon people icon, team silhouette, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Cube Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 60,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue neon cube icon, model shape, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Book Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1490,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue neon book icon, knowledge symbol, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Wrench Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1490,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue neon wrench icon, tools crossed, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Door Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 120,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon door icon, entry portal, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Chart Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 270,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon chart icon, growth bar graph, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Towers Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 420,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon towers icon, industry pylons, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "People Group Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 570,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon people group icon, collaboration, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Brain Icon Bottom",
+      "type": "icon",
+      "bbox": {
+        "x": 720,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon brain icon, thinking process, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Blueprint Icon Bottom",
+      "type": "icon",
+      "bbox": {
+        "x": 870,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon blueprint icon, design roll, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Network Icon Bottom",
+      "type": "icon",
+      "bbox": {
+        "x": 1020,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon network icon, structure connection, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Globe Icon Bottom",
+      "type": "icon",
+      "bbox": {
+        "x": 1170,
+        "y": 810,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon globe icon, world map, flat design, glowing outline, electric blue",
+      "negative_prompt": "3d, realistic, colored, shadowed",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "photo",
+      "bbox": {
+        "x": 400,
+        "y": 500,
+        "w": 872,
+        "h": 250
+      },
+      "prompt": "blue holographic rings, technology abstract, glowing center, futuristic interface, layered circles",
+      "negative_prompt": "realistic photo, solid colors, dark, static",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Arrow",
+      "type": "photo",
+      "bbox": {
+        "x": 0,
+        "y": 800,
+        "w": 1672,
+        "h": 150
+      },
+      "prompt": "blue glowing arrow path, curved trajectory, futuristic light trail, connecting nodes",
+      "negative_prompt": "straight line, dark, static, no glow",
+      "transparent": true
+    }
+  ]
+}

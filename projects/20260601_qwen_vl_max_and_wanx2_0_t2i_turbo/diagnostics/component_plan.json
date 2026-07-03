@@ -1,0 +1,368 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "image",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue futuristic background with glowing circuit patterns, subtle grid lines, digital tech atmosphere, deep space feel, ambient light glow",
+      "negative_prompt": "text, logos, bright colors, cartoon style, flat design",
+      "transparent": false
+    },
+    {
+      "name": "icon_power_socket",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 255,
+        "w": 80,
+        "h": 310
+      },
+      "prompt": "blue glowing power socket icon, electric plug symbol, neon outline, 3D effect, futuristic style, metallic texture, illuminated center",
+      "negative_prompt": "flat, no glow, realistic, cluttered, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_stack",
+      "type": "icon",
+      "bbox": {
+        "x": 235,
+        "y": 255,
+        "w": 290,
+        "h": 310
+      },
+      "prompt": "stack of cubes with blue glow, layered digital blocks, modern 3D design, transparent layers, futuristic data storage symbol",
+      "negative_prompt": "realistic, flat, no glow, cluttered, non-technical",
+      "transparent": true
+    },
+    {
+      "name": "icon_factory",
+      "type": "icon",
+      "bbox": {
+        "x": 415,
+        "y": 255,
+        "w": 470,
+        "h": 310
+      },
+      "prompt": "industrial factory icon with blue glow, power lines and towers, metallic structure, 3D rendering, futuristic energy facility",
+      "negative_prompt": "flat, cartoon, no glow, simple lines, non-industrial",
+      "transparent": true
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": {
+        "x": 595,
+        "y": 255,
+        "w": 650,
+        "h": 310
+      },
+      "prompt": "neural network icon, abstract connection nodes, blue glowing lines, futuristic data flow, circular pattern, digital brain-like structure",
+      "negative_prompt": "realistic, flat, no glow, solid shapes, non-abstract",
+      "transparent": true
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": {
+        "x": 775,
+        "y": 255,
+        "w": 830,
+        "h": 310
+      },
+      "prompt": "3D brain icon with blue glow, neural pathways visible, cognitive theme, futuristic design, detailed surface texture",
+      "negative_prompt": "flat, no glow, cartoon, simple shape, non-neural",
+      "transparent": true
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 955,
+        "y": 255,
+        "w": 1010,
+        "h": 310
+      },
+      "prompt": "blueprint icon with technical lines, engineering drawing style, blue glow, architectural plan, industrial design",
+      "negative_prompt": "colorful, flat, no glow, non-technical, cartoon",
+      "transparent": true
+    },
+    {
+      "name": "icon_graph",
+      "type": "icon",
+      "bbox": {
+        "x": 1135,
+        "y": 255,
+        "w": 1190,
+        "h": 310
+      },
+      "prompt": "network graph icon, connected nodes, blue glowing lines, data visualization, futuristic abstract diagram",
+      "negative_prompt": "flat, no glow, realistic, solid shapes, non-digital",
+      "transparent": true
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": {
+        "x": 1315,
+        "y": 255,
+        "w": 1370,
+        "h": 310
+      },
+      "prompt": "globe earth icon, blue glow, 3D planet, digital rendering, global network theme, futuristic Earth model",
+      "negative_prompt": "flat, no glow, realistic photo, non-3D, cartoon",
+      "transparent": true
+    },
+    {
+      "name": "icon_people",
+      "type": "icon",
+      "bbox": {
+        "x": 45,
+        "y": 465,
+        "w": 90,
+        "h": 510
+      },
+      "prompt": "group of people icon, blue glow, simple flat design, user profile symbols, collaborative team concept",
+      "negative_prompt": "3D, detailed faces, realistic, cluttered, non-social",
+      "transparent": true
+    },
+    {
+      "name": "icon_cube",
+      "type": "icon",
+      "bbox": {
+        "x": 45,
+        "y": 550,
+        "w": 90,
+        "h": 595
+      },
+      "prompt": "geometric cube icon, blue glow, 3D model, mathematical shape, futuristic design, clean lines",
+      "negative_prompt": "flat, no glow, complex details, non-geometric, cartoon",
+      "transparent": true
+    },
+    {
+      "name": "icon_document",
+      "type": "icon",
+      "bbox": {
+        "x": 1305,
+        "y": 465,
+        "w": 1350,
+        "h": 510
+      },
+      "prompt": "document icon, paper sheet with blue glow, knowledge symbol, flat design, technical document style",
+      "negative_prompt": "3D, realistic, no glow, cluttered, non-document",
+      "transparent": true
+    },
+    {
+      "name": "icon_wrench",
+      "type": "icon",
+      "bbox": {
+        "x": 1305,
+        "y": 550,
+        "w": 1350,
+        "h": 595
+      },
+      "prompt": "wrench tool icon, blue glow, mechanical design, flat style, repair and maintenance symbol",
+      "negative_prompt": "3D, realistic, no glow, cluttered, non-tool",
+      "transparent": true
+    },
+    {
+      "name": "icon_phone",
+      "type": "icon",
+      "bbox": {
+        "x": 165,
+        "y": 675,
+        "w": 205,
+        "h": 725
+      },
+      "prompt": "mobile phone icon, blue glow, modern device, flat design, smartphone silhouette, digital communication",
+      "negative_prompt": "3D, realistic, no glow, cluttered, non-device",
+      "transparent": true
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "bbox": {
+        "x": 305,
+        "y": 675,
+        "w": 365,
+        "h": 725
+      },
+      "prompt": "bar chart icon, upward trend, yellow bars, growth symbol, flat design, financial or data visualization",
+      "negative_prompt": "3D, blue glow, cluttered, non-chart, realistic",
+      "transparent": true
+    },
+    {
+      "name": "icon_power_tower",
+      "type": "icon",
+      "bbox": {
+        "x": 455,
+        "y": 675,
+        "w": 515,
+        "h": 725
+      },
+      "prompt": "power tower icon, electricity pylon, blue glow, industrial design, 3D effect, energy transmission symbol",
+      "negative_prompt": "flat, no glow, cartoon, non-electrical, simple line",
+      "transparent": true
+    },
+    {
+      "name": "icon_people_group",
+      "type": "icon",
+      "bbox": {
+        "x": 615,
+        "y": 675,
+        "w": 675,
+        "h": 725
+      },
+      "prompt": "group of people icon, blue glow, social collaboration, flat design, community or teamwork symbol",
+      "negative_prompt": "3D, realistic, no glow, cluttered, non-social",
+      "transparent": true
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": {
+        "x": 775,
+        "y": 675,
+        "w": 835,
+        "h": 725
+      },
+      "prompt": "brain icon with blue glow, neural network pattern, cognition theme, 3D effect, futuristic design",
+      "negative_prompt": "flat, no glow, cartoon, simple shape, non-neural",
+      "transparent": true
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 945,
+        "y": 675,
+        "w": 1005,
+        "h": 725
+      },
+      "prompt": "blueprint icon, technical drawing lines, blue glow, engineering plan, flat design, architectural theme",
+      "negative_prompt": "3D, colorful, no glow, cluttered, non-technical",
+      "transparent": true
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": {
+        "x": 1115,
+        "y": 675,
+        "w": 1175,
+        "h": 725
+      },
+      "prompt": "network icon, connected nodes, blue glow, data flow, abstract digital structure, futuristic design",
+      "negative_prompt": "flat, no glow, realistic, solid shapes, non-digital",
+      "transparent": true
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": {
+        "x": 1275,
+        "y": 675,
+        "w": 1335,
+        "h": 725
+      },
+      "prompt": "globe earth icon, blue glow, 3D planet, digital rendering, global connectivity theme, futuristic Earth model",
+      "negative_prompt": "flat, no glow, realistic photo, non-3D, cartoon",
+      "transparent": true
+    },
+    {
+      "name": "central_engine",
+      "type": "decoration",
+      "bbox": {
+        "x": 370,
+        "y": 430,
+        "w": 1150,
+        "h": 635
+      },
+      "prompt": "futuristic engine with blue glow, circular layered structure, holographic effect, 3D rendering, central power core, data fusion hub",
+      "negative_prompt": "flat, no glow, realistic, simple shape, non-tech",
+      "transparent": false
+    },
+    {
+      "name": "top_right_globe",
+      "type": "decoration",
+      "bbox": {
+        "x": 1290,
+        "y": 15,
+        "w": 1470,
+        "h": 150
+      },
+      "prompt": "digital globe in top right corner, Earth with blue glow, 3D rendering, futuristic design, global network overlay",
+      "negative_prompt": "flat, no glow, realistic photo, non-3D, cartoon",
+      "transparent": false
+    },
+    {
+      "name": "bottom_left_building",
+      "type": "decoration",
+      "bbox": {
+        "x": 320,
+        "y": 545,
+        "w": 410,
+        "h": 605
+      },
+      "prompt": "cityscape building icon, blue glow, digital architecture, 3D rendering, urban skyline, futuristic city block",
+      "negative_prompt": "flat, no glow, realistic, non-urban, cartoon",
+      "transparent": false
+    },
+    {
+      "name": "bottom_right_factory",
+      "type": "decoration",
+      "bbox": {
+        "x": 1060,
+        "y": 510,
+        "w": 1170,
+        "h": 605
+      },
+      "prompt": "industrial factory with blue glow, 3D rendering, futuristic plant, power infrastructure, detailed machinery",
+      "negative_prompt": "flat, no glow, cartoon, non-industrial, simple lines",
+      "transparent": false
+    },
+    {
+      "name": "background_grid",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue background with glowing grid lines, circuit pattern, tech-themed texture, subtle neon glow, digital interface feel",
+      "negative_prompt": "bright colors, text, logos, flat, non-tech",
+      "transparent": false
+    },
+    {
+      "name": "light_effects",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "glow effects, light trails, blue neon streaks, dynamic lighting, futuristic ambiance, motion blur effect",
+      "negative_prompt": "flat, no glow, static, dark, non-dynamic",
+      "transparent": false
+    },
+    {
+      "name": "shadow_under_central_engine",
+      "type": "shadow",
+      "bbox": {
+        "x": 370,
+        "y": 635,
+        "w": 1150,
+        "h": 700
+      },
+      "prompt": "soft shadow under central engine, blue tint, subtle depth effect, ambient lighting, realistic projection",
+      "negative_prompt": "hard edges, bright, no shadow, flat, unrealistic",
+      "transparent": true
+    }
+  ]
+}

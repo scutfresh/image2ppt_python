@@ -1,0 +1,122 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.6-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 87
+    },
+    "objects": {
+      "count": 25,
+      "types": {
+        "shape": 3,
+        "icon": 20,
+        "decoration": 2
+      },
+      "needs_image": {
+        "true": 24,
+        "false": 1
+      },
+      "names_by_type": {
+        "shape": [
+          "timeline_connector",
+          "central_engine_bg",
+          "bottom_path_arrow"
+        ],
+        "icon": [
+          "icon_1",
+          "icon_2",
+          "icon_3",
+          "icon_4",
+          "icon_5",
+          "icon_6",
+          "icon_7",
+          "icon_8",
+          "icon_business_eco",
+          "icon_model_eco",
+          "icon_knowledge_eco",
+          "icon_tool_eco",
+          "bottom_icon_1",
+          "bottom_icon_2",
+          "bottom_icon_3",
+          "bottom_icon_4",
+          "bottom_icon_5",
+          "bottom_icon_6",
+          "bottom_icon_7",
+          "bottom_icon_8"
+        ],
+        "decoration": [
+          "globe_background",
+          "power_lines_background"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 16,
+      "types": {
+        "roundRect": 15,
+        "line": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 24,
+      "types": {
+        "icon": 20,
+        "shape": 2,
+        "decoration": 2
+      },
+      "transparent": {
+        "true": 22,
+        "false": 2
+      },
+      "names_by_type": {
+        "icon": [
+          "icon_1",
+          "icon_2",
+          "icon_3",
+          "icon_4",
+          "icon_5",
+          "icon_6",
+          "icon_7",
+          "icon_8",
+          "icon_business_eco",
+          "icon_model_eco",
+          "icon_knowledge_eco",
+          "icon_tool_eco",
+          "bottom_icon_1",
+          "bottom_icon_2",
+          "bottom_icon_3",
+          "bottom_icon_4",
+          "bottom_icon_5",
+          "bottom_icon_6",
+          "bottom_icon_7",
+          "bottom_icon_8"
+        ],
+        "shape": [
+          "central_engine_bg",
+          "bottom_path_arrow"
+        ],
+        "decoration": [
+          "globe_background",
+          "power_lines_background"
+        ]
+      }
+    }
+  }
+}

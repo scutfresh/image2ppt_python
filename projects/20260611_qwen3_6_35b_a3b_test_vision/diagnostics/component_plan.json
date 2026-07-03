@@ -1,0 +1,100 @@
+{
+  "assets": [
+    {
+      "name": "icon_step_1_plug",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"33\" y=\"23\" width=\"34\" height=\"39\" rx=\"5\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><ellipse cx=\"50\" cy=\"85\" rx=\"27\" ry=\"8\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><rect x=\"35\" y=\"25\" width=\"30\" height=\"35\" rx=\"3\" fill=\"#00ffff\" /><rect x=\"42\" y=\"60\" width=\"4\" height=\"15\" fill=\"#00ffff\" /><rect x=\"54\" y=\"60\" width=\"4\" height=\"15\" fill=\"#00ffff\" /><ellipse cx=\"50\" cy=\"85\" rx=\"25\" ry=\"6\" fill=\"#00ffff\" /></svg>"
+    },
+    {
+      "name": "icon_step_2_servers",
+      "type": "icon",
+      "bbox": {
+        "x": 170,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"18\" width=\"64\" height=\"64\" rx=\"4\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><rect x=\"20\" y=\"20\" width=\"60\" height=\"15\" rx=\"2\" fill=\"#00ffff\" /><rect x=\"20\" y=\"40\" width=\"60\" height=\"15\" rx=\"2\" fill=\"#00ffff\" /><rect x=\"20\" y=\"60\" width=\"60\" height=\"15\" rx=\"2\" fill=\"#00ffff\" /><rect x=\"25\" y=\"25\" width=\"50\" height=\"5\" fill=\"#ffffff\" opacity=\"0.5\" /><rect x=\"25\" y=\"45\" width=\"50\" height=\"5\" fill=\"#ffffff\" opacity=\"0.5\" /><rect x=\"25\" y=\"65\" width=\"50\" height=\"5\" fill=\"#ffffff\" opacity=\"0.5\" /></svg>"
+    },
+    {
+      "name": "icon_step_3_transformer",
+      "type": "icon",
+      "bbox": {
+        "x": 290,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"33\" y=\"18\" width=\"8\" height=\"64\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><rect x=\"59\" y=\"18\" width=\"8\" height=\"64\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><rect x=\"23\" y=\"28\" width=\"54\" height=\"8\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><rect x=\"23\" y=\"48\" width=\"54\" height=\"8\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><path d=\"M50 25 L42 50 L50 50 L46 75 L58 45 L50 45 Z\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><rect x=\"35\" y=\"20\" width=\"4\" height=\"60\" fill=\"#00ffff\" /><rect x=\"61\" y=\"20\" width=\"4\" height=\"60\" fill=\"#00ffff\" /><rect x=\"25\" y=\"30\" width=\"50\" height=\"4\" fill=\"#00ffff\" /><rect x=\"25\" y=\"50\" width=\"50\" height=\"4\" fill=\"#00ffff\" /><circle cx=\"30\" cy=\"30\" r=\"2\" fill=\"#ffffff\" /><circle cx=\"70\" cy=\"30\" r=\"2\" fill=\"#ffffff\" /><circle cx=\"30\" cy=\"50\" r=\"2\" fill=\"#ffffff\" /><circle cx=\"70\" cy=\"50\" r=\"2\" fill=\"#ffffff\" /><path d=\"M50 25 L42 50 L50 50 L46 75 L58 45 L50 45 Z\" fill=\"#00ffff\" /></svg>"
+    },
+    {
+      "name": "icon_step_4_network",
+      "type": "icon",
+      "bbox": {
+        "x": 410,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"12\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><circle cx=\"50\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><circle cx=\"50\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><circle cx=\"20\" cy=\"50\" r=\"10\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><circle cx=\"80\" cy=\"50\" r=\"10\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"4\" opacity=\"0.3\" /><circle cx=\"50\" cy=\"50\" r=\"8\" fill=\"#00ffff\" /><circle cx=\"50\" cy=\"20\" r=\"6\" fill=\"#00ffff\" /><circle cx=\"50\" cy=\"80\" r=\"6\" fill=\"#00ffff\" /><circle cx=\"20\" cy=\"50\" r=\"6\" fill=\"#00ffff\" /><circle cx=\"80\" cy=\"50\" r=\"6\" fill=\"#00ffff\" /><line x1=\"50\" y1=\"42\" x2=\"50\" y2=\"26\" stroke=\"#00ffff\" stroke-width=\"2\" /><line x1=\"50\" y1=\"58\" x2=\"50\" y2=\"74\" stroke=\"#00ffff\" stroke-width=\"2\" /><line x1=\"42\" y1=\"50\" x2=\"26\" y2=\"50\" stroke=\"#00ffff\" stroke-width=\"2\" /><line x1=\"58\" y1=\"50\" x2=\"74\" y2=\"50\" stroke=\"#00ffff\" stroke-width=\"2\" /></svg>"
+    },
+    {
+      "name": "icon_step_5_brain",
+      "type": "icon",
+      "bbox": {
+        "x": 530,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M30 30 Q50 10 70 30 Q90 50 70 70 Q50 90 30 70 Q10 50 30 30 Z\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><path d=\"M30 30 Q50 10 70 30 Q90 50 70 70 Q50 90 30 70 Q10 50 30 30 Z\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"3\" /><path d=\"M50 20 L50 80\" stroke=\"#00ffff\" stroke-width=\"2\" /><path d=\"M35 40 Q50 50 65 40\" stroke=\"#00ffff\" stroke-width=\"2\" fill=\"none\" /><path d=\"M35 60 Q50 70 65 60\" stroke=\"#00ffff\" stroke-width=\"2\" fill=\"none\" /></svg>"
+    },
+    {
+      "name": "icon_step_6_blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 650,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 20 Q10 20 10 30 L10 70 Q10 80 20 80 L20 20 Z\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><rect x=\"18\" y=\"18\" width=\"64\" height=\"64\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><path d=\"M20 20 Q10 20 10 30 L10 70 Q10 80 20 80 L20 20 Z\" fill=\"#00ffff\" /><rect x=\"20\" y=\"20\" width=\"60\" height=\"60\" fill=\"#00ffff\" /><line x1=\"30\" y1=\"30\" x2=\"70\" y2=\"30\" stroke=\"#ffffff\" stroke-width=\"2\" /><line x1=\"30\" y1=\"40\" x2=\"70\" y2=\"40\" stroke=\"#ffffff\" stroke-width=\"2\" /><line x1=\"30\" y1=\"50\" x2=\"70\" y2=\"50\" stroke=\"#ffffff\" stroke-width=\"2\" /><line x1=\"30\" y1=\"60\" x2=\"70\" y2=\"60\" stroke=\"#ffffff\" stroke-width=\"2\" /><line x1=\"30\" y1=\"70\" x2=\"70\" y2=\"70\" stroke=\"#ffffff\" stroke-width=\"2\" /><rect x=\"65\" y=\"15\" width=\"6\" height=\"70\" fill=\"#00ffff\" transform=\"rotate(10 65 50)\" /></svg>"
+    },
+    {
+      "name": "icon_step_7_molecule",
+      "type": "icon",
+      "bbox": {
+        "x": 770,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"50,20 80,35 80,65 50,80 20,65 20,35\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><circle cx=\"50\" cy=\"50\" r=\"12\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><polygon points=\"50,20 80,35 80,65 50,80 20,65 20,35\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"2\" /><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"#00ffff\" /><circle cx=\"80\" cy=\"35\" r=\"5\" fill=\"#00ffff\" /><circle cx=\"80\" cy=\"65\" r=\"5\" fill=\"#00ffff\" /><circle cx=\"50\" cy=\"80\" r=\"5\" fill=\"#00ffff\" /><circle cx=\"20\" cy=\"65\" r=\"5\" fill=\"#00ffff\" /><circle cx=\"20\" cy=\"35\" r=\"5\" fill=\"#00ffff\" /><circle cx=\"50\" cy=\"50\" r=\"8\" fill=\"#00ffff\" /></svg>"
+    },
+    {
+      "name": "icon_step_8_globe",
+      "type": "icon",
+      "bbox": {
+        "x": 890,
+        "y": 250,
+        "w": 100,
+        "h": 100
+      },
+      "transparent": true,
+      "svg_code": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"34\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><ellipse cx=\"50\" cy=\"50\" rx=\"34\" ry=\"14\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><ellipse cx=\"50\" cy=\"50\" rx=\"14\" ry=\"34\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"6\" opacity=\"0.3\" /><circle cx=\"50\" cy=\"50\" r=\"30\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"2\" /><ellipse cx=\"50\" cy=\"50\" rx=\"30\" ry=\"10\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"2\" /><ellipse cx=\"50\" cy=\"50\" rx=\"10\" ry=\"30\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"2\" /><path d=\"M30 70 L30 50 L40 50\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"2\" /><path d=\"M70 70 L70 50 L60 50\" fill=\"none\" stroke=\"#00ffff\" stroke-width=\"2\" /><rect x=\"28\" y=\"45\" width=\"4\" height=\"5\" fill=\"#00ffff\" /><rect x=\"68\" y=\"45\" width=\"4\" height=\"5\" fill=\"#00ffff\" /></svg>"
+    }
+  ]
+}

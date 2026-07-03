@@ -1,0 +1,303 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue technology background, subtle grid pattern, faint power line tower silhouettes in distance, digital noise texture, deep navy gradient",
+      "negative_prompt": "bright colors, white background, text, logos, clutter",
+      "transparent": false
+    },
+    {
+      "name": "Icon_Plug",
+      "type": "icon",
+      "bbox": {
+        "x": 60,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue electric plug icon, glowing outline, flat vector style, tech interface element, two prongs, circular base",
+      "negative_prompt": "3d realistic, wood, plastic texture, red, yellow",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Server",
+      "type": "icon",
+      "bbox": {
+        "x": 250,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue server stack icon, isometric 3d layers, database cylinders, glowing edges, tech interface element",
+      "negative_prompt": "flat 2d, realistic photo, wood, paper",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Transformer",
+      "type": "icon",
+      "bbox": {
+        "x": 440,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue electrical transformer icon, substation structure, lightning bolt symbol in center, glowing outline, industrial tech style",
+      "negative_prompt": "realistic photo, rusty metal, daylight",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Network",
+      "type": "icon",
+      "bbox": {
+        "x": 630,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue network nodes icon, connected dots and lines, hexagonal structure, glowing points, tech interface element",
+      "negative_prompt": "solid shapes, realistic people, organic textures",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Brain",
+      "type": "icon",
+      "bbox": {
+        "x": 820,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue brain icon, AI intelligence symbol, circuit board patterns inside brain shape, glowing outline, tech interface element",
+      "negative_prompt": "realistic biological brain, pink, red, fleshy texture",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 1010,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue blueprint scroll icon, rolled paper with graph lines, engineering design symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic paper texture, colored ink, photograph",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Graph",
+      "type": "icon",
+      "bbox": {
+        "x": 1200,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue graph topology icon, network structure, connected nodes forming a sphere, glowing lines, tech interface element",
+      "negative_prompt": "bar chart, pie chart, realistic metal",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Globe",
+      "type": "icon",
+      "bbox": {
+        "x": 1390,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "neon blue globe icon, wireframe earth sphere, power line towers silhouette inside, glowing grid lines, tech interface element",
+      "negative_prompt": "realistic earth photo, continents, green and blue oceans",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Business",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 560,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue business team icon, three people silhouettes, group collaboration symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic faces, detailed clothing, colorful",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Model",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue 3d cube model icon, wireframe structure, geometric shape, glowing edges, tech interface element",
+      "negative_prompt": "solid block, realistic material, wood, stone",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Knowledge",
+      "type": "icon",
+      "bbox": {
+        "x": 1472,
+        "y": 560,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue book document icon, open book with text lines, knowledge symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic paper, leather cover, colorful illustrations",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Tools",
+      "type": "icon",
+      "bbox": {
+        "x": 1472,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue tools icon, crossed wrench and screwdriver, settings symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic metal texture, rusty, colorful handles",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_1",
+      "type": "icon",
+      "bbox": {
+        "x": 110,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue door entry icon, mobile phone screen with arrow, access symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic door, wood texture, handle",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_2",
+      "type": "icon",
+      "bbox": {
+        "x": 260,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue growth chart icon, bar graph with upward arrow, statistics symbol, glowing outline, tech interface element",
+      "negative_prompt": "line graph, pie chart, realistic paper",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_3",
+      "type": "icon",
+      "bbox": {
+        "x": 410,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue power tower icon, electricity pylons, industry symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic metal, rusty, daylight sky",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_4",
+      "type": "icon",
+      "bbox": {
+        "x": 560,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue collaboration icon, group of people heads, team symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic faces, detailed features, colorful",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_5",
+      "type": "icon",
+      "bbox": {
+        "x": 710,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue brain thinking icon, AI symbol, circuit patterns, glowing outline, tech interface element",
+      "negative_prompt": "realistic brain, biological texture, pink",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_6",
+      "type": "icon",
+      "bbox": {
+        "x": 860,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue blueprint design icon, scroll with graph, engineering symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic paper, colored ink, photograph",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_7",
+      "type": "icon",
+      "bbox": {
+        "x": 1010,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue network structure icon, connected nodes, graph symbol, glowing outline, tech interface element",
+      "negative_prompt": "solid shapes, realistic metal, organic",
+      "transparent": true
+    },
+    {
+      "name": "Icon_Path_8",
+      "type": "icon",
+      "bbox": {
+        "x": 1160,
+        "y": 820,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue globe simulation icon, wireframe sphere, world model symbol, glowing outline, tech interface element",
+      "negative_prompt": "realistic earth photo, continents, green and blue",
+      "transparent": true
+    },
+    {
+      "name": "Central_Engine_Graphic",
+      "type": "chart",
+      "bbox": {
+        "x": 400,
+        "y": 530,
+        "w": 872,
+        "h": 250
+      },
+      "prompt": "holographic blue 3d ring structure, multiple glowing concentric layers, tech engine core, digital data visualization, central hub, futuristic interface, glowing text labels",
+      "negative_prompt": "flat 2d, paper texture, realistic metal, wood, daylight",
+      "transparent": true
+    },
+    {
+      "name": "Bottom_Arrow_Path",
+      "type": "decoration",
+      "bbox": {
+        "x": 20,
+        "y": 800,
+        "w": 1632,
+        "h": 100
+      },
+      "prompt": "glowing blue curved arrow line, tech motion path, connecting timeline points, neon light trail, futuristic interface element",
+      "negative_prompt": "solid line, black, red, realistic road",
+      "transparent": true
+    }
+  ]
+}

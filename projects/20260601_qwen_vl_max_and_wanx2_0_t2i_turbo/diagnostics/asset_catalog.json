@@ -1,0 +1,312 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "image",
+      "file": "component_images/background_image.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "icon_power_socket",
+      "type": "icon",
+      "file": "component_images/icon_power_socket.png",
+      "bbox": {
+        "x": 40,
+        "y": 255,
+        "w": 80,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_stack",
+      "type": "icon",
+      "file": "component_images/icon_stack.png",
+      "bbox": {
+        "x": 235,
+        "y": 255,
+        "w": 290,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_factory",
+      "type": "icon",
+      "file": "component_images/icon_factory.png",
+      "bbox": {
+        "x": 415,
+        "y": 255,
+        "w": 470,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "file": "component_images/icon_network.png",
+      "bbox": {
+        "x": 595,
+        "y": 255,
+        "w": 650,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "file": "component_images/icon_brain.png",
+      "bbox": {
+        "x": 775,
+        "y": 255,
+        "w": 830,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "file": "component_images/icon_blueprint.png",
+      "bbox": {
+        "x": 955,
+        "y": 255,
+        "w": 1010,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_graph",
+      "type": "icon",
+      "file": "component_images/icon_graph.png",
+      "bbox": {
+        "x": 1135,
+        "y": 255,
+        "w": 1190,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "file": "component_images/icon_earth.png",
+      "bbox": {
+        "x": 1315,
+        "y": 255,
+        "w": 1370,
+        "h": 310
+      }
+    },
+    {
+      "name": "icon_people",
+      "type": "icon",
+      "file": "component_images/icon_people.png",
+      "bbox": {
+        "x": 45,
+        "y": 465,
+        "w": 90,
+        "h": 510
+      }
+    },
+    {
+      "name": "icon_cube",
+      "type": "icon",
+      "file": "component_images/icon_cube.png",
+      "bbox": {
+        "x": 45,
+        "y": 550,
+        "w": 90,
+        "h": 595
+      }
+    },
+    {
+      "name": "icon_document",
+      "type": "icon",
+      "file": "component_images/icon_document.png",
+      "bbox": {
+        "x": 1305,
+        "y": 465,
+        "w": 1350,
+        "h": 510
+      }
+    },
+    {
+      "name": "icon_wrench",
+      "type": "icon",
+      "file": "component_images/icon_wrench.png",
+      "bbox": {
+        "x": 1305,
+        "y": 550,
+        "w": 1350,
+        "h": 595
+      }
+    },
+    {
+      "name": "icon_phone",
+      "type": "icon",
+      "file": "component_images/icon_phone.png",
+      "bbox": {
+        "x": 165,
+        "y": 675,
+        "w": 205,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "file": "component_images/icon_chart.png",
+      "bbox": {
+        "x": 305,
+        "y": 675,
+        "w": 365,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_power_tower",
+      "type": "icon",
+      "file": "component_images/icon_power_tower.png",
+      "bbox": {
+        "x": 455,
+        "y": 675,
+        "w": 515,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_people_group",
+      "type": "icon",
+      "file": "component_images/icon_people_group.png",
+      "bbox": {
+        "x": 615,
+        "y": 675,
+        "w": 675,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "file": "component_images/icon_brain.png",
+      "bbox": {
+        "x": 775,
+        "y": 675,
+        "w": 835,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "file": "component_images/icon_blueprint.png",
+      "bbox": {
+        "x": 945,
+        "y": 675,
+        "w": 1005,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "file": "component_images/icon_network.png",
+      "bbox": {
+        "x": 1115,
+        "y": 675,
+        "w": 1175,
+        "h": 725
+      }
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "file": "component_images/icon_earth.png",
+      "bbox": {
+        "x": 1275,
+        "y": 675,
+        "w": 1335,
+        "h": 725
+      }
+    },
+    {
+      "name": "central_engine",
+      "type": "decoration",
+      "file": "component_images/central_engine.png",
+      "bbox": {
+        "x": 370,
+        "y": 430,
+        "w": 1150,
+        "h": 635
+      }
+    },
+    {
+      "name": "top_right_globe",
+      "type": "decoration",
+      "file": "component_images/top_right_globe.png",
+      "bbox": {
+        "x": 1290,
+        "y": 15,
+        "w": 1470,
+        "h": 150
+      }
+    },
+    {
+      "name": "bottom_left_building",
+      "type": "decoration",
+      "file": "component_images/bottom_left_building.png",
+      "bbox": {
+        "x": 320,
+        "y": 545,
+        "w": 410,
+        "h": 605
+      }
+    },
+    {
+      "name": "bottom_right_factory",
+      "type": "decoration",
+      "file": "component_images/bottom_right_factory.png",
+      "bbox": {
+        "x": 1060,
+        "y": 510,
+        "w": 1170,
+        "h": 605
+      }
+    },
+    {
+      "name": "background_grid",
+      "type": "texture",
+      "file": "component_images/background_grid.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "light_effects",
+      "type": "decoration",
+      "file": "component_images/light_effects.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "shadow_under_central_engine",
+      "type": "shadow",
+      "file": "component_images/shadow_under_central_engine.png",
+      "bbox": {
+        "x": 370,
+        "y": 635,
+        "w": 1150,
+        "h": 700
+      }
+    }
+  ]
+}

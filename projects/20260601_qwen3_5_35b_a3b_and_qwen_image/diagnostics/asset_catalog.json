@@ -1,0 +1,169 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "image",
+      "file": "component_images/background_image.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "Power Tower Background",
+      "type": "decoration",
+      "file": "component_images/power_tower_background.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 200
+      }
+    },
+    {
+      "name": "Globe Graphic Top Right",
+      "type": "photo",
+      "file": "component_images/globe_graphic_top_right.png",
+      "bbox": {
+        "x": 1350,
+        "y": 20,
+        "w": 1600,
+        "h": 180
+      }
+    },
+    {
+      "name": "Step 1 Icon (Plug)",
+      "type": "icon",
+      "file": "component_images/step_1_icon_plug.png",
+      "bbox": {
+        "x": 80,
+        "y": 300,
+        "w": 120,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 2 Icon (Server Stack)",
+      "type": "icon",
+      "file": "component_images/step_2_icon_server_stack.png",
+      "bbox": {
+        "x": 220,
+        "y": 300,
+        "w": 260,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 3 Icon (Transformer)",
+      "type": "icon",
+      "file": "component_images/step_3_icon_transformer.png",
+      "bbox": {
+        "x": 360,
+        "y": 300,
+        "w": 400,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 4 Icon (Network Nodes)",
+      "type": "icon",
+      "file": "component_images/step_4_icon_network_nodes.png",
+      "bbox": {
+        "x": 500,
+        "y": 300,
+        "w": 540,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 5 Icon (Brain)",
+      "type": "icon",
+      "file": "component_images/step_5_icon_brain.png",
+      "bbox": {
+        "x": 640,
+        "y": 300,
+        "w": 680,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 6 Icon (Blueprint)",
+      "type": "icon",
+      "file": "component_images/step_6_icon_blueprint.png",
+      "bbox": {
+        "x": 780,
+        "y": 300,
+        "w": 820,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 7 Icon (Topology)",
+      "type": "icon",
+      "file": "component_images/step_7_icon_topology.png",
+      "bbox": {
+        "x": 920,
+        "y": 300,
+        "w": 960,
+        "h": 360
+      }
+    },
+    {
+      "name": "Step 8 Icon (Globe/Tower)",
+      "type": "icon",
+      "file": "component_images/step_8_icon_globetower.png",
+      "bbox": {
+        "x": 1060,
+        "y": 300,
+        "w": 1100,
+        "h": 360
+      }
+    },
+    {
+      "name": "Central Circular Diagram Base",
+      "type": "photo",
+      "file": "component_images/central_circular_diagram_base.png",
+      "bbox": {
+        "x": 250,
+        "y": 500,
+        "w": 1200,
+        "h": 750
+      }
+    },
+    {
+      "name": "Left Side Boxes",
+      "type": "decoration",
+      "file": "component_images/left_side_boxes.png",
+      "bbox": {
+        "x": 20,
+        "y": 530,
+        "w": 150,
+        "h": 720
+      }
+    },
+    {
+      "name": "Right Side Boxes",
+      "type": "decoration",
+      "file": "component_images/right_side_boxes.png",
+      "bbox": {
+        "x": 1300,
+        "y": 530,
+        "w": 1450,
+        "h": 720
+      }
+    },
+    {
+      "name": "Bottom Timeline Icons",
+      "type": "icon",
+      "file": "component_images/bottom_timeline_icons.png",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1400,
+        "h": 880
+      }
+    }
+  ]
+}

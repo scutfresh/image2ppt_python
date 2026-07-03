@@ -1,0 +1,381 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue futuristic technology background, subtle circuit board patterns, faint silhouette of power transmission towers on left, wireframe globe on top right, deep blue gradient, high tech atmosphere",
+      "negative_prompt": "text, bright colors, cluttered, low resolution",
+      "transparent": false
+    },
+    {
+      "name": "Timeline Circle 1",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 1 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 2",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 2 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 3",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 3 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 4",
+      "type": "icon",
+      "bbox": {
+        "x": 700,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 4 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 5",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 5 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 6",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 6 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1300,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 7 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Circle 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 150,
+        "w": 30,
+        "h": 30
+      },
+      "prompt": "glowing blue neon circle with number 8 inside, flat design, futuristic UI element, bright cyan glow",
+      "negative_prompt": "3d, realistic, shadow, complex texture",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 1",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D electric plug icon, glowing blue neon energy, futuristic technology style, metallic blue finish, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 2",
+      "type": "icon",
+      "bbox": {
+        "x": 280,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D server stack icon, glowing blue indicator lights, data center storage, futuristic tech style, metallic blue finish, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 3",
+      "type": "icon",
+      "bbox": {
+        "x": 480,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D electrical transformer icon with lightning bolt, glowing blue neon, power grid technology, metallic blue finish, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 4",
+      "type": "icon",
+      "bbox": {
+        "x": 680,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D network nodes icon, connected spheres forming a mesh, glowing blue lines, data connectivity, futuristic tech style, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 5",
+      "type": "icon",
+      "bbox": {
+        "x": 880,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D stylized brain icon, glowing blue neural connections, AI technology, futuristic tech style, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 6",
+      "type": "icon",
+      "bbox": {
+        "x": 1080,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D rolled blueprint icon, glowing blue grid lines, engineering design, futuristic tech style, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1280,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D molecule structure icon, glowing blue atoms and bonds, scientific research, futuristic tech style, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Card 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1480,
+        "y": 250,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "3D wireframe globe icon, glowing blue meridians, global network, futuristic tech style, isolated on transparent background",
+      "negative_prompt": "realistic photo, messy, text, logo",
+      "transparent": true
+    },
+    {
+      "name": "Icon Business Ecosystem",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "flat icon of a group of people, glowing blue neon outline, business team concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Model Ecosystem",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "flat icon of an isometric cube, glowing blue neon outline, data model concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Knowledge Ecosystem",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "flat icon of an open book, glowing blue neon outline, knowledge base concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Tool Ecosystem",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 590,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "flat icon of crossed wrenches, glowing blue neon outline, tools and settings concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 1",
+      "type": "icon",
+      "bbox": {
+        "x": 130,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of an arrow entering a door frame, glowing blue neon outline, entry point concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 2",
+      "type": "icon",
+      "bbox": {
+        "x": 280,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of a rising bar chart, glowing blue neon outline, growth concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 3",
+      "type": "icon",
+      "bbox": {
+        "x": 430,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of power transmission towers, glowing blue neon outline, infrastructure concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 4",
+      "type": "icon",
+      "bbox": {
+        "x": 580,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of a group of people, glowing blue neon outline, collaboration concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 5",
+      "type": "icon",
+      "bbox": {
+        "x": 730,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of a brain, glowing blue neon outline, intelligence concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 6",
+      "type": "icon",
+      "bbox": {
+        "x": 880,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of a rolled blueprint, glowing blue neon outline, planning concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1030,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of network nodes, glowing blue neon outline, connectivity concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    },
+    {
+      "name": "Icon Bottom 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1180,
+        "y": 800,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "flat icon of a wireframe globe, glowing blue neon outline, global concept, minimalist design, isolated on transparent background",
+      "negative_prompt": "3d, realistic, shading, complex",
+      "transparent": true
+    }
+  ]
+}

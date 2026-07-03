@@ -1,0 +1,134 @@
+{
+  "analysis": {
+    "vision_model": "qwen-vl-max",
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "image",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 40
+    },
+    "objects": {
+      "count": 28,
+      "types": {
+        "icon": 20,
+        "decoration": 4,
+        "photo": 3,
+        "texture": 1
+      },
+      "needs_image": {
+        "true": 25,
+        "false": 3
+      },
+      "names_by_type": {
+        "icon": [
+          "icon_power_plug",
+          "icon_stack",
+          "icon_factory",
+          "icon_network",
+          "icon_brain",
+          "icon_blueprint",
+          "icon_graph",
+          "icon_earth",
+          "icon_people",
+          "icon_cube",
+          "icon_document",
+          "icon_wrench",
+          "icon_phone",
+          "icon_chart",
+          "icon_power_tower",
+          "icon_people_group",
+          "icon_brain_2",
+          "icon_equation",
+          "icon_network_2",
+          "icon_earth_2"
+        ],
+        "decoration": [
+          "arrow_path",
+          "central_engine",
+          "highlight_line",
+          "timeline_arrows"
+        ],
+        "photo": [
+          "top_right_globe",
+          "bottom_left_building",
+          "bottom_right_factory"
+        ],
+        "texture": [
+          "background_pattern"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 21,
+      "types": {
+        "roundRect": 12,
+        "ellipse": 8,
+        "line": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 26,
+      "types": {
+        "texture": 2,
+        "icon": 20,
+        "decoration": 1,
+        "photo": 3
+      },
+      "transparent": {
+        "true": 20,
+        "false": 6
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Image",
+          "background_pattern"
+        ],
+        "icon": [
+          "icon_power_plug",
+          "icon_stack",
+          "icon_factory",
+          "icon_network",
+          "icon_brain",
+          "icon_blueprint",
+          "icon_graph",
+          "icon_earth",
+          "icon_people",
+          "icon_cube",
+          "icon_document",
+          "icon_wrench",
+          "icon_phone",
+          "icon_chart",
+          "icon_power_tower",
+          "icon_people_group",
+          "icon_brain_2",
+          "icon_equation",
+          "icon_network_2",
+          "icon_earth_2"
+        ],
+        "decoration": [
+          "central_engine"
+        ],
+        "photo": [
+          "top_right_globe",
+          "bottom_left_building",
+          "bottom_right_factory"
+        ]
+      }
+    }
+  }
+}

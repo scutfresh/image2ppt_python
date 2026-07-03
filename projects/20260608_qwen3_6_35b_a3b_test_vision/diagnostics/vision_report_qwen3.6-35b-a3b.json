@@ -1,0 +1,76 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.6-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 4
+    },
+    "body_text": {
+      "count": 35
+    },
+    "objects": {
+      "count": 17,
+      "types": {
+        "decoration": 4,
+        "icon": 13
+      },
+      "needs_image": {
+        "true": 0,
+        "false": 0
+      },
+      "names_by_type": {
+        "decoration": [
+          "Timeline Connector Line",
+          "Step Number Circles",
+          "Central Rings",
+          "Bottom Path Arrow"
+        ],
+        "icon": [
+          "Icon 1: Plug",
+          "Icon 2: Stack",
+          "Icon 3: Transformer",
+          "Icon 4: Network",
+          "Icon 5: Brain",
+          "Icon 6: Blueprint",
+          "Icon 7: Molecule",
+          "Icon 8: Globe",
+          "Icon: People",
+          "Icon: Cube",
+          "Icon: Book",
+          "Icon: Wrench",
+          "Bottom Icons"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 15,
+      "types": {
+        "roundRect": 12,
+        "ellipse": 3
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 0,
+      "types": {},
+      "transparent": {
+        "true": 0,
+        "false": 0
+      },
+      "names_by_type": {}
+    }
+  }
+}

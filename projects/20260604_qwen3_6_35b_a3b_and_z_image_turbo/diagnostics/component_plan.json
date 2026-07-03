@@ -1,0 +1,277 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue technology background, subtle grid pattern, faint circuit board lines, deep space gradient, high definition, cyberpunk aesthetic",
+      "negative_prompt": "bright colors, white background, text, logos, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "Power Tower Silhouette Left",
+      "type": "image",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      },
+      "prompt": "silhouette of high voltage power transmission towers, dark blue tone, night sky background, faint outline, industrial infrastructure",
+      "negative_prompt": "colorful, bright, detailed textures, daytime",
+      "transparent": false
+    },
+    {
+      "name": "Power Tower Silhouette Right",
+      "type": "image",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 300
+      },
+      "prompt": "silhouette of high voltage power transmission towers, dark blue tone, night sky background, faint outline, industrial infrastructure",
+      "negative_prompt": "colorful, bright, detailed textures, daytime",
+      "transparent": false
+    },
+    {
+      "name": "Globe Wireframe",
+      "type": "image",
+      "bbox": {
+        "x": 1450,
+        "y": 20,
+        "w": 200,
+        "h": 150
+      },
+      "prompt": "glowing blue wireframe globe, digital earth map, network connections, futuristic tech style, neon light, holographic effect",
+      "negative_prompt": "solid globe, realistic photo, clouds, landmasses",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "image",
+      "bbox": {
+        "x": 200,
+        "y": 450,
+        "w": 1272,
+        "h": 300
+      },
+      "prompt": "futuristic holographic platform, concentric glowing blue rings, 3D isometric view, data streams, cybernetic engine, dark blue background, layered technology",
+      "negative_prompt": "text, realistic objects, warm colors, simple shapes",
+      "transparent": false
+    },
+    {
+      "name": "Icon: Plug",
+      "type": "image",
+      "bbox": {
+        "x": 80,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue electrical plug icon, glowing outline, flat vector style, white background, energy symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Stack",
+      "type": "image",
+      "bbox": {
+        "x": 280,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue stacked cubes icon, glowing outline, flat vector style, white background, data storage symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Transformer",
+      "type": "image",
+      "bbox": {
+        "x": 480,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue electrical transformer icon with lightning bolt, glowing outline, flat vector style, white background, power symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Network",
+      "type": "image",
+      "bbox": {
+        "x": 680,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue network nodes icon, connected dots and lines, glowing outline, flat vector style, white background, connectivity symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Brain",
+      "type": "image",
+      "bbox": {
+        "x": 880,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue brain icon with circuit pattern, glowing outline, flat vector style, white background, AI symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Blueprint",
+      "type": "image",
+      "bbox": {
+        "x": 1080,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue rolled blueprint icon, technical drawing lines, glowing outline, flat vector style, white background, engineering symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Molecule",
+      "type": "image",
+      "bbox": {
+        "x": 1280,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue molecular structure icon, connected spheres, glowing outline, flat vector style, white background, science symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Globe",
+      "type": "image",
+      "bbox": {
+        "x": 1480,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      },
+      "prompt": "neon blue globe icon with towers, glowing outline, flat vector style, white background, global symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Arrow",
+      "type": "image",
+      "bbox": {
+        "x": 180,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue arrow entering door icon, glowing outline, flat vector style, white background, entry symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Chart",
+      "type": "image",
+      "bbox": {
+        "x": 330,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue and gold rising bar chart icon, glowing outline, flat vector style, white background, growth symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Towers",
+      "type": "image",
+      "bbox": {
+        "x": 480,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue power towers icon, glowing outline, flat vector style, white background, infrastructure symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: People",
+      "type": "image",
+      "bbox": {
+        "x": 630,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue group of people icon, glowing outline, flat vector style, white background, team symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Brain",
+      "type": "image",
+      "bbox": {
+        "x": 780,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue brain icon, glowing outline, flat vector style, white background, intelligence symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Blueprint",
+      "type": "image",
+      "bbox": {
+        "x": 930,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue rolled blueprint icon, glowing outline, flat vector style, white background, design symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Network",
+      "type": "image",
+      "bbox": {
+        "x": 1080,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue network nodes icon, glowing outline, flat vector style, white background, connection symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Icon: Globe",
+      "type": "image",
+      "bbox": {
+        "x": 1230,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "neon blue globe icon, glowing outline, flat vector style, white background, world symbol",
+      "negative_prompt": "realistic, 3d render, shadows, complex details",
+      "transparent": true
+    }
+  ]
+}

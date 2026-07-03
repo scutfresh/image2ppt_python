@@ -1,0 +1,124 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": { "x": 0, "y": 0, "w": 1920, "h": 1080 },
+      "prompt": "soft gradient background with subtle radial light effect, pastel blue to white transition, smooth and clean, no patterns or noise",
+      "negative_prompt": "text, shapes, icons, people, objects, clutter, sharp lines, dark shadows",
+      "transparent": false
+    },
+    {
+      "name": "icon_user",
+      "type": "icon",
+      "bbox": { "x": 50, "y": 60, "w": 30, "h": 30 },
+      "prompt": "simple user profile icon, outline style, light gray color, minimalistic design",
+      "negative_prompt": "filled, detailed face, colors, text, complex shapes",
+      "transparent": true
+    },
+    {
+      "name": "icon_settings",
+      "type": "icon",
+      "bbox": { "x": 120, "y": 60, "w": 30, "h": 30 },
+      "prompt": "gear icon, outline style, light gray, clean and modern",
+      "negative_prompt": "filled, colorful, detailed, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_search",
+      "type": "icon",
+      "bbox": { "x": 190, "y": 60, "w": 30, "h": 30 },
+      "prompt": "magnifying glass icon, outline style, light gray, simple and clear",
+      "negative_prompt": "filled, colored, complex details, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_notification",
+      "type": "icon",
+      "bbox": { "x": 260, "y": 60, "w": 30, "h": 30 },
+      "prompt": "bell icon, outline style, light gray, minimalist",
+      "negative_prompt": "filled, animated, colorful, text",
+      "transparent": true
+    },
+    {
+      "name": "decorative_line",
+      "type": "texture",
+      "bbox": { "x": 40, "y": 100, "w": 1840, "h": 2 },
+      "prompt": "thin horizontal line, soft gray color, subtle shadow, clean and straight",
+      "negative_prompt": "thick, wavy, textured, patterned, colored",
+      "transparent": false
+    },
+    {
+      "name": "chart_bar",
+      "type": "chart",
+      "bbox": { "x": 100, "y": 150, "w": 600, "h": 300 },
+      "prompt": "bar chart with four bars, ascending height, soft blue gradient fill, clean labels, light gray grid lines",
+      "negative_prompt": "text, numbers, complex data, pie chart, line graph",
+      "transparent": false
+    },
+    {
+      "name": "icon_star",
+      "type": "icon",
+      "bbox": { "x": 750, "y": 180, "w": 20, "h": 20 },
+      "prompt": "star icon, solid yellow, small size, centered",
+      "negative_prompt": "outline, gray, large, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_heart",
+      "type": "icon",
+      "bbox": { "x": 790, "y": 180, "w": 20, "h": 20 },
+      "prompt": "heart icon, solid red, small size, centered",
+      "negative_prompt": "outline, gray, large, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_share",
+      "type": "icon",
+      "bbox": { "x": 830, "y": 180, "w": 20, "h": 20 },
+      "prompt": "share icon, two connected circles, light gray, outline style",
+      "negative_prompt": "filled, colored, text, complex",
+      "transparent": true
+    },
+    {
+      "name": "photo_profile",
+      "type": "photo",
+      "bbox": { "x": 150, "y": 400, "w": 120, "h": 120 },
+      "prompt": "professional headshot of a person, neutral expression, soft lighting, blurred background, high resolution",
+      "negative_prompt": "text, logos, multiple people, harsh shadows",
+      "transparent": false
+    },
+    {
+      "name": "icon_calendar",
+      "type": "icon",
+      "bbox": { "x": 300, "y": 450, "w": 25, "h": 25 },
+      "prompt": "calendar icon, outline style, light gray, simple square with dots",
+      "negative_prompt": "filled, colored, detailed, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_clock",
+      "type": "icon",
+      "bbox": { "x": 350, "y": 450, "w": 25, "h": 25 },
+      "prompt": "clock icon, outline style, light gray, circular shape with hands",
+      "negative_prompt": "filled, colored, detailed, text",
+      "transparent": true
+    },
+    {
+      "name": "icon_location",
+      "type": "icon",
+      "bbox": { "x": 400, "y": 450, "w": 25, "h": 25 },
+      "prompt": "location pin icon, outline style, light gray, simple map marker",
+      "negative_prompt": "filled, colored, detailed, text",
+      "transparent": true
+    },
+    {
+      "name": "decoration_wave",
+      "type": "texture",
+      "bbox": { "x": 0, "y": 950, "w": 1920, "h": 30 },
+      "prompt": "subtle wave pattern at bottom edge, soft blue gradient, flowing curve, transparent overlay",
+      "negative_prompt": "sharp edges, text, solid color, complex shapes",
+      "transparent": true
+    }
+  ]
+}

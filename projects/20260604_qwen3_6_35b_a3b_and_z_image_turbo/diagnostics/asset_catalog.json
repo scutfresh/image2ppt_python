@@ -1,0 +1,235 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "file": "component_images/background_image.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "Power Tower Silhouette Left",
+      "type": "image",
+      "file": "component_images/power_tower_silhouette_left.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      }
+    },
+    {
+      "name": "Power Tower Silhouette Right",
+      "type": "image",
+      "file": "component_images/power_tower_silhouette_right.png",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 300
+      }
+    },
+    {
+      "name": "Globe Wireframe",
+      "type": "image",
+      "file": "component_images/globe_wireframe.png",
+      "bbox": {
+        "x": 1450,
+        "y": 20,
+        "w": 200,
+        "h": 150
+      }
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "image",
+      "file": "component_images/central_engine_graphic.png",
+      "bbox": {
+        "x": 200,
+        "y": 450,
+        "w": 1272,
+        "h": 300
+      }
+    },
+    {
+      "name": "Icon: Plug",
+      "type": "image",
+      "file": "component_images/icon_plug.png",
+      "bbox": {
+        "x": 80,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Stack",
+      "type": "image",
+      "file": "component_images/icon_stack.png",
+      "bbox": {
+        "x": 280,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Transformer",
+      "type": "image",
+      "file": "component_images/icon_transformer.png",
+      "bbox": {
+        "x": 480,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Network",
+      "type": "image",
+      "file": "component_images/icon_network.png",
+      "bbox": {
+        "x": 680,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Brain",
+      "type": "image",
+      "file": "component_images/icon_brain.png",
+      "bbox": {
+        "x": 880,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Blueprint",
+      "type": "image",
+      "file": "component_images/icon_blueprint.png",
+      "bbox": {
+        "x": 1080,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Molecule",
+      "type": "image",
+      "file": "component_images/icon_molecule.png",
+      "bbox": {
+        "x": 1280,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon: Globe",
+      "type": "image",
+      "file": "component_images/icon_globe.png",
+      "bbox": {
+        "x": 1480,
+        "y": 300,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Bottom Icon: Arrow",
+      "type": "image",
+      "file": "component_images/bottom_icon_arrow.png",
+      "bbox": {
+        "x": 180,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: Chart",
+      "type": "image",
+      "file": "component_images/bottom_icon_chart.png",
+      "bbox": {
+        "x": 330,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: Towers",
+      "type": "image",
+      "file": "component_images/bottom_icon_towers.png",
+      "bbox": {
+        "x": 480,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: People",
+      "type": "image",
+      "file": "component_images/bottom_icon_people.png",
+      "bbox": {
+        "x": 630,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: Brain",
+      "type": "image",
+      "file": "component_images/bottom_icon_brain.png",
+      "bbox": {
+        "x": 780,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: Blueprint",
+      "type": "image",
+      "file": "component_images/bottom_icon_blueprint.png",
+      "bbox": {
+        "x": 930,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: Network",
+      "type": "image",
+      "file": "component_images/bottom_icon_network.png",
+      "bbox": {
+        "x": 1080,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icon: Globe",
+      "type": "image",
+      "file": "component_images/bottom_icon_globe.png",
+      "bbox": {
+        "x": 1230,
+        "y": 800,
+        "w": 40,
+        "h": 40
+      }
+    }
+  ]
+}

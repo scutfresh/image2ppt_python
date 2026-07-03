@@ -1,0 +1,342 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "soft gradient background, light blue to white transition, subtle texture",
+      "negative_prompt": "dark colors, text, logos",
+      "transparent": false
+    },
+    {
+      "name": "icon_power_plug",
+      "type": "icon",
+      "bbox": {
+        "x": 35,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "power plug, blue glow, neon, electric, 3d, futuristic, clean lines",
+      "negative_prompt": "realistic, cluttered, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_stack",
+      "type": "icon",
+      "bbox": {
+        "x": 235,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "stacked layers, blue glow, digital, 3d, tech, abstract",
+      "negative_prompt": "flat, cartoon, simple shapes, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_factory",
+      "type": "icon",
+      "bbox": {
+        "x": 415,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "industrial factory, blue glow, power, 3d, modern, geometric",
+      "negative_prompt": "old style, rustic, detailed textures, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_network",
+      "type": "icon",
+      "bbox": {
+        "x": 595,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "neural network, blue glow, connected nodes, abstract, futuristic, 3d",
+      "negative_prompt": "simple lines, flat, no connections, dark",
+      "transparent": true
+    },
+    {
+      "name": "icon_brain",
+      "type": "icon",
+      "bbox": {
+        "x": 775,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "brain, neural structure, blue glow, cognitive, 3d, sci-fi",
+      "negative_prompt": "anatomical, realistic, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 955,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "blueprint, technical drawing, blue glow, engineering, 3d, schematic",
+      "negative_prompt": "colorful, cartoon, non-technical, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_graph",
+      "type": "icon",
+      "bbox": {
+        "x": 1135,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "network graph, blue glow, data flow, abstract, futuristic, 3d",
+      "negative_prompt": "bar chart, flat, simple, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_earth",
+      "type": "icon",
+      "bbox": {
+        "x": 1315,
+        "y": 255,
+        "w": 55,
+        "h": 55
+      },
+      "prompt": "globe, earth, blue glow, global, 3d, planet, stylized",
+      "negative_prompt": "realistic, detailed terrain, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_people",
+      "type": "icon",
+      "bbox": {
+        "x": 45,
+        "y": 465,
+        "w": 45,
+        "h": 45
+      },
+      "prompt": "user group, blue glow, social, 3d, simple, abstract figures",
+      "negative_prompt": "realistic people, detailed faces, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_cube",
+      "type": "icon",
+      "bbox": {
+        "x": 45,
+        "y": 550,
+        "w": 45,
+        "h": 45
+      },
+      "prompt": "cube, blue glow, model, 3d, abstract, geometric",
+      "negative_prompt": "flat, simple shape, no glow, real object",
+      "transparent": true
+    },
+    {
+      "name": "icon_document",
+      "type": "icon",
+      "bbox": {
+        "x": 1305,
+        "y": 465,
+        "w": 45,
+        "h": 45
+      },
+      "prompt": "document, blue glow, knowledge, 3d, flat design, paper sheet",
+      "negative_prompt": "realistic paper, folded, textured, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_wrench",
+      "type": "icon",
+      "bbox": {
+        "x": 1305,
+        "y": 550,
+        "w": 45,
+        "h": 45
+      },
+      "prompt": "wrench, tool, blue glow, mechanical, 3d, industrial",
+      "negative_prompt": "flat, cartoon, no glow, broken",
+      "transparent": true
+    },
+    {
+      "name": "icon_phone",
+      "type": "icon",
+      "bbox": {
+        "x": 165,
+        "y": 675,
+        "w": 40,
+        "h": 50
+      },
+      "prompt": "mobile phone, blue glow, device, 3d, tech, sleek design",
+      "negative_prompt": "old phone, flat, no screen, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_chart",
+      "type": "icon",
+      "bbox": {
+        "x": 305,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "bar chart, gold, growth, 3d, business, upward trend",
+      "negative_prompt": "blue, flat, declining, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_power_tower",
+      "type": "icon",
+      "bbox": {
+        "x": 445,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "power tower, blue glow, industrial, 3d, energy, transmission",
+      "negative_prompt": "flat, cartoon, no glow, windmill",
+      "transparent": true
+    },
+    {
+      "name": "icon_people_group",
+      "type": "icon",
+      "bbox": {
+        "x": 625,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "group, blue glow, collaboration, 3d, social, abstract figures",
+      "negative_prompt": "realistic, detailed, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_brain_2",
+      "type": "icon",
+      "bbox": {
+        "x": 765,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "brain, neural, blue glow, cognition, 3d, sci-fi",
+      "negative_prompt": "anatomical, realistic, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "icon_equation",
+      "type": "icon",
+      "bbox": {
+        "x": 945,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "formula, math, blue glow, scientific, 3d, symbols",
+      "negative_prompt": "text only, flat, no glow, handwritten",
+      "transparent": true
+    },
+    {
+      "name": "icon_network_2",
+      "type": "icon",
+      "bbox": {
+        "x": 1105,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "network, blue glow, connection, abstract, futuristic, 3d",
+      "negative_prompt": "flat, simple lines, no glow, disconnected",
+      "transparent": true
+    },
+    {
+      "name": "icon_earth_2",
+      "type": "icon",
+      "bbox": {
+        "x": 1265,
+        "y": 675,
+        "w": 60,
+        "h": 50
+      },
+      "prompt": "globe, earth, blue glow, global, 3d, planet, stylized",
+      "negative_prompt": "realistic, detailed terrain, flat, no glow",
+      "transparent": true
+    },
+    {
+      "name": "central_engine",
+      "type": "decoration",
+      "bbox": {
+        "x": 370,
+        "y": 430,
+        "w": 780,
+        "h": 205
+      },
+      "prompt": "futuristic engine, blue glow, layered rings, 3d, sci-fi, mechanical core",
+      "negative_prompt": "realistic, flat, simple, no glow, static",
+      "transparent": false
+    },
+    {
+      "name": "top_right_globe",
+      "type": "photo",
+      "bbox": {
+        "x": 1290,
+        "y": 15,
+        "w": 170,
+        "h": 135
+      },
+      "prompt": "globe, blue glow, cityscape, night, futuristic, illuminated buildings",
+      "negative_prompt": "daytime, flat, no glow, rural",
+      "transparent": false
+    },
+    {
+      "name": "bottom_left_building",
+      "type": "photo",
+      "bbox": {
+        "x": 320,
+        "y": 540,
+        "w": 100,
+        "h": 65
+      },
+      "prompt": "building, blue glow, digital, 3d, urban, futuristic architecture",
+      "negative_prompt": "old building, flat, no glow, natural landscape",
+      "transparent": false
+    },
+    {
+      "name": "bottom_right_factory",
+      "type": "photo",
+      "bbox": {
+        "x": 1050,
+        "y": 510,
+        "w": 120,
+        "h": 95
+      },
+      "prompt": "factory, blue glow, industrial, 3d, modern, glowing structures",
+      "negative_prompt": "rustic, old, flat, no glow",
+      "transparent": false
+    },
+    {
+      "name": "background_pattern",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "dark blue, circuit lines, glowing nodes, futuristic, tech, seamless pattern",
+      "negative_prompt": "light colors, text, logos, organic patterns",
+      "transparent": false
+    }
+  ]
+}

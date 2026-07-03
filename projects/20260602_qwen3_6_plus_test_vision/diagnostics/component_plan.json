@@ -1,0 +1,342 @@
+{
+  "assets": [
+    {
+      "name": "Background Texture",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue tech background, subtle grid lines, faint outlines of power transmission towers, futuristic data visualization style, deep blue gradient, high tech interface background",
+      "negative_prompt": "text, logos, bright colors, realistic photos, cluttered",
+      "transparent": false
+    },
+    {
+      "name": "Top Arrow Line",
+      "type": "decoration",
+      "bbox": {
+        "x": 100,
+        "y": 170,
+        "w": 1470,
+        "h": 10
+      },
+      "prompt": "horizontal glowing blue line with arrowheads, connecting timeline nodes, tech style, neon blue, sleek digital line",
+      "negative_prompt": "text, thick lines, realistic, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 1 Plug",
+      "type": "icon",
+      "bbox": {
+        "x": 80,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "electric plug icon, blue neon glow, tech style, flat vector with 3D lighting, power symbol",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 2 Stack",
+      "type": "icon",
+      "bbox": {
+        "x": 270,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "stacked layers icon, database symbol, blue neon glow, tech style, flat vector with 3D lighting, server stack",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 3 Transformer",
+      "type": "icon",
+      "bbox": {
+        "x": 460,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "electrical transformer icon, lightning bolt symbol, blue neon glow, tech style, flat vector with 3D lighting, power grid equipment",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 4 Network",
+      "type": "icon",
+      "bbox": {
+        "x": 650,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "network nodes connected by lines, blue neon glow, tech style, flat vector with 3D lighting, connectivity diagram",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 5 Brain",
+      "type": "icon",
+      "bbox": {
+        "x": 840,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "human brain icon with digital elements, blue neon glow, tech style, flat vector with 3D lighting, AI symbol",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 6 Blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 1030,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "rolled blueprint scroll with technical drawing, blue neon glow, tech style, flat vector with 3D lighting, engineering plan",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 7 Graph",
+      "type": "icon",
+      "bbox": {
+        "x": 1220,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "topology graph structure, nodes and edges, blue neon glow, tech style, flat vector with 3D lighting, network topology",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon 8 Globe",
+      "type": "icon",
+      "bbox": {
+        "x": 1410,
+        "y": 260,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "wireframe globe with power towers inside, blue neon glow, tech style, flat vector with 3D lighting, world model",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Rings",
+      "type": "decoration",
+      "bbox": {
+        "x": 350,
+        "y": 480,
+        "w": 900,
+        "h": 200
+      },
+      "prompt": "concentric glowing blue rings, 3D platform effect, holographic interface, tech style, neon blue, data engine visualization",
+      "negative_prompt": "text, realistic, cluttered, flat",
+      "transparent": true
+    },
+    {
+      "name": "Central Server Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 400,
+        "y": 600,
+        "w": 80,
+        "h": 60
+      },
+      "prompt": "server rack icon, data center symbol, blue neon glow, tech style, flat vector with 3D lighting, computing infrastructure",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Central Building Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 600,
+        "w": 80,
+        "h": 60
+      },
+      "prompt": "industrial factory building icon, blue neon glow, tech style, flat vector with 3D lighting, power plant",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Business Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 520,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "group of people icon, silhouette, blue neon glow, tech style, flat vector with 3D lighting, business ecosystem",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Model Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 620,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "3D cube icon, wireframe, blue neon glow, tech style, flat vector with 3D lighting, model ecosystem",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Knowledge Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 1430,
+        "y": 520,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "open book icon, document symbol, blue neon glow, tech style, flat vector with 3D lighting, knowledge base",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Tool Eco",
+      "type": "icon",
+      "bbox": {
+        "x": 1430,
+        "y": 620,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "crossed wrench and screwdriver icon, blue neon glow, tech style, flat vector with 3D lighting, tools ecosystem",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Line",
+      "type": "decoration",
+      "bbox": {
+        "x": 150,
+        "y": 820,
+        "w": 1300,
+        "h": 100
+      },
+      "prompt": "curved glowing blue arrow line, timeline path, tech style, neon blue, sleek digital path, evolution roadmap",
+      "negative_prompt": "text, thick lines, realistic, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 1 Door",
+      "type": "icon",
+      "bbox": {
+        "x": 200,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "open door icon, entrance symbol, blue neon glow, tech style, flat vector with 3D lighting, service entry",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 2 Chart",
+      "type": "icon",
+      "bbox": {
+        "x": 350,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "bar chart with upward trend arrow, blue neon glow, tech style, flat vector with 3D lighting, growth chart",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 3 Towers",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "power transmission towers icon, blue neon glow, tech style, flat vector with 3D lighting, electricity grid",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 4 People",
+      "type": "icon",
+      "bbox": {
+        "x": 650,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "group of people icon, team symbol, blue neon glow, tech style, flat vector with 3D lighting, collaboration",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 5 Brain",
+      "type": "icon",
+      "bbox": {
+        "x": 800,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "brain icon, cognitive symbol, blue neon glow, tech style, flat vector with 3D lighting, reasoning",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 6 Blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 950,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blueprint scroll icon, plan symbol, blue neon glow, tech style, flat vector with 3D lighting, industrial design",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 7 Network",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "network nodes icon, connection symbol, blue neon glow, tech style, flat vector with 3D lighting, topology",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    },
+    {
+      "name": "Icon Path 8 Globe",
+      "type": "icon",
+      "bbox": {
+        "x": 1250,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "globe icon, world symbol, blue neon glow, tech style, flat vector with 3D lighting, world model",
+      "negative_prompt": "text, realistic, 3d render, cluttered",
+      "transparent": true
+    }
+  ]
+}

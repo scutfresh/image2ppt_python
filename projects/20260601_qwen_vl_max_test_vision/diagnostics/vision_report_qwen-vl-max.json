@@ -1,0 +1,140 @@
+{
+  "analysis": {
+    "vision_model": "qwen-vl-max",
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "background": {
+      "type": "image",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 40
+    },
+    "objects": {
+      "count": 49,
+      "types": {
+        "icon": 20,
+        "decoration": 5,
+        "shape": 24
+      },
+      "needs_image": {
+        "true": 24,
+        "false": 25
+      },
+      "names_by_type": {
+        "icon": [
+          "icon_power",
+          "icon_stack",
+          "icon_factory",
+          "icon_network",
+          "icon_brain",
+          "icon_blueprint",
+          "icon_graph",
+          "icon_earth",
+          "icon_people",
+          "icon_cube",
+          "icon_document",
+          "icon_wrench",
+          "icon_phone",
+          "icon_chart",
+          "icon_tower",
+          "icon_people_group",
+          "icon_brain2",
+          "icon_blueprint2",
+          "icon_network2",
+          "icon_earth2"
+        ],
+        "decoration": [
+          "arrow_path",
+          "central_engine",
+          "globe_background",
+          "power_lines",
+          "glow_effect"
+        ],
+        "shape": [
+          "step_arrow_1",
+          "step_arrow_2",
+          "step_arrow_3",
+          "step_arrow_4",
+          "step_arrow_5",
+          "step_arrow_6",
+          "step_arrow_7",
+          "step_arrow_8",
+          "circle_1",
+          "circle_2",
+          "circle_3",
+          "circle_4",
+          "circle_5",
+          "circle_6",
+          "circle_7",
+          "circle_8",
+          "highlight_line_1",
+          "highlight_line_2",
+          "highlight_line_3",
+          "highlight_line_4",
+          "highlight_line_5",
+          "highlight_line_6",
+          "highlight_line_7",
+          "highlight_line_8"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 13,
+      "types": {
+        "roundRect": 12,
+        "line": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 15,
+      "types": {
+        "texture": 3,
+        "icon": 10,
+        "chart": 1,
+        "photo": 1
+      },
+      "transparent": {
+        "true": 11,
+        "false": 4
+      },
+      "names_by_type": {
+        "texture": [
+          "Background Image",
+          "decorative_line",
+          "decoration_wave"
+        ],
+        "icon": [
+          "icon_user",
+          "icon_settings",
+          "icon_search",
+          "icon_notification",
+          "icon_star",
+          "icon_heart",
+          "icon_share",
+          "icon_calendar",
+          "icon_clock",
+          "icon_location"
+        ],
+        "chart": [
+          "chart_bar"
+        ],
+        "photo": [
+          "photo_profile"
+        ]
+      }
+    }
+  }
+}

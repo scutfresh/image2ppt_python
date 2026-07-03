@@ -1,0 +1,238 @@
+{
+  "assets": [
+    {
+      "name": "Top Arrow Connector",
+      "type": "decoration",
+      "bbox": {
+        "x": 250,
+        "y": 160,
+        "w": 1200,
+        "h": 30
+      },
+      "prompt": "horizontal glowing blue arrow connector, neon cyan line, tech style, dark background",
+      "negative_prompt": "text, cluttered, low resolution",
+      "transparent": false
+    },
+    {
+      "name": "Column 1 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon plug icon, flat design, electrical outlet symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 2 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon stack of cubes icon, flat design, server or data layer symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 3 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon transformer icon, flat design, electrical substation symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 4 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 700,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon network nodes icon, flat design, connection points symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 5 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon brain icon, flat design, AI or cognitive symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 6 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon blueprint scroll icon, flat design, engineering plan symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 7 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1300,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon topology graph icon, flat design, mesh network symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Column 8 Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue neon globe icon, flat design, world network symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "chart",
+      "bbox": {
+        "x": 550,
+        "y": 450,
+        "w": 572,
+        "h": 350
+      },
+      "prompt": "circular holographic engine graphic, layered blue rings, 3d isometric view, tech interface, glowing text bubbles",
+      "negative_prompt": "flat 2d, static, no glow",
+      "transparent": false
+    },
+    {
+      "name": "Left Ecosystem Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 550,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue group of people icon, flat design, team symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Left Model Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 40,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue wireframe cube icon, flat design, 3d model symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Right Knowledge Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1480,
+        "y": 550,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue open book icon, flat design, document symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Right Tool Icon",
+      "type": "icon",
+      "bbox": {
+        "x": 1480,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue crossed wrenches icon, flat design, tools symbol, glowing outline",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Curve",
+      "type": "decoration",
+      "bbox": {
+        "x": 100,
+        "y": 780,
+        "w": 1472,
+        "h": 150
+      },
+      "prompt": "long curved glowing blue arrow line, tech path, gradient cyan to blue",
+      "negative_prompt": "straight line, dark, broken",
+      "transparent": false
+    },
+    {
+      "name": "Bottom Path Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 150,
+        "y": 800,
+        "w": 1200,
+        "h": 80
+      },
+      "prompt": "sequence of blue flat icons including door, chart, towers, people, brain, blueprint, network, globe, connected by line",
+      "negative_prompt": "3d realistic, colored fill, shadow",
+      "transparent": true
+    },
+    {
+      "name": "Top Left Power Tower",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      },
+      "prompt": "silhouette of high voltage power tower, dark blue, foggy background, subtle texture",
+      "negative_prompt": "bright, clear, foreground object",
+      "transparent": false
+    },
+    {
+      "name": "Top Right Globe",
+      "type": "decoration",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 300
+      },
+      "prompt": "large digital wireframe globe, blue network connections, tech background element",
+      "negative_prompt": "realistic earth, solid colors",
+      "transparent": false
+    }
+  ]
+}

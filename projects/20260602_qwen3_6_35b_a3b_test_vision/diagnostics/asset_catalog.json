@@ -1,0 +1,257 @@
+{
+  "assets": [
+    {
+      "name": "Background Towers",
+      "type": "texture",
+      "file": "component_images/background_towers.png",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    {
+      "name": "Icon 1",
+      "type": "icon",
+      "file": "component_images/icon_1.png",
+      "bbox": {
+        "x": 70,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 2",
+      "type": "icon",
+      "file": "component_images/icon_2.png",
+      "bbox": {
+        "x": 270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 3",
+      "type": "icon",
+      "file": "component_images/icon_3.png",
+      "bbox": {
+        "x": 470,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 4",
+      "type": "icon",
+      "file": "component_images/icon_4.png",
+      "bbox": {
+        "x": 670,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 5",
+      "type": "icon",
+      "file": "component_images/icon_5.png",
+      "bbox": {
+        "x": 870,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 6",
+      "type": "icon",
+      "file": "component_images/icon_6.png",
+      "bbox": {
+        "x": 1070,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 7",
+      "type": "icon",
+      "file": "component_images/icon_7.png",
+      "bbox": {
+        "x": 1270,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Icon 8",
+      "type": "icon",
+      "file": "component_images/icon_8.png",
+      "bbox": {
+        "x": 1470,
+        "y": 280,
+        "w": 80,
+        "h": 80
+      }
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "decoration",
+      "file": "component_images/central_engine_graphic.png",
+      "bbox": {
+        "x": 300,
+        "y": 450,
+        "w": 1072,
+        "h": 250
+      }
+    },
+    {
+      "name": "Arrow Path Bottom",
+      "type": "decoration",
+      "file": "component_images/arrow_path_bottom.png",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1500,
+        "h": 100
+      }
+    },
+    {
+      "name": "Side Icons",
+      "type": "icon",
+      "file": "component_images/side_icons.png",
+      "bbox": {
+        "x": 40,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Side Icons 2",
+      "type": "icon",
+      "file": "component_images/side_icons_2.png",
+      "bbox": {
+        "x": 40,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Side Icons 3",
+      "type": "icon",
+      "file": "component_images/side_icons_3.png",
+      "bbox": {
+        "x": 1490,
+        "y": 510,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Side Icons 4",
+      "type": "icon",
+      "file": "component_images/side_icons_4.png",
+      "bbox": {
+        "x": 1490,
+        "y": 610,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "name": "Bottom Icons",
+      "type": "icon",
+      "file": "component_images/bottom_icons.png",
+      "bbox": {
+        "x": 150,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 2",
+      "type": "icon",
+      "file": "component_images/bottom_icons_2.png",
+      "bbox": {
+        "x": 300,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 3",
+      "type": "icon",
+      "file": "component_images/bottom_icons_3.png",
+      "bbox": {
+        "x": 450,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 4",
+      "type": "icon",
+      "file": "component_images/bottom_icons_4.png",
+      "bbox": {
+        "x": 600,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 5",
+      "type": "icon",
+      "file": "component_images/bottom_icons_5.png",
+      "bbox": {
+        "x": 750,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 6",
+      "type": "icon",
+      "file": "component_images/bottom_icons_6.png",
+      "bbox": {
+        "x": 900,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 7",
+      "type": "icon",
+      "file": "component_images/bottom_icons_7.png",
+      "bbox": {
+        "x": 1050,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    },
+    {
+      "name": "Bottom Icons 8",
+      "type": "icon",
+      "file": "component_images/bottom_icons_8.png",
+      "bbox": {
+        "x": 1200,
+        "y": 800,
+        "w": 60,
+        "h": 60
+      }
+    }
+  ]
+}

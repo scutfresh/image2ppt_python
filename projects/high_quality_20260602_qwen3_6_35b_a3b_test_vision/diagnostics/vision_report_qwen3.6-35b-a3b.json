@@ -1,0 +1,107 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.6-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "color",
+      "bbox": null
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 87
+    },
+    "objects": {
+      "count": 22,
+      "types": {
+        "image": 2,
+        "icon": 20
+      },
+      "needs_image": {
+        "true": 22,
+        "false": 0
+      },
+      "names_by_type": {
+        "image": [
+          "Central Engine Graphic",
+          "Bottom Arrow Graphic"
+        ],
+        "icon": [
+          "Icon 1",
+          "Icon 2",
+          "Icon 3",
+          "Icon 4",
+          "Icon 5",
+          "Icon 6",
+          "Icon 7",
+          "Icon 8",
+          "Side Icon 1",
+          "Side Icon 2",
+          "Side Icon 3",
+          "Side Icon 4",
+          "Bottom Icon 1",
+          "Bottom Icon 2",
+          "Bottom Icon 3",
+          "Bottom Icon 4",
+          "Bottom Icon 5",
+          "Bottom Icon 6",
+          "Bottom Icon 7",
+          "Bottom Icon 8"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 27,
+      "types": {
+        "roundRect": 12,
+        "line": 7,
+        "ellipse": 8
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 22,
+      "types": {
+        "image": 2,
+        "icon": 20
+      },
+      "transparent": {
+        "true": 20,
+        "false": 2
+      },
+      "names_by_type": {
+        "image": [
+          "Central Engine Graphic",
+          "Bottom Arrow Graphic"
+        ],
+        "icon": [
+          "Icon 1",
+          "Icon 2",
+          "Icon 3",
+          "Icon 4",
+          "Icon 5",
+          "Icon 6",
+          "Icon 7",
+          "Icon 8",
+          "Side Icon 1",
+          "Side Icon 2",
+          "Side Icon 3",
+          "Side Icon 4",
+          "Bottom Icon 1",
+          "Bottom Icon 2",
+          "Bottom Icon 3",
+          "Bottom Icon 4",
+          "Bottom Icon 5",
+          "Bottom Icon 6",
+          "Bottom Icon 7",
+          "Bottom Icon 8"
+        ]
+      }
+    }
+  }
+}

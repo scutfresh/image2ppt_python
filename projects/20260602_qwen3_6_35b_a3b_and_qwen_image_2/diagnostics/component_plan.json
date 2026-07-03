@@ -1,0 +1,303 @@
+{
+  "assets": [
+    {
+      "name": "Background Pylons Left",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 300,
+        "h": 300
+      },
+      "prompt": "faint blue wireframe high voltage transmission towers, tech style, isolated on a transparent background",
+      "negative_prompt": "white background, bright background, solid background, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Background Pylons Right",
+      "type": "decoration",
+      "bbox": {
+        "x": 1300,
+        "y": 0,
+        "w": 372,
+        "h": 200
+      },
+      "prompt": "blue wireframe high voltage towers and city skyline silhouette, tech style, isolated on a transparent background",
+      "negative_prompt": "white background, bright background, solid background, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Globe",
+      "type": "decoration",
+      "bbox": {
+        "x": 1400,
+        "y": 20,
+        "w": 250,
+        "h": 200
+      },
+      "prompt": "blue wireframe globe with grid lines, tech style, isolated on a transparent background",
+      "negative_prompt": "white background, bright background, solid background, realistic photo",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Plug",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline plug icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Server Stack",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline server stack icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Transformer",
+      "type": "icon",
+      "bbox": {
+        "x": 500,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline electrical transformer icon with lightning bolt, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Network Nodes",
+      "type": "icon",
+      "bbox": {
+        "x": 700,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline network nodes icon, connected dots, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Brain + Image",
+      "type": "icon",
+      "bbox": {
+        "x": 900,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline brain and image icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 1100,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline rolled blueprint icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Molecule",
+      "type": "icon",
+      "bbox": {
+        "x": 1300,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline molecule structure icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Globe + Pylons",
+      "type": "icon",
+      "bbox": {
+        "x": 1500,
+        "y": 300,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "blue outline globe with pylons icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: People Group",
+      "type": "icon",
+      "bbox": {
+        "x": 60,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue outline group of people icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Cube",
+      "type": "icon",
+      "bbox": {
+        "x": 60,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue outline isometric cube icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Book",
+      "type": "icon",
+      "bbox": {
+        "x": 1572,
+        "y": 570,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue outline open book icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Wrench/Gear",
+      "type": "icon",
+      "bbox": {
+        "x": 1572,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "blue outline wrench and gear icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Door/Entry",
+      "type": "icon",
+      "bbox": {
+        "x": 160,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline arrow entering door icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Bar Chart",
+      "type": "icon",
+      "bbox": {
+        "x": 360,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline bar chart icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Pylons",
+      "type": "icon",
+      "bbox": {
+        "x": 560,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline two electricity pylons icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: People Network",
+      "type": "icon",
+      "bbox": {
+        "x": 760,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline people network icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Brain",
+      "type": "icon",
+      "bbox": {
+        "x": 960,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline brain icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Blueprint",
+      "type": "icon",
+      "bbox": {
+        "x": 1160,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline blueprint drawing icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Network Nodes",
+      "type": "icon",
+      "bbox": {
+        "x": 1360,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline network nodes graph icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    },
+    {
+      "name": "Icon: Globe",
+      "type": "icon",
+      "bbox": {
+        "x": 1560,
+        "y": 780,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "blue outline globe icon, flat design, isolated on a transparent background",
+      "negative_prompt": "3d, realistic, cluttered, white background, solid background",
+      "transparent": true
+    }
+  ]
+}

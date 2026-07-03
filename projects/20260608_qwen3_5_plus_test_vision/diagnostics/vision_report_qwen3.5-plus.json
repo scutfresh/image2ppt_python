@@ -1,0 +1,98 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.5-plus",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 4
+    },
+    "body_text": {
+      "count": 55
+    },
+    "objects": {
+      "count": 33,
+      "types": {
+        "decoration": 14,
+        "icon": 16,
+        "chart": 1,
+        "photo": 2
+      },
+      "needs_image": {
+        "true": 0,
+        "false": 0
+      },
+      "names_by_type": {
+        "decoration": [
+          "Timeline Card Background 1",
+          "Timeline Card Background 2",
+          "Timeline Card Background 3",
+          "Timeline Card Background 4",
+          "Timeline Card Background 5",
+          "Timeline Card Background 6",
+          "Timeline Card Background 7",
+          "Timeline Card Background 8",
+          "Side Box Left Top",
+          "Side Box Left Bottom",
+          "Side Box Right Top",
+          "Side Box Right Bottom",
+          "Bottom Path Arrow",
+          "Header Decoration Lines"
+        ],
+        "icon": [
+          "Icon Plug",
+          "Icon Layers",
+          "Icon Transformer",
+          "Icon Network",
+          "Icon Brain",
+          "Icon Blueprint",
+          "Icon Topology",
+          "Icon Globe",
+          "Icon Path 1",
+          "Icon Path 2",
+          "Icon Path 3",
+          "Icon Path 4",
+          "Icon Path 5",
+          "Icon Path 6",
+          "Icon Path 7",
+          "Icon Path 8"
+        ],
+        "chart": [
+          "Central Engine Graphic"
+        ],
+        "photo": [
+          "Top Right Globe",
+          "Top Left Towers"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 17,
+      "types": {
+        "roundRect": 16,
+        "line": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 0,
+      "types": {},
+      "transparent": {
+        "true": 0,
+        "false": 0
+      },
+      "names_by_type": {}
+    }
+  }
+}

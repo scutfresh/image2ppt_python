@@ -1,0 +1,118 @@
+{
+  "analysis": {
+    "vision_model": "qwen3.5-35b-a3b",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "background": {
+      "type": "gradient",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      }
+    },
+    "titles": {
+      "count": 3
+    },
+    "body_text": {
+      "count": 35
+    },
+    "objects": {
+      "count": 22,
+      "types": {
+        "chart": 1,
+        "icon": 20,
+        "texture": 1
+      },
+      "needs_image": {
+        "true": 22,
+        "false": 0
+      },
+      "names_by_type": {
+        "chart": [
+          "Central Engine Graphic"
+        ],
+        "icon": [
+          "Icon Plug",
+          "Icon Server Stack",
+          "Icon Transformer",
+          "Icon Network",
+          "Icon Brain",
+          "Icon Blueprint",
+          "Icon Topology",
+          "Icon Globe",
+          "Icon People",
+          "Icon Cube",
+          "Icon Book",
+          "Icon Tools",
+          "Icon Door",
+          "Icon Chart",
+          "Icon Towers",
+          "Icon Group",
+          "Icon Brain Bottom",
+          "Icon Blueprint Bottom",
+          "Icon Topology Bottom",
+          "Icon Globe Bottom"
+        ],
+        "texture": [
+          "Background Grid"
+        ]
+      }
+    },
+    "shapes": {
+      "count": 14,
+      "types": {
+        "rect": 12,
+        "line": 1,
+        "shape": 1
+      }
+    }
+  },
+  "component_plan": {
+    "assets": {
+      "count": 22,
+      "types": {
+        "chart": 1,
+        "icon": 20,
+        "texture": 1
+      },
+      "transparent": {
+        "true": 20,
+        "false": 2
+      },
+      "names_by_type": {
+        "chart": [
+          "Central Engine Graphic"
+        ],
+        "icon": [
+          "Icon Plug",
+          "Icon Server Stack",
+          "Icon Transformer",
+          "Icon Network",
+          "Icon Brain",
+          "Icon Blueprint",
+          "Icon Topology",
+          "Icon Globe",
+          "Icon People",
+          "Icon Cube",
+          "Icon Book",
+          "Icon Tools",
+          "Icon Door",
+          "Icon Chart",
+          "Icon Towers",
+          "Icon Group",
+          "Icon Brain Bottom",
+          "Icon Blueprint Bottom",
+          "Icon Topology Bottom",
+          "Icon Globe Bottom"
+        ],
+        "texture": [
+          "Background Grid"
+        ]
+      }
+    }
+  }
+}

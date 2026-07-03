@@ -1,0 +1,121 @@
+{
+  "assets": [
+    {
+      "name": "Background Power Towers",
+      "type": "decoration",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 300
+      },
+      "prompt": "silhouette of high-voltage electricity pylons, futuristic industrial style, subtle digital grid overlay, deep blue atmospheric perspective, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Background Globe",
+      "type": "decoration",
+      "bbox": {
+        "x": 1400,
+        "y": 0,
+        "w": 272,
+        "h": 200
+      },
+      "prompt": "wireframe globe, blue neon network lines, rotating earth concept, high-tech data visualization, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Version Number Circles",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 150,
+        "w": 1472,
+        "h": 40
+      },
+      "prompt": "row of eight circular badges, glowing cyan borders, dark blue centers, numbers 1 to 8, sleek sci-fi UI design, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Cards Backgrounds",
+      "type": "shape",
+      "bbox": {
+        "x": 20,
+        "y": 200,
+        "w": 1632,
+        "h": 280
+      },
+      "prompt": "horizontal row of eight glassmorphism UI panels, rounded corners, glowing cyan borders, semi-transparent dark blue fill, futuristic dashboard aesthetic, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "chart",
+      "bbox": {
+        "x": 300,
+        "y": 500,
+        "w": 1072,
+        "h": 200
+      },
+      "prompt": "complex futuristic engine diagram, concentric glowing blue rings, central core structure, data flow visualization, high-tech interface element, on a smooth dark-blue gradient background",
+      "negative_prompt": "text, logos, simple shapes, low resolution",
+      "transparent": false
+    },
+    {
+      "name": "Side Ecosystem Boxes",
+      "type": "shape",
+      "bbox": {
+        "x": 20,
+        "y": 520,
+        "w": 180,
+        "h": 180
+      },
+      "prompt": "two stacked futuristic UI panels, glowing blue borders, dark blue translucent fill, sleek tech design, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Arrow",
+      "type": "shape",
+      "bbox": {
+        "x": 100,
+        "y": 800,
+        "w": 1472,
+        "h": 100
+      },
+      "prompt": "long curved glowing blue arrow pointing right, futuristic trajectory line, neon light effect, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icons",
+      "type": "icon",
+      "bbox": {
+        "x": 100,
+        "y": 750,
+        "w": 1472,
+        "h": 80
+      },
+      "prompt": "row of eight futuristic tech icons: door, bar chart, power towers, group of people, brain, blueprint, network nodes, globe. All in glowing cyan and blue style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icons (Plug, Server, etc.)",
+      "type": "icon",
+      "bbox": {
+        "x": 30,
+        "y": 300,
+        "w": 1612,
+        "h": 100
+      },
+      "prompt": "row of eight specific tech icons: plug, server stack, electrical transformer, network mesh, brain with chip, blueprint scroll, molecular structure, wireframe globe. Glowing cyan and blue style, isolated on a solid pure black background",
+      "negative_prompt": "gradients, noisy background, cluttered background, watermarks, grids, checkerboard",
+      "transparent": true
+    }
+  ]
+}

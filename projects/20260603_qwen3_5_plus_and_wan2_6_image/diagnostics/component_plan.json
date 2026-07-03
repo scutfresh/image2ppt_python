@@ -1,0 +1,290 @@
+{
+  "assets": [
+    {
+      "name": "Timeline Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 90,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of an electrical plug, neon blue glow, glowing circuit lines, dark background, flat vector style, high contrast",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 300,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of stacked layers or cubes, isometric 3d view, neon blue glow, glowing edges, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution, flat 2d",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 510,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of an electrical transformer or substation, neon blue glow, industrial style, glowing lines, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 720,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of a network with connected nodes, constellation style, neon blue glow, glowing dots and lines, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 930,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of a digital brain, AI concept, neon blue glow, circuit patterns inside brain, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution, biological brain",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 1140,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of a blueprint scroll, technical drawing, neon blue glow, glowing grid lines, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1350,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of a complex network graph, structural nodes, neon blue glow, glowing connections, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Timeline Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1560,
+        "y": 280,
+        "w": 60,
+        "h": 60
+      },
+      "prompt": "futuristic tech icon of a wireframe globe, world model, neon blue glow, grid lines on sphere, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution, solid earth",
+      "transparent": true
+    },
+    {
+      "name": "Central Engine Graphic",
+      "type": "decoration",
+      "bbox": {
+        "x": 400,
+        "y": 530,
+        "w": 872,
+        "h": 200
+      },
+      "prompt": "futuristic central engine graphic, concentric glowing blue rings, orbital paths, holographic interface elements, dark background, high tech visualization",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution, simple flat shapes",
+      "transparent": true
+    },
+    {
+      "name": "Side Box Icon Left 1",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 560,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "futuristic tech icon of a group of people, users, neon blue glow, simple outline, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Side Box Icon Left 2",
+      "type": "icon",
+      "bbox": {
+        "x": 50,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "futuristic tech icon of a 3d cube or model, wireframe, neon blue glow, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Side Box Icon Right 1",
+      "type": "icon",
+      "bbox": {
+        "x": 1520,
+        "y": 560,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "futuristic tech icon of an open book or document, knowledge, neon blue glow, glowing pages, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Side Box Icon Right 2",
+      "type": "icon",
+      "bbox": {
+        "x": 1520,
+        "y": 650,
+        "w": 40,
+        "h": 40
+      },
+      "prompt": "futuristic tech icon of crossed tools, wrench and screwdriver, neon blue glow, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 1",
+      "type": "icon",
+      "bbox": {
+        "x": 170,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of a smartphone with an entry arrow, neon blue glow, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 2",
+      "type": "icon",
+      "bbox": {
+        "x": 320,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of a bar chart with growth arrow, orange and gold glow, dark background, vector style",
+      "negative_prompt": "text, realistic photo, blue colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 3",
+      "type": "icon",
+      "bbox": {
+        "x": 470,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of power towers or electricity pylons, neon blue glow, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 4",
+      "type": "icon",
+      "bbox": {
+        "x": 620,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of people in a network, collaboration, neon blue glow, connected users, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 5",
+      "type": "icon",
+      "bbox": {
+        "x": 770,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of a digital brain, AI reasoning, neon blue glow, circuit patterns, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 6",
+      "type": "icon",
+      "bbox": {
+        "x": 920,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of a blueprint or engineering design, neon blue glow, technical drawing style, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 7",
+      "type": "icon",
+      "bbox": {
+        "x": 1070,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of network topology, structure, neon blue glow, connected nodes, dark background, vector illustration",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Bottom Path Icon 8",
+      "type": "icon",
+      "bbox": {
+        "x": 1220,
+        "y": 820,
+        "w": 50,
+        "h": 50
+      },
+      "prompt": "futuristic tech icon of a wireframe globe, world simulation, neon blue glow, grid lines, dark background, vector style",
+      "negative_prompt": "text, realistic photo, warm colors, blurry, low resolution",
+      "transparent": true
+    },
+    {
+      "name": "Background Tech Lines",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "prompt": "dark blue tech background, faint grid lines, circuit board patterns, subtle glowing connections, futuristic interface texture, low opacity",
+      "negative_prompt": "text, bright colors, solid color, noisy, blurry, high contrast",
+      "transparent": false
+    }
+  ]
+}

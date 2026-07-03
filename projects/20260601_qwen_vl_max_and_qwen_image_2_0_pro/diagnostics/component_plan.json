@@ -1,0 +1,17 @@
+{
+  "assets": [
+    {
+      "name": "Background Image",
+      "type": "texture",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "prompt": "soft gradient background with light blue to white transition, subtle texture resembling brushed paper, clean and professional look",
+      "negative_prompt": "dark colors, cluttered patterns, sharp lines, text, logos",
+      "transparent": false
+    }
+  ]
+}
